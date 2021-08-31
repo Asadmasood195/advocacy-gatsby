@@ -1,0 +1,266 @@
+@use "config" as *;
+
+body {
+  font-family: "inter";
+  overflow: hidden;
+}
+#error404 {
+  min-height: 500px;
+  padding: 100px 0px;
+}
+.col-center {
+  float: none !important;
+  margin: 0 auto !important;
+}
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins";
+}
+.fa-star.checked {
+  color: orange;
+}
+label {
+  .red {
+    color: $primary-color;
+  }
+}
+
+.box1 {
+  background: $background-light;
+  padding: 10px;
+  border-top: 2px solid $primary-color;
+}
+
+textarea {
+  box-shadow: inset 0 -1px 0 #ddd;
+  outline: none !important;
+  box-shadow: none;
+  &.form-control:focus {
+    @extend textarea;
+  }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+  &:focus {
+    box-shadow: inset 0 -1px 0 #ddd;
+    outline: none !important;
+    box-shadow: none;
+  }
+}
+
+input.form-control {
+  @include input-form-control;
+  &:focus {
+    box-shadow: inset 0 -1px 0 #ddd;
+    outline: none !important;
+    box-shadow: none;
+  }
+}
+
+a {
+  box-shadow: inset 0 -1px 0 #ddd;
+  outline: none !important;
+  box-shadow: none;
+  &:focus {
+    @extend a;
+  }
+  &.btn:focus {
+    @extend a;
+  }
+}
+
+[type="text"].form-control:focus,
+[type="password"].form-control:focus,
+[type="email"].form-control:focus,
+[type="tel"].form-control:focus,
+[contenteditable].form-control:focus {
+  box-shadow: inset 0 -1px 0 #ddd;
+  outline: none !important;
+  box-shadow: none;
+}
+
+header .py-3 {
+  padding-bottom: 0px;
+}
+.no-border {
+  border: 0px !important;
+}
+.align-right {
+  text-align: right;
+}
+.btn-primary {
+  @include btn-primary;
+  &:hover {
+    @include btn-primary-effect;
+    images,
+    svg {
+      fill: #000 !important;
+    }
+  }
+
+  &:active {
+    @include btn-primary-effect;
+    images,
+    svg {
+      fill: #000 !important;
+    }
+  }
+  &:focus {
+    @include btn-primary-effect;
+    images,
+    svg {
+      fill: #000 !important;
+    }
+  }
+  &.btn-lg {
+    padding: 8px 40px;
+  }
+  & images {
+    fill: #fff;
+  }
+  & svg {
+    fill: #fff;
+  }
+}
+.add-to-cart {
+  padding: 10px 30px;
+  & svg,
+  images {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+    margin-right: 20px;
+  }
+}
+// #main {
+//   padding-bottom: 20px;
+// }
+
+#header {
+  padding-top: 20px;
+  & .navbar {
+    padding-bottom: 0px;
+  }
+  &.border-bottom {
+    border-bottom-color: $primary-color !important;
+  }
+  & #breadcrumbs {
+    @include bread-crumbs;
+    &.container {
+      padding: 10px 20px;
+    }
+    a {
+      @include bread-crumbs-a;
+    }
+  }
+  & .nav-item {
+    padding-right: 20px;
+    & a.nav-link {
+      @include custom-navLink;
+      &:focus,
+      &:active {
+        color: $primary-color !important;
+        border-bottom: 2px solid $primary-color;
+      }
+    }
+  }
+  & #accounts {
+    & .btn-login {
+      font-family: "Poppins";
+      font-size: 16px;
+      font-weight: 600;
+      padding: 15px 30px;
+    }
+    & .me-2 {
+      font-family: "Poppins";
+      font-size: 16px;
+      font-weight: 600;
+      color: $primary-color;
+    }
+    & .cart-icon {
+      images,
+      svg {
+        color: #000;
+        fill: #000;
+        width: 30px;
+        height: 30px;
+      }
+      & .badge {
+        padding-left: 9px;
+        padding-right: 9px;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        border-radius: 9px;
+      }
+      & .label-warning[href],
+      & .badge-warning[href] {
+        background-color: $background-secondary;
+      }
+      & #lblCartCount {
+        @include cart-count;
+      }
+    }
+  }
+  & .input-group {
+    input {
+      &.form-control {
+        @include input-form-control-2;
+      }
+    }
+    button {
+      background-color: $primary-color;
+      border: $primary-color;
+      padding: 12px 20px;
+      images {
+        filter: invert();
+        width: 30px;
+      }
+    }
+  }
+
+  & .dropdown {
+    &:hover {
+      .dropdown-menu {
+        display: block;
+        margin-top: 1px;
+        /* remove the gap so it doesn't close */
+      }
+    }
+  }
+
+  & .dropdown-menu {
+    border: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    box-shadow: 2px 4px 10px rgb(0 0 0 / 10%);
+    li {
+      border-bottom: 1px solid $primary-color;
+      &:hover {
+        background: #000;
+        a {
+          padding: 10px;
+          font-family: poppins, Sans-serif;
+          font-weight: 400;
+          color: #494c4f;
+          font-size: 14px;
+          &:hover,
+          &:active {
+            background: #000;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
