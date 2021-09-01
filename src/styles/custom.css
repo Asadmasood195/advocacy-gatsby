@@ -144,12 +144,33 @@ input.form-control {
 #header #breadcrumbs {
   border-top: 1px solid #ff173d !important;
 }
+#breadcrumbsTop {
+  border-bottom-color: #ff173d !important;
+}
 
+#breadcrumbsTop a {
+  color: #000;
+  font-weight: 600;
+  font-family: "Inter";
+  font-size: 14px;
+  text-decoration: none;
+}
+
+#breadcrumbsTop .container {
+  padding: 10px 20px;
+  border-bottom-color: #ff173d !important;
+}
 #header #breadcrumbs .container {
   padding: 10px 20px;
 }
 
 #header #breadcrumbs {
+  color: #000;
+  font-weight: 300;
+  font-family: "Inter";
+  font-size: 14px;
+}
+#breadcrumbsTop {
   color: #000;
   font-weight: 300;
   font-family: "Inter";
@@ -502,6 +523,7 @@ nav .pagination li.active a {
   background-image: url("../assests/logo-bg-adv2.webp");
   background-position: top right;
   background-repeat: no-repeat;
+  border-top: 1px solid #ff173d;
 }
 #contact #title-top h2 {
   font-family: "Poppins", Sans-serif;
@@ -554,6 +576,7 @@ nav .pagination li.active a {
   background: url(../assests/about-banner.png);
   min-height: 500px;
   background-size: cover;
+  border-top: 1px solid #ff173d;
 }
 
 .banner-about .text-banner {
@@ -569,6 +592,7 @@ nav .pagination li.active a {
   font-size: 48px;
   font-weight: 600;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .banner-about .text-banner h5 {
@@ -586,6 +610,7 @@ nav .pagination li.active a {
   background: url(../assests/banner-brands.webp);
   min-height: 500px;
   background-size: cover;
+  border-top: 1px solid #ff173d;
 }
 
 .banner-brands .text-banner {

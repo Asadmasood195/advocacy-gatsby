@@ -1,9 +1,23 @@
 import * as React from "react"
 
+import Header from "../components/header/Header"
+import Footer from "../components/footer/Footer"
+
 const NotFoundPage: React.FC = () => (
   <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <Header />
+    <div id="error404">
+      <div id="content">
+        <div className="container">
+          <h1 className="text-center">
+            404
+            <br />
+            Page Not Found
+          </h1>
+        </div>
+      </div>
+    </div>
+    <Footer />
   </div>
 )
 

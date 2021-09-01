@@ -37,7 +37,7 @@ const ProductsList = [
   },
 ]
 
-const Header = () => {
+const Header = ({ children }: any) => {
   const [imgSrc, setImgSrc] = React.useState("1")
 
   return (
