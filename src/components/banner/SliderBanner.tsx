@@ -3,13 +3,13 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Carousel from "react-multi-carousel"
 
-import GovBuddyBanner from "../../images/slide-govbuddy.jpg"
-import PolicyBanner from "../../images/slide-policy.jpg"
-import PrintedBanner from "../../images/slide-printed.jpg"
-import PritBanner from "../../images/slide-prit.jpg"
-import DigitalBanner from "../../images/slide-digital.jpg"
-import MapBanner from "../../images/slide-map.jpg"
-import ArrowRight16 from "../../images/octicons/arrow-right-16.svg"
+import GovBuddyBanner from "../../assests/slide-govbuddy.jpg"
+import PolicyBanner from "../../assests/slide-policy.jpg"
+import PrintedBanner from "../../assests/slide-printed.jpg"
+import PritBanner from "../../assests/slide-prit.jpg"
+import DigitalBanner from "../../assests/slide-digital.jpg"
+import MapBanner from "../../assests/slide-map.jpg"
+import ArrowRight16 from "../../assests/octicons/arrow-right-16.svg"
 
 const responsive = {
   superLargeDesktop: {
@@ -77,7 +77,7 @@ const SliderBanner = () => {
                         </Link>
                       </div>
                       <div className="col-md-6 text-center">
-                        <StaticImage src="../../images/sl-govbuddy.png" />
+                        <StaticImage src="../../assests/sl-govbuddy.png" />
                       </div>
                     </div>
                   </div>
@@ -108,7 +108,7 @@ const SliderBanner = () => {
                         </Link>
                       </div>
                       <div className="col-md-6 text-center">
-                        <StaticImage src="../../images/sl-policy.png" />
+                        <StaticImage src="../../assests/sl-policy.png" />
                       </div>
                     </div>
                   </div>
@@ -143,7 +143,7 @@ const SliderBanner = () => {
                         </Link>
                       </div>
                       <div className="col-md-6 align-right">
-                        <StaticImage src="../../images/sl-printed.png" />
+                        <StaticImage src="../../assests/sl-printed.png" />
                       </div>
                     </div>
                   </div>
@@ -181,7 +181,7 @@ const SliderBanner = () => {
                         style={{ padding: "100px 0px" }}
                       >
                         <StaticImage
-                          src="../../images/sl-prit.png"
+                          src="../../assests/sl-prit.png"
                           style={{ height: "auto", width: "500px" }}
                         />
                       </div>
@@ -225,7 +225,7 @@ const SliderBanner = () => {
                         style={{ padding: "50px 0px" }}
                       >
                         <StaticImage
-                          src="../../images/sl-digital.png"
+                          src="../../assests/sl-digital.png"
                           style={{ height: "400px" }}
                         />
                       </div>
@@ -265,7 +265,7 @@ const SliderBanner = () => {
                         </Link>
                       </div>
                       <div className="col-md-6 align-right">
-                        <StaticImage src="../../images/sl-maps.png" />
+                        <StaticImage src="../../assests/sl-maps.png" />
                       </div>
                     </div>
                   </div>

@@ -14,7 +14,7 @@ const ProductCategories = () => {
             <div className="col-md-4">
               <div className="box-prod-cat">
                 <div className="prod-img">
-                  <StaticImage src="../../images/prod-printed.webp" />
+                  <StaticImage src="../../assests/prod-printed.webp" />
                 </div>
                 <h4 className="prod-title">Printed Directories</h4>
                 <div className="prod-desc">
@@ -31,7 +31,7 @@ const ProductCategories = () => {
             <div className="col-md-4">
               <div className="box-prod-cat">
                 <div className="prod-img">
-                  <StaticImage src="../../images/prod-digital.webp" />
+                  <StaticImage src="../../assests/prod-digital.webp" />
                 </div>
                 <h4 className="prod-title">Digital Editions</h4>
                 <div className="prod-desc">
@@ -48,7 +48,7 @@ const ProductCategories = () => {
             <div className="col-md-4">
               <div className="box-prod-cat">
                 <div className="prod-img">
-                  <StaticImage src="../../images/prod-prit.webp" />
+                  <StaticImage src="../../assests/prod-prit.webp" />
                 </div>
                 <h4 className="prod-title">PritchardU</h4>
                 <div className="prod-desc">
@@ -64,7 +64,7 @@ const ProductCategories = () => {
             <div className="col-md-4">
               <div className="box-prod-cat">
                 <div className="prod-img">
-                  <StaticImage src="../../images/prod-maps.webp" />
+                  <StaticImage src="../../assests/prod-maps.webp" />
                 </div>
                 <h4 className="prod-title">Maps</h4>
                 <div className="prod-desc">
@@ -79,7 +79,7 @@ const ProductCategories = () => {
             <div className="col-md-4">
               <div className="box-prod-cat">
                 <div className="prod-img">
-                  <StaticImage src="../../images/prod-govbuddy.webp" />
+                  <StaticImage src="../../assests/prod-govbuddy.webp" />
                 </div>
                 <h4 className="prod-title">GovBuddy</h4>
                 <div className="prod-desc">
@@ -94,7 +94,7 @@ const ProductCategories = () => {
             <div className="col-md-4">
               <div className="box-prod-cat">
                 <div className="prod-img">
-                  <StaticImage src="../../images/prod-policy.webp" />
+                  <StaticImage src="../../assests/prod-policy.webp" />
                 </div>
                 <h4 className="prod-title">PolicyGuru</h4>
                 <div className="prod-desc">

@@ -3,8 +3,8 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Carousel from "react-multi-carousel"
 
-import BackgroundImg from "../../images/bg-slide1.jpg"
-import ArrowRight16 from "../../images/octicons/arrow-right-16.svg"
+import BackgroundImg from "../../assests/bg-slide1.jpg"
+import ArrowRight16 from "../../assests/octicons/arrow-right-16.svg"
 
 const responsive = {
   superLargeDesktop: {
@@ -33,12 +33,11 @@ const HowCanWeHelp = () => {
         <div className="container">
           <div id="history-slider" className="ncdr-posts">
             <Carousel
+              className="history-carousel"
               responsive={responsive}
               showDots={false}
               arrows={false}
               infinite={true}
-              className="history-carousel"
-              customTransition="all 1s linear infinite"
             >
               <section>
                 <div className="ncdr-post-list li-history-portfolio-slider">
@@ -51,7 +50,7 @@ const HowCanWeHelp = () => {
                     }}
                     className="slide-content"
                   >
-                    <StaticImage src="../../images/49.svg" />
+                    <StaticImage src="../../assests/49.svg" />
                     <h4>Government Directory Expertise & Innovation</h4>
                   </div>
                 </div>

@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="col-lg-3">
             <div className="col-footer">
               <div className="logo-footer">
-                <StaticImage src="../../images/logo.svg" />
+                <StaticImage src="../../assests/logo.svg" />
               </div>
               <p>
                 Empowering Advocacy Professionals to Coordinate Strategic

@@ -1,25 +1,30 @@
 import * as React from "react"
+import { Link } from "gatsby"
+
+import CartIcon from "../../assests/octicons/cart.svg"
 
 const ProductCards = () => {
+  const [currentTab, setCurentTab] = React.useState("2021")
+
   return (
-    <div>
+    <div id="homepage">
       <div id="products">
-        <div class="container">
-          <div class="row" id="header-title">
-            <div class="col-md-12">
+        <div className="container">
+          <div className="row" id="header-title">
+            <div className="col-md-12">
               <h3>Capitol Enquiry Products</h3>
               <p>Game Changing Products for Advocacy</p>
             </div>
           </div>
           <div id="products-list">
             <ul
-              class="nav nav-pills justify-content-center"
+              className="nav nav-pills justify-content-center"
               id="productTab"
               role="tablist"
             >
-              <li class="nav-item" role="presentation">
+              <li className="nav-item" role="presentation">
                 <button
-                  class="nav-link active"
+                  className={`nav-link ${currentTab === "2021" && "active"}`}
                   id="tab-2021-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#tab-2021"
@@ -27,13 +32,14 @@ const ProductCards = () => {
                   role="tab"
                   aria-controls="tab-2021"
                   aria-selected="true"
+                  onClick={() => setCurentTab("2021")}
                 >
                   2021
                 </button>
               </li>
-              <li class="nav-item" role="presentation">
+              <li className="nav-item" role="presentation">
                 <button
-                  class="nav-link"
+                  className={`nav-link ${currentTab === "2022" && "active"}`}
                   id="tab-2022-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#tab-2022"
@@ -41,337 +47,329 @@ const ProductCards = () => {
                   role="tab"
                   aria-controls="tab-2022"
                   aria-selected="false"
+                  onClick={() => setCurentTab("2022")}
                 >
                   2022
                 </button>
               </li>
             </ul>
-            <div class="tab-content" id="productTabContent">
+            <div className="tab-content" id="productTabContent">
               <div
-                class="tab-pane fade show active"
+                className={`tab-pane fade ${
+                  currentTab === "2021" && "active show"
+                }`}
                 id="tab-2021"
                 role="tabpanel"
                 aria-labelledby="tab-2021"
               >
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="product-item">
-                      <a href="product-detail.html" class="product-detail">
+                <div className="row">
+                  <div className="col-md-3">
+                    <div className="product-item">
+                      <Link to="/product-detail" className="product-detail">
                         <div
-                          class="product-item-img"
-                          style="
-                                background: url('./img/sample1.jpeg') no-repeat
-                                  center center;
-                                background-size: contain;
-                              "
+                          className="product-item-Card"
+                          id="Card1Styles"
                         ></div>
-                        <div class="product-item-title">
+                        <div className="product-item-title">
                           2021 State Agency Directory Digital Edition
                         </div>
-                        <div class="product-item-price">$299.95</div>
-                      </a>
-                      <div class="product-item-button">
-                        <a href="cart.html" class="btn btn-primary add-to-cart">
-                          <img src="./plugins/octicons/cart.svg" class="svg" />
+                        <div className="product-item-price">$299.95</div>
+                      </Link>
+                      <div className="product-item-button">
+                        <Link
+                          to="/cart"
+                          className="btn btn-primary add-to-cart"
+                        >
+                          <CartIcon className="svg" />
                           Add to Cart
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-3">
-                    <div class="product-item">
-                      <a href="product-detail.html" class="product-detail">
+                  <div className="col-md-3">
+                    <div className="product-item">
+                      <Link to="/product-detail" className="product-detail">
                         <div
-                          class="product-item-img"
-                          style="
-                                background: url('./img/sample1.jpeg') no-repeat
-                                  center center;
-                                background-size: contain;
-                              "
+                          className="product-item-Card"
+                          id="Card1Styles"
                         ></div>
-                        <div class="product-item-title">
+                        <div className="product-item-title">
                           2021 State Agency Directory Digital Edition
                         </div>
-                        <div class="product-item-price">$299.95</div>
-                      </a>
-                      <div class="product-item-button">
-                        <a href="cart.html" class="btn btn-primary add-to-cart">
-                          <img src="./plugins/octicons/cart.svg" class="svg" />
+                        <div className="product-item-price">$299.95</div>
+                      </Link>
+                      <div className="product-item-button">
+                        <Link
+                          to="/cart"
+                          className="btn btn-primary add-to-cart"
+                        >
+                          <CartIcon className="svg" />
                           Add to Cart
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-3">
-                    <div class="product-item">
-                      <a href="product-detail.html" class="product-detail">
+                  <div className="col-md-3">
+                    <div className="product-item">
+                      <Link to="/product-detail" className="product-detail">
                         <div
-                          class="product-item-img"
-                          style="
-                                background: url('./img/sample2.jpeg') no-repeat
-                                  center center;
-                                background-size: contain;
-                              "
+                          className="product-item-Card"
+                          id="Card2Styles"
                         ></div>
-                        <div class="product-item-title">
+                        <div className="product-item-title">
                           2021 State Agency Directory Digital Edition
                         </div>
-                        <div class="product-item-price">$299.95</div>
-                      </a>
-                      <div class="product-item-button">
-                        <a href="cart.html" class="btn btn-primary add-to-cart">
-                          <img src="./plugins/octicons/cart.svg" class="svg" />
+                        <div className="product-item-price">$299.95</div>
+                      </Link>
+                      <div className="product-item-button">
+                        <Link
+                          to="/cart"
+                          className="btn btn-primary add-to-cart"
+                        >
+                          <CartIcon className="svg" />
                           Add to Cart
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-3">
-                    <div class="product-item">
-                      <a href="product-detail.html" class="product-detail">
+                  <div className="col-md-3">
+                    <div className="product-item">
+                      <Link to="/product-detail" className="product-detail">
                         <div
-                          class="product-item-img"
-                          style="
-                                background: url('./img/sample2.jpeg') no-repeat
-                                  center center;
-                                background-size: contain;
-                              "
+                          className="product-item-Card"
+                          id="Card2Styles"
                         ></div>
-                        <div class="product-item-title">
+                        <div className="product-item-title">
                           2021 State Agency Directory Digital Edition
                         </div>
-                        <div class="product-item-price">$299.95</div>
-                      </a>
-                      <div class="product-item-button">
-                        <a href="cart.html" class="btn btn-primary add-to-cart">
-                          <img src="./plugins/octicons/cart.svg" class="svg" />
+                        <div className="product-item-price">$299.95</div>
+                      </Link>
+                      <div className="product-item-button">
+                        <Link
+                          to="/cart"
+                          className="btn btn-primary add-to-cart"
+                        >
+                          <CartIcon className="svg" />
                           Add to Cart
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-3">
-                    <div class="product-item">
-                      <a href="product-detail.html" class="product-detail">
+                  <div className="col-md-3">
+                    <div className="product-item">
+                      <Link to="/product-detail" className="product-detail">
                         <div
-                          class="product-item-img"
-                          style="
-                                background: url('./img/sample0.jpeg') no-repeat
-                                  center center;
-                                background-size: contain;
-                              "
+                          className="product-item-Card"
+                          id="Card0Styles"
                         ></div>
-                        <div class="product-item-title">
+                        <div className="product-item-title">
                           2021 State Agency Directory Digital Edition
                         </div>
-                        <div class="product-item-price">$299.95</div>
-                      </a>
-                      <div class="product-item-button">
-                        <a href="cart.html" class="btn btn-primary add-to-cart">
-                          <img src="./plugins/octicons/cart.svg" class="svg" />
+                        <div className="product-item-price">$299.95</div>
+                      </Link>
+                      <div className="product-item-button">
+                        <Link
+                          to="/cart"
+                          className="btn btn-primary add-to-cart"
+                        >
+                          <CartIcon className="svg" />
                           Add to Cart
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-3">
-                    <div class="product-item">
-                      <a href="product-detail.html" class="product-detail">
+                  <div className="col-md-3">
+                    <div className="product-item">
+                      <Link to="/product-detail" className="product-detail">
                         <div
-                          class="product-item-img"
-                          style="
-                                background: url('./img/sample0.jpeg') no-repeat
-                                  center center;
-                                background-size: contain;
-                              "
+                          className="product-item-Card"
+                          id="Card0Styles"
                         ></div>
-                        <div class="product-item-title">
+                        <div className="product-item-title">
                           2021 State Agency Directory Digital Edition
                         </div>
-                        <div class="product-item-price">$299.95</div>
-                      </a>
-                      <div class="product-item-button">
-                        <a href="cart.html" class="btn btn-primary add-to-cart">
-                          <img src="./plugins/octicons/cart.svg" class="svg" />
+                        <div className="product-item-price">$299.95</div>
+                      </Link>
+                      <div className="product-item-button">
+                        <Link
+                          to="/cart"
+                          className="btn btn-primary add-to-cart"
+                        >
+                          <CartIcon className="svg" />
                           Add to Cart
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-3">
-                    <div class="product-item">
-                      <a href="product-detail.html" class="product-detail">
+                  <div className="col-md-3">
+                    <div className="product-item">
+                      <Link to="/product-detail" className="product-detail">
                         <div
-                          class="product-item-img"
-                          style="
-                                background: url('./img/sample0.jpeg') no-repeat
-                                  center center;
-                                background-size: contain;
-                              "
+                          className="product-item-Card"
+                          id="Card0Styles"
                         ></div>
-                        <div class="product-item-title">
+                        <div className="product-item-title">
                           2021 State Agency Directory Digital Edition
                         </div>
-                        <div class="product-item-price">$299.95</div>
-                      </a>
-                      <div class="product-item-button">
-                        <a href="cart.html" class="btn btn-primary add-to-cart">
-                          <img src="./plugins/octicons/cart.svg" class="svg" />
+                        <div className="product-item-price">$299.95</div>
+                      </Link>
+                      <div className="product-item-button">
+                        <Link
+                          to="/cart"
+                          className="btn btn-primary add-to-cart"
+                        >
+                          <CartIcon className="svg" />
                           Add to Cart
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-3">
-                    <div class="product-item">
-                      <a href="product-detail.html" class="product-detail">
+                  <div className="col-md-3">
+                    <div className="product-item">
+                      <Link to="/product-detail" className="product-detail">
                         <div
-                          class="product-item-img"
-                          style="
-                                background: url('./img/sample2.jpeg') no-repeat
-                                  center center;
-                                background-size: contain;
-                              "
+                          className="product-item-Card"
+                          id="Card2Styles"
                         ></div>
-                        <div class="product-item-title">
+                        <div className="product-item-title">
                           2021 State Agency Directory Digital Edition
                         </div>
-                        <div class="product-item-price">$299.95</div>
-                      </a>
-                      <div class="product-item-button">
-                        <a href="cart.html" class="btn btn-primary add-to-cart">
-                          <img src="./plugins/octicons/cart.svg" class="svg" />
+                        <div className="product-item-price">$299.95</div>
+                      </Link>
+                      <div className="product-item-button">
+                        <Link
+                          to="/cart"
+                          className="btn btn-primary add-to-cart"
+                        >
+                          <CartIcon className="svg" />
                           Add to Cart
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-3">
-                    <div class="product-item">
-                      <a href="product-detail.html" class="product-detail">
+                  <div className="col-md-3">
+                    <div className="product-item">
+                      <Link to="/product-detail" className="product-detail">
                         <div
-                          class="product-item-img"
-                          style="
-                                background: url('./img/sample1.jpeg') no-repeat
-                                  center center;
-                                background-size: contain;
-                              "
+                          className="product-item-Card"
+                          id="Card1Styles"
                         ></div>
-                        <div class="product-item-title">
+                        <div className="product-item-title">
                           2021 State Agency Directory Digital Edition
                         </div>
-                        <div class="product-item-price">$299.95</div>
-                      </a>
-                      <div class="product-item-button">
-                        <a href="cart.html" class="btn btn-primary add-to-cart">
-                          <img src="./plugins/octicons/cart.svg" class="svg" />
+                        <div className="product-item-price">$299.95</div>
+                      </Link>
+                      <div className="product-item-button">
+                        <Link
+                          to="/cart"
+                          className="btn btn-primary add-to-cart"
+                        >
+                          <CartIcon className="svg" />
                           Add to Cart
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="tab-pane fade show"
+                className={`tab-pane fade ${
+                  currentTab === "2022" && "active show"
+                }`}
                 id="tab-2022"
                 role="tabpanel"
                 aria-labelledby="tab-2021"
               >
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="product-item">
-                      <a href="product-detail.html" class="product-detail">
+                <div className="row">
+                  <div className="col-md-3">
+                    <div className="product-item">
+                      <Link to="/product-detail" className="product-detail">
                         <div
-                          class="product-item-img"
-                          style="
-                                background: url('./img/sample1.jpeg') no-repeat
-                                  center center;
-                                background-size: contain;
-                              "
+                          className="product-item-Card"
+                          id="Card1Styles"
                         ></div>
-                        <div class="product-item-title">
+                        <div className="product-item-title">
                           2022 State Agency Directory Digital Edition
                         </div>
-                        <div class="product-item-price">$299.95</div>
-                      </a>
-                      <div class="product-item-button">
-                        <a href="cart.html" class="btn btn-primary add-to-cart">
-                          <img src="./plugins/octicons/cart.svg" class="svg" />
+                        <div className="product-item-price">$299.95</div>
+                      </Link>
+                      <div className="product-item-button">
+                        <Link
+                          to="/cart"
+                          className="btn btn-primary add-to-cart"
+                        >
+                          <CartIcon className="svg" />
                           Add to Cart
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-3">
-                    <div class="product-item">
-                      <a href="product-detail.html" class="product-detail">
+                  <div className="col-md-3">
+                    <div className="product-item">
+                      <Link to="/product-detail" className="product-detail">
                         <div
-                          class="product-item-img"
-                          style="
-                                background: url('./img/sample2.jpeg') no-repeat
-                                  center center;
-                                background-size: contain;
-                              "
+                          className="product-item-Card"
+                          id="Card2Styles"
                         ></div>
-                        <div class="product-item-title">
+                        <div className="product-item-title">
                           2022 State Agency Directory Digital Edition
                         </div>
-                        <div class="product-item-price">$299.95</div>
-                      </a>
-                      <div class="product-item-button">
-                        <a href="cart.html" class="btn btn-primary add-to-cart">
-                          <img src="./plugins/octicons/cart.svg" class="svg" />
+                        <div className="product-item-price">$299.95</div>
+                      </Link>
+                      <div className="product-item-button">
+                        <Link
+                          to="/cart"
+                          className="btn btn-primary add-to-cart"
+                        >
+                          <CartIcon className="svg" />
                           Add to Cart
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-3">
-                    <div class="product-item">
-                      <a href="product-detail.html" class="product-detail">
+                  <div className="col-md-3">
+                    <div className="product-item">
+                      <Link to="/product-detail" className="product-detail">
                         <div
-                          class="product-item-img"
-                          style="
-                                background: url('./img/sample2.jpeg') no-repeat
-                                  center center;
-                                background-size: contain;
-                              "
+                          className="product-item-Card"
+                          id="Card2Styles"
                         ></div>
-                        <div class="product-item-title">
+                        <div className="product-item-title">
                           2022 State Agency Directory Digital Edition
                         </div>
-                        <div class="product-item-price">$299.95</div>
-                      </a>
-                      <div class="product-item-button">
-                        <a href="cart.html" class="btn btn-primary add-to-cart">
-                          <img src="./plugins/octicons/cart.svg" class="svg" />
+                        <div className="product-item-price">$299.95</div>
+                      </Link>
+                      <div className="product-item-button">
+                        <Link
+                          to="/cart"
+                          className="btn btn-primary add-to-cart"
+                        >
+                          <CartIcon className="svg" />
                           Add to Cart
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-3">
-                    <div class="product-item">
-                      <a href="product-detail.html" class="product-detail">
+                  <div className="col-md-3">
+                    <div className="product-item">
+                      <Link to="/product-detail" className="product-detail">
                         <div
-                          class="product-item-img"
-                          style="
-                                background: url('./img/sample0.jpeg') no-repeat
-                                  center center;
-                                background-size: contain;
-                              "
+                          className="product-item-Card"
+                          id="Card0Styles"
                         ></div>
-                        <div class="product-item-title">
+                        <div className="product-item-title">
                           2022 State Agency Directory Digital Edition
                         </div>
-                        <div class="product-item-price">$299.95</div>
-                      </a>
-                      <div class="product-item-button">
-                        <a href="cart.html" class="btn btn-primary add-to-cart">
-                          <img src="./plugins/octicons/cart.svg" class="svg" />
+                        <div className="product-item-price">$299.95</div>
+                      </Link>
+                      <div className="product-item-button">
+                        <Link
+                          to="/cart"
+                          className="btn btn-primary add-to-cart"
+                        >
+                          <CartIcon className="svg" />
                           Add to Cart
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

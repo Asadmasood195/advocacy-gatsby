@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SliderBanner from "../components/banner/SliderBanner"
 import CompanyLogos from "../components/banner/CompanyLogos"
 import ProductCategories from "../components/banner/ProductCategories"
+import ProductCards from "../components/product-cards/ProductCards"
 import PrinchardU from "../components/banner/PrinchardU"
 import PrintedDirectory from "../components/banner/PrintedDirectory"
 import TrustedCompany from "../components/banner/TrustedCompany"
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <SliderBanner />
     <CompanyLogos />
     <ProductCategories />
+    <ProductCards />
     <PrinchardU />
     <PrintedDirectory />
     <MoreDetails />

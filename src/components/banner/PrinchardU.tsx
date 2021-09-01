@@ -10,7 +10,7 @@ const PrinchardU = () => {
           <div className="col-md-6">
             <div className="p-5">
               <StaticImage
-                src="../../images/br-pritchard.webp"
+                src="../../assests/br-pritchard.webp"
                 className="logo"
               />
               <h4>Online Educational Courses</h4>
@@ -40,7 +40,7 @@ const PrinchardU = () => {
             </div>
           </div>
           <div className="col-md-6 align-right">
-            <StaticImage src="../../images/sc-prit2.webp" />
+            <StaticImage src="../../assests/sc-prit2.webp" />
           </div>
         </div>
       </div>

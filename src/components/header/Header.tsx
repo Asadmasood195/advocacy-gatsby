@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import CartIcon from "../../images/octicons/cart.svg"
-import Search from "../../images/octicons/search-16.svg"
+import CartIcon from "../../assests/octicons/cart.svg"
+import Search from "../../assests/octicons/search-16.svg"
 
 const ProductsList = [
   {
@@ -52,7 +52,7 @@ const Header = () => {
     "
       >
         <Link to="/" className="d-flex align-items-center">
-          <StaticImage src="../../images/logo.svg" />
+          <StaticImage src="../../assests/logo.svg" />
         </Link>
         <div className="col-md-8">
           <div
@@ -139,14 +139,14 @@ const Header = () => {
                       <div className="product-image">
                         {imgSrc === "1" && (
                           <StaticImage
-                            src="../../images/mnu-govbuddy.png"
+                            src="../../assests/mnu-govbuddy.png"
                             alt=""
                             height={254}
                           />
                         )}
                         {imgSrc === "2" && (
                           <StaticImage
-                            src="../../images/mnu-printed.png"
+                            src="../../assests/mnu-printed.png"
                             alt=""
                             height={254}
                           />
@@ -154,7 +154,7 @@ const Header = () => {
 
                         {imgSrc === "3" && (
                           <StaticImage
-                            src="../../images/mnu-maps.png"
+                            src="../../assests/mnu-maps.png"
                             alt=""
                             height={254}
                           />
@@ -162,7 +162,7 @@ const Header = () => {
 
                         {imgSrc === "4" && (
                           <StaticImage
-                            src="../../images/mnu-digital.png"
+                            src="../../assests/mnu-digital.png"
                             alt=""
                             height={254}
                           />
@@ -170,7 +170,7 @@ const Header = () => {
 
                         {imgSrc === "5" && (
                           <StaticImage
-                            src="../../images/mnu-policyguru.png"
+                            src="../../assests/mnu-policyguru.png"
                             alt=""
                             height={254}
                           />
@@ -178,7 +178,7 @@ const Header = () => {
 
                         {imgSrc === "6" && (
                           <StaticImage
-                            src="../../images/mnu-prit.png"
+                            src="../../assests/mnu-prit.png"
                             alt=""
                             height={254}
                           />

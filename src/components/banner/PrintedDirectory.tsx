@@ -7,9 +7,7 @@ const PrintedDirectory = () => {
     <div id="homepage">
       <div id="printed-directories">
         <div className="row">
-          <div className="col-md-3">
-            <StaticImage src="" />
-          </div>
+          <div className="col-md-3"></div>
           <div className="col-md-6">
             <div className="p-5 text-center">
               <br />

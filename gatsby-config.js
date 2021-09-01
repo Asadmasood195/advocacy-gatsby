@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    // siteUrl: "https://www.yourdomain.tld",
     title: "advocasy-gatsby-project",
   },
   plugins: [
@@ -9,14 +9,6 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: "./src/images/octicons",
-      },
-      __key: "images",
-    },
     {
       resolve: "gatsby-plugin-typescript",
       options: {

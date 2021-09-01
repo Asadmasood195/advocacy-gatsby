@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import ArrowRight16 from "../../images/octicons/arrow-right-16.svg"
+import ArrowRight16 from "../../assests/octicons/arrow-right-16.svg"
 
 const MoreDetails = () => {
   return (
@@ -10,7 +10,7 @@ const MoreDetails = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6">
-              <StaticImage src="../../images/sc-rand1.webp" />
+              <StaticImage src="../../assests/sc-rand1.webp" />
             </div>
             <div className="col-md-6">
               <h3>We’re committed to creating Change that Matters</h3>

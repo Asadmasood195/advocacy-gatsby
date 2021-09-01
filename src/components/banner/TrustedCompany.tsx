@@ -15,30 +15,30 @@ const TrustedCompany = () => {
               legislators easy and manageable.
             </p>
             <div className="image-list">
-              <StaticImage src="../../images/ico-apple.webp" />
-              <StaticImage src="../../images/ico-google.webp" />
-              <StaticImage src="../../images/ico-microsoft.webp" />
-              <StaticImage src="../../images/ico-chase.webp" />
-              <StaticImage src="../../images/ico-exxon.webp" />
-              <StaticImage src="../../images/ico-greenpeace.webp" />
-              <StaticImage src="../../images/ico-aarp.webp" />
-              <StaticImage src="../../images/ico-wsap.webp" />
-              <StaticImage src="../../images/ico-chevron.webp" />
-              <StaticImage src="../../images/ico-seu.webp" />
-              <StaticImage src="../../images/ico-chamber.webp" />
-              <StaticImage src="../../images/ico-cpha.webp" />
-              <StaticImage src="../../images/ico-custom1.webp" />
-              <StaticImage src="../../images/ico-cta.webp" />
-              <StaticImage src="../../images/ico-pge.webp" />
-              <StaticImage src="../../images/ico-afscme.webp" />
-              <StaticImage src="../../images/ico-capitoladv.webp" />
-              <StaticImage src="../../images/ico-kp.webp" />
-              <StaticImage src="../../images/ico-lang.webp" />
-              <StaticImage src="../../images/ico-california.webp" />
-              <StaticImage src="../../images/ico-axiom.webp" />
-              <StaticImage src="../../images/ico-major.webp" />
-              <StaticImage src="../../images/ico-nossaman.webp" />
-              <StaticImage src="../../images/ico-gualco.webp" />
+              <StaticImage src="../../assests/ico-apple.webp" />
+              <StaticImage src="../../assests/ico-google.webp" />
+              <StaticImage src="../../assests/ico-microsoft.webp" />
+              <StaticImage src="../../assests/ico-chase.webp" />
+              <StaticImage src="../../assests/ico-exxon.webp" />
+              <StaticImage src="../../assests/ico-greenpeace.webp" />
+              <StaticImage src="../../assests/ico-aarp.webp" />
+              <StaticImage src="../../assests/ico-wsap.webp" />
+              <StaticImage src="../../assests/ico-chevron.webp" />
+              <StaticImage src="../../assests/ico-seu.webp" />
+              <StaticImage src="../../assests/ico-chamber.webp" />
+              <StaticImage src="../../assests/ico-cpha.webp" />
+              <StaticImage src="../../assests/ico-custom1.webp" />
+              <StaticImage src="../../assests/ico-cta.webp" />
+              <StaticImage src="../../assests/ico-pge.webp" />
+              <StaticImage src="../../assests/ico-afscme.webp" />
+              <StaticImage src="../../assests/ico-capitoladv.webp" />
+              <StaticImage src="../../assests/ico-kp.webp" />
+              <StaticImage src="../../assests/ico-lang.webp" />
+              <StaticImage src="../../assests/ico-california.webp" />
+              <StaticImage src="../../assests/ico-axiom.webp" />
+              <StaticImage src="../../assests/ico-major.webp" />
+              <StaticImage src="../../assests/ico-nossaman.webp" />
+              <StaticImage src="../../assests/ico-gualco.webp" />
             </div>
             <div className="text-center many-more">And many more</div>
           </div>

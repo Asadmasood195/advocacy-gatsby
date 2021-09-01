@@ -9,16 +9,16 @@ const CompanyLogos = () => {
           <div className="container">
             <div className="row text-center">
               <div className="col-md-3">
-                <StaticImage src="../../images/br-capitol.webp" />
+                <StaticImage src="../../assests/br-capitol.webp" />
               </div>
               <div className="col-md-3">
-                <StaticImage src="../../images/br-govbuddy.webp" />
+                <StaticImage src="../../assests/br-govbuddy.webp" />
               </div>
               <div className="col-md-3">
-                <StaticImage src="../../images/br-policy.webp" />
+                <StaticImage src="../../assests/br-policy.webp" />
               </div>
               <div className="col-md-3">
-                <StaticImage src="../../images/br-pritchard.webp" />
+                <StaticImage src="../../assests/br-pritchard.webp" />
               </div>
             </div>
           </div>
