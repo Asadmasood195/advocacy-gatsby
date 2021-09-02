@@ -92,7 +92,7 @@ header .py-3 {
   padding: 8px 40px;
 }
 
-.btn-primary images,
+.btn-primary img,
 .btn-primary svg {
   fill: #fff;
 }
@@ -101,11 +101,11 @@ header .py-3 {
   height: 24 !important;
 }
 
-.btn-primary:focus images,
+.btn-primary:focus img,
 .btn-primary:focus svg,
-.btn-primary:active images,
+.btn-primary:active img,
 .btn-primary:active svg,
-.btn-primary:hover images,
+.btn-primary:hover img,
 .btn-primary:hover svg {
   fill: #000 !important;
 }
@@ -115,7 +115,7 @@ header .py-3 {
 }
 
 .add-to-cart svg,
-.add-to-cart images {
+.add-to-cart img {
   width: 30px;
   height: 30px;
   fill: #fff;
@@ -219,7 +219,7 @@ input.form-control {
   color: #ff173d;
 }
 
-#header #accounts .cart-icon images,
+#header #accounts .cart-icon img,
 #header #accounts .cart-icon svg {
   color: #000;
   fill: #000;
@@ -358,7 +358,7 @@ input.form-control {
   margin-bottom: 20px;
 }
 
-#footer-menu .logo-footer images {
+#footer-menu .logo-footer img {
   width: 100%;
 }
 
@@ -446,7 +446,7 @@ nav .pagination li.active a {
   color: #fff;
 }
 
-.btn-outline-primary images {
+.btn-outline-primary img {
   width: 30px !important;
 }
 .btn-outline-primary svg {
@@ -583,7 +583,7 @@ nav .pagination li.active a {
   padding: 80px 0px;
 }
 
-.banner-about .text-banner images {
+.banner-about .text-banner img {
   margin-bottom: 20px;
 }
 
@@ -617,7 +617,7 @@ nav .pagination li.active a {
   padding: 140px 0px;
 }
 
-.banner-brands .text-banner images {
+.banner-brands .text-banner img {
   margin-bottom: 20px;
 }
 
@@ -637,7 +637,7 @@ nav .pagination li.active a {
   color: #fff;
 }
 
-#brands #content images.logo-icon {
+#brands #content img.logo-icon {
   margin-bottom: 20px;
 }
 #brands #content .body-content h4 {
@@ -720,7 +720,7 @@ nav .pagination li.active a {
   padding: 140px 0px;
 }
 
-.banner-solutions .text-banner images {
+.banner-solutions .text-banner img {
   margin-bottom: 20px;
 }
 
@@ -740,7 +740,7 @@ nav .pagination li.active a {
   color: #fff;
 }
 
-#solutions #content images.logo-icon {
+#solutions #content img.logo-icon {
   margin-bottom: 20px;
 }
 #solutions #content .body-content h4 {
@@ -767,7 +767,7 @@ nav .pagination li.active a {
   padding-bottom: 0px;
 }
 
-#solutions #content .body-content ul li images {
+#solutions #content .body-content ul li img {
   width: 20px !important;
   height: 20px !important;
 }
@@ -811,7 +811,7 @@ nav .pagination li.active a {
   display: block;
 }
 
-#solutions .product-list a images {
+#solutions .product-list a img {
   width: 100px;
 }
 
@@ -835,7 +835,7 @@ nav .pagination li.active a {
   padding: 140px 0px;
 }
 
-.banner-products .text-banner images {
+.banner-products .text-banner img {
   margin-bottom: 20px;
 }
 
@@ -855,7 +855,7 @@ nav .pagination li.active a {
   color: #fff;
 }
 
-#products #content images.logo-icon {
+#products #content img.logo-icon {
   margin-bottom: 20px;
 }
 #products #content .body-content h4 {
@@ -882,7 +882,7 @@ nav .pagination li.active a {
   padding-bottom: 0px;
 }
 
-#products #content .body-content ul li images {
+#products #content .body-content ul li img {
   width: 20px !important;
   height: 20px !important;
 }
@@ -989,7 +989,7 @@ nav .pagination li.active a {
   padding: 80px 0px 30px;
 }
 
-#about #product-list-overview images {
+#about #product-list-overview img {
   margin-bottom: 20px;
 }
 
@@ -1025,7 +1025,7 @@ nav .pagination li.active a {
   padding: 80px 0px;
 }
 
-.banner-legal .text-banner images {
+.banner-legal .text-banner img {
   margin-bottom: 20px;
 }
 
@@ -1071,7 +1071,7 @@ nav .pagination li.active a {
   color: #000;
 }
 
-#legal #legal-content images {
+#legal #legal-content img {
   width: 30px;
   height: 30px;
 }
@@ -1085,7 +1085,7 @@ nav .pagination li.active a {
   font-weight: 400;
   color: #54595f;
 }
-#legal #legal-content a images,
+#legal #legal-content a img,
 #legal #legal-content a svg {
   margin-right: 19px;
 }
@@ -1138,12 +1138,12 @@ nav .pagination li.active a {
   padding-top: 0px;
 }
 
-#homepage #brand-logo images {
+#homepage #brand-logo img {
   height: 50px;
   filter: grayscale(1);
 }
 
-#homepage #brand-logo images:hover {
+#homepage #brand-logo img:hover {
   filter: grayscale(0);
 }
 
@@ -1164,7 +1164,7 @@ nav .pagination li.active a {
   position: relative;
   padding-bottom: 60px;
 }
-#homepage #product-categories .box-prod-cat images {
+#homepage #product-categories .box-prod-cat img {
   height: 100px;
   margin-bottom: 10px;
 }
@@ -1276,7 +1276,7 @@ nav .pagination li.active a {
 }
 
 .product-item .product-item-button a svg,
-.product-item .product-item-button a images {
+.product-item .product-item-button a img {
   width: 30px;
   height: 30px;
   fill: #fff;
@@ -1291,7 +1291,7 @@ nav .pagination li.active a {
   padding: 80px 0px;
 }
 
-#homepage #pritchard-enroll images.logo {
+#homepage #pritchard-enroll img.logo {
   max-width: 500px;
 }
 
@@ -1454,7 +1454,7 @@ nav .pagination li.active a {
   position: relative;
 }
 
-#homepage .banner-homepage .slider-homepage images {
+#homepage .banner-homepage .slider-homepage img {
   height: 450px;
   display: inline-block;
 }
@@ -1513,7 +1513,7 @@ nav .pagination li.active a {
   padding: 15px 30px;
 }
 
-#homepage .banner-homepage .slider-homepage .btn-primary images,
+#homepage .banner-homepage .slider-homepage .btn-primary img,
 #homepage .banner-homepage .slider-homepage .btn-primary svg {
   width: 24px;
   height: 24px;
@@ -1697,42 +1697,42 @@ nav .pagination li.active a {
   padding-bottom: 50px;
 }
 
-#product-detail .product-images-for {
+#product-detail .product-img-for {
   margin-bottom: 40px;
 }
 
-#product-detail .product-images-for .image-item {
+#product-detail .product-img-for .image-item {
   width: 100%;
   background-size: contain !important;
   min-height: 300px;
 }
 
-#product-detail .product-images-nav {
+#product-detail .product-img-nav {
   width: 80%;
   margin: 0 auto 40px;
 }
 
-/* #product-detail .product-images-nav .image-item {
+/* #product-detail .product-img-nav .image-item {
 } */
 
-#product-detail .product-images-nav .slick-arrow {
+#product-detail .product-img-nav .slick-arrow {
   position: absolute;
   left: -40px;
   top: 30%;
 }
 
-#product-detail .product-images-nav .slick-arrow.slick-next {
+#product-detail .product-img-nav .slick-arrow.slick-next {
   left: auto;
   right: -40px;
 }
 
-#product-detail .product-images-nav .slick-arrow.slick-next,
-#product-detail .product-images-nav .slick-arrow.slick-prev {
+#product-detail .product-img-nav .slick-arrow.slick-next,
+#product-detail .product-img-nav .slick-arrow.slick-prev {
   border: 0px;
   background: none;
 }
 
-#product-detail .product-images-nav .image-item {
+#product-detail .product-img-nav .image-item {
   width: 100%;
   background-size: contain !important;
   min-height: 100px;
@@ -1863,7 +1863,7 @@ nav .pagination li.active a {
 #cart #shopping-cart table .product-image {
   width: 10%;
 }
-#cart #shopping-cart table .product-image images {
+#cart #shopping-cart table .product-image img {
   max-width: 100px;
 }
 
@@ -1937,7 +1937,7 @@ nav .pagination li.active a {
   padding: 2px 4px;
 }
 
-#cart #shopping-cart .btn-delete images,
+#cart #shopping-cart .btn-delete img,
 #cart #shopping-cart .btn-delete svg {
   fill: #ff173d;
   position: relative;
@@ -2039,7 +2039,7 @@ nav .pagination li.active a {
 #checkout #choose-payment .card-logo {
   padding-bottom: 20px;
 }
-#checkout #choose-payment .card-logo images {
+#checkout #choose-payment .card-logo img {
   max-width: 40px;
 }
 
@@ -2068,7 +2068,7 @@ nav .pagination li.active a {
   min-height: 500px;
 }
 
-#login images {
+#login img {
   max-width: 100%;
   margin-bottom: 20px;
 }
@@ -2462,7 +2462,7 @@ nav .pagination li.active a {
   max-width: 80%;
 }
 
-.banner-subproducts .text-banner images {
+.banner-subproducts .text-banner img {
   margin-bottom: 20px;
 }
 
@@ -2542,10 +2542,10 @@ nav .pagination li.active a {
   padding-left: 20px;
 }
 
-.list-of-courses .list .list-item .images images {
+.list-of-courses .list .list-item .img img {
   width: 100%;
 }
-.list-of-courses .list .list-item .author-detail .images images {
+.list-of-courses .list .list-item .author-detail .img img {
   width: auto;
 }
 .list-of-courses .list .list-item .author-detail h6 {
