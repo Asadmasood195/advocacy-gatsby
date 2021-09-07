@@ -1035,7 +1035,7 @@ nav {
       font-size: 20px;
       font-weight: 700;
       line-height: 28px;
-      color: #ff173d;
+      color: $primary-color;
       padding: 20px 0px;
     }
   }
@@ -1121,3 +1121,925 @@ nav {
 
 // no error at this point in build #1418
 /*=====================Homepage Slider==================+*/
+
+#history-slider {
+  .ncdr-post-list {
+    h4 {
+      padding: 40px 0px;
+    }
+    h3 {
+      color: #fff;
+      font-family: inter, Sans-serif;
+      font-size: 75px;
+      font-weight: 300;
+    }
+    p {
+      color: #fff;
+      font-family: inter, Sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+    }
+    & .slide-content {
+      margin-right: 20px;
+      height: 480px;
+      padding: 30px;
+      position: relative;
+      & .abs {
+        position: absolute;
+        bottom: 0px;
+      }
+    }
+  }
+}
+
+#homepage {
+  & .banner-homepage {
+    & .slider-homepage {
+      @include homepage-bh-shp;
+      img {
+        height: 450px;
+        display: inline-block;
+      }
+      h2 {
+        @include homepage-bh-shp-h2;
+      }
+      p {
+        @include homepage-bh-shp-p;
+      }
+      & .details {
+        padding-bottom: 20px;
+      }
+      & .price {
+        @include homepage-bh-shp-price;
+      }
+      & .priceinfo {
+        @include homepage-bh-shp-priceinfo;
+      }
+      & .btn-primary {
+        @include homepage-bh-shp-btn-primary;
+        img,
+        svg {
+          width: 24px;
+          height: 24px;
+          margin-left: 20px;
+        }
+      }
+      &.printed-dir {
+        h2,
+        p,
+        & .priceinfo {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+.slick-dots {
+  @include slick-dots;
+  li {
+    @include slick-dots-li;
+    button {
+      @include slick-dots-li-btn;
+      &:hover {
+        &:before {
+          opacity: 1;
+        }
+      }
+      &:focus {
+        outline: none;
+        &:before {
+          opacity: 1;
+        }
+      }
+      &:before {
+        @include slick-dots-li-btn-before;
+      }
+    }
+    &.slick-active {
+      button {
+        &:before {
+          opacity: 0.75;
+          color: 000;
+        }
+      }
+    }
+  }
+}
+
+// no error at this point in build #1605
+/*============= PRODUCT DETAILS ===================*/
+
+#product-detail {
+  & .product-img-nav {
+    width: 80%;
+    margin: 0 auto 40px;
+    & .slick-arrow {
+      position: absolute;
+      left: -40px;
+      top: 30%;
+      &.slick-next {
+        left: auto;
+        right: -40px;
+        border: 0px;
+        background: none;
+      }
+      &.slick-prev {
+        border: 0px;
+        background: none;
+      }
+    }
+  }
+  & .product-img-for {
+    margin-bottom: 40px;
+    & .image-item {
+      width: 100%;
+      background-size: contain !important;
+      min-height: 300px;
+    }
+  }
+  & .product-img-nav {
+    & .image-item {
+      width: 100%;
+      background-size: contain !important;
+      min-height: 100px;
+    }
+  }
+  & #p-detail-body {
+    padding-bottom: 80px;
+    font-family: Inter;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #1d1f27;
+    & .quantity-details {
+      table {
+        border: 1px solid #e0e0e0;
+        th {
+          background: #f8f9fb;
+          border-bottom: 0px;
+        }
+      }
+      & .title-top {
+        @include pd-pdb-qd-tt;
+        &:before {
+          @include pd-pdb-qd-tt-before;
+        }
+      }
+    }
+    & .notice1 {
+      font-family: Inter;
+      color: #0eaea5;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    h2 {
+      font-family: Poppins;
+      letter-spacing: 0px;
+      font-weight: 500;
+      font-size: 36px;
+      color: #000;
+    }
+    .price {
+      font-family: Inter;
+      letter-spacing: 0px;
+      font-weight: 600;
+      font-size: 32px;
+      color: $primary-color;
+    }
+  }
+  & .quantity {
+    padding-bottom: 20px;
+    & .input-group {
+      button {
+        padding: 5px 15px;
+        font-size: 28px;
+        background: #f2f2f2;
+        border: #bdbdbd 1px solid;
+        &.btn-minus {
+          border-radius: 10px 0px 0px 10px;
+        }
+        &.btn-plus {
+          border-radius: 0px 10px 10px 0px;
+        }
+      }
+    }
+  }
+  & .product-info {
+    background: #f8f9fb;
+    padding: 20px;
+    h5 {
+      font-family: Poppins;
+      letter-spacing: 0px;
+      font-weight: 500;
+      font-size: 24px;
+      color: #000;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      ul {
+        margin-top: 10px;
+        margin-left: 30px;
+      }
+      li {
+        padding-left: 30px;
+        padding-bottom: 10px;
+        font-family: Inter;
+        letter-spacing: 0px;
+        font-weight: 300;
+        font-size: 16px;
+        position: relative;
+        &:before {
+          @include product-detail-product-info-ul-li-before;
+        }
+        li:before {
+          @include product-detail-product-info-ul-li-li-before;
+        }
+      }
+    }
+  }
+}
+
+#recommended-products {
+  h3 {
+    font-family: Poppins;
+    line-height: 38px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    font-size: 34px;
+    color: #000;
+  }
+  p {
+    font-family: Inter;
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #676d75;
+    padding-bottom: 50px;
+  }
+}
+
+/*========CART==============*/
+#cart {
+  & #recommended-product {
+    border-radius: 10px;
+    background-color: #293442;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    h3 {
+      font-family: Inter;
+      letter-spacing: 0px;
+      font-weight: 600;
+      font-size: 24px;
+      color: #fff;
+      text-align: center;
+    }
+    & .select-arr {
+      background: #f2f2f2;
+      display: inline-block;
+      border-radius: 8px;
+      position: relative;
+      top: 2px;
+      margin-right: 10px;
+      select {
+        -webkit-appearance: none;
+        appearance: none;
+        border: 0px;
+        width: 200px;
+        font-family: Inter;
+        letter-spacing: 0px;
+        font-weight: 600;
+        font-size: 18px;
+        background: none;
+        padding: 12px;
+        &:after {
+          @include cart-rp-sa-after;
+        }
+      }
+    }
+  }
+  & #shopping-cart {
+    h2 {
+      font-family: Poppins;
+      letter-spacing: 0px;
+      font-weight: 500;
+      font-size: 34px;
+      color: #000;
+      margin-bottom: 20px;
+    }
+    table {
+      margin-bottom: 20px;
+      tr {
+        border-bottom: 1px solid #eee;
+        td,
+        th {
+          padding: 20px;
+        }
+      }
+      td {
+        padding: 15px;
+      }
+      & .product-image {
+        width: 10%;
+        img {
+          max-width: 100px;
+        }
+      }
+      & .price {
+        min-width: 100px;
+        font-family: Inter;
+        letter-spacing: 0px;
+        font-weight: 600;
+        font-size: 20px;
+        color: $primary-color;
+      }
+      & .qty {
+        width: 150px;
+        input {
+          background-color: #f6f7f8;
+          border: 0px;
+        }
+        button {
+          color: $primary-color;
+          background-color: #f6f7f8;
+          border: 0px;
+        }
+      }
+    }
+    & .btn-outline-primary {
+      padding: 10px 30px;
+    }
+    & .unit-price {
+      min-width: 100px;
+      font-family: Inter;
+      letter-spacing: 0px;
+      font-weight: 600;
+      font-size: 20px;
+      color: $primary-color;
+    }
+    & .product-title {
+      font-family: Poppins;
+      letter-spacing: 0px;
+      font-weight: 500;
+      font-size: 18px;
+      color: #000;
+    }
+    & .note1 {
+      font-family: Inter;
+      letter-spacing: 0px;
+      font-weight: 500;
+      font-size: 18px;
+      color: #0eaea5;
+    }
+    & .btn-delete {
+      background: #fff7f8;
+      border-radius: 100%;
+      padding: 2px 4px;
+      img,
+      svg {
+        fill: $primary-color;
+        position: relative;
+        top: -2px;
+      }
+    }
+    & #summary {
+      background: #f8f9fb;
+      border-top: 2px solid #ff173d;
+      padding: 10px;
+      table {
+        tr {
+          border: 0px;
+          td {
+            border: 0px;
+          }
+        }
+      }
+      & .total-price {
+        color: $primary-color;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.btn-default {
+  @include btn-default;
+}
+
+// no error at this point in build #1975
+/*===========CHECKOUT==========*/
+
+#checkout {
+  font-family: Inter;
+  letter-spacing: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  table {
+    border: 1px solid #eee;
+  }
+  & .form-control {
+    margin-bottom: 10px;
+  }
+  & .form-group {
+    padding-bottom: 20px;
+    select {
+      background: #fff url(../assests/icons-png/chevron-down-24.png) no-repeat
+        99% center;
+    }
+  }
+  & #ch-card-num {
+    background: #fff url(../assests/icons-png/credit-card-24.png) no-repeat 99%
+      center;
+  }
+  & #return-customer {
+    margin-bottom: 20px;
+  }
+  & .card {
+    border-radius: 0px;
+    padding: 20px;
+  }
+  & .btn-primary {
+    padding: 10px 20px;
+    border-radius: 0px;
+    margin-bottom: 20px;
+  }
+  & .some-notes1 {
+    border: 1px solid orange;
+    padding: 20px;
+    background: #fffbe6;
+    font-weight: bold;
+  }
+  & #additional-fields1 {
+    margin-bottom: 20px;
+  }
+  & #choose-payment {
+    label {
+      display: block;
+    }
+    & .box2 {
+      padding: 30px;
+      background: #f5f5f5;
+      margin-bottom: 20px;
+    }
+    & .card-logo {
+      padding-bottom: 20px;
+      img {
+        max-width: 40px;
+      }
+    }
+    & .card {
+      background: #eee;
+      border: 0px;
+      padding: 30px;
+      & .card-body {
+        border: 1px solid #000;
+      }
+    }
+  }
+}
+
+/*============LOGIN==============*/
+#login {
+  @include login;
+  img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  & .box2 {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #efefef;
+  }
+  & .form-control {
+    margin-bottom: 5px;
+  }
+  & .form-group {
+    padding-bottom: 10px;
+  }
+  & .btn-primary {
+    padding: 10px 20px;
+    border-radius: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+/*===========CHOOSE PLAN==============*/
+
+.plan-benefit {
+  padding: 10px 20px;
+  margin-top: 20px;
+  ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    li {
+      margin-bottom: 20px;
+      background: url(../assests/check.png) no-repeat;
+      background-size: 25px;
+      padding-left: 35px;
+      font-size: 14px;
+      padding-bottom: 5px;
+    }
+  }
+  & .col-md-10 {
+    background: #ffffff;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.06);
+    border-radius: 3px;
+    padding: 10px 30px;
+    border-top: 5px solid #f9173e;
+  }
+}
+#choose-plan {
+  padding: 40px 0 0;
+  background: #f8f8f8;
+  h2 {
+    @include choose-plan-faq-acc;
+  }
+  p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 30px */
+    text-align: center;
+    letter-spacing: -0.2px;
+    color: #676d75;
+  }
+  & .plan-box {
+    & .size-people {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      /* identical to box height */
+      text-align: center;
+      color: #262f3b;
+      margin: 0;
+    }
+  }
+  & .plan-benefit {
+    p,
+    li {
+      @include cp-pb-p-li;
+    }
+    h3 {
+      @include pb-h3;
+    }
+    h4 {
+      @include pb-h4;
+    }
+  }
+}
+#faq-accordion {
+  padding: 25px 0 50px;
+  background: #f8f8f8;
+  h2 {
+    @include choose-plan-faq-acc;
+  }
+  & .panel-title {
+    a {
+      @include faq-pt-a;
+    }
+  }
+  & .panel-body {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 150%;
+    color: #4f5865;
+  }
+  & .panel-heading {
+    a {
+      &:before {
+        @include faq-ph-a-before;
+      }
+      &[aria-expanded="true"] {
+        &:before {
+          transform: rotate(-180deg);
+        }
+      }
+    }
+  }
+}
+
+.plan-white {
+  background: #fff;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.06);
+  border-radius: 3px;
+  min-height: 250px;
+  position: relative;
+  padding-bottom: 70px;
+  cursor: pointer;
+  &:hover {
+    & .btn {
+      background: #f9163e;
+    }
+  }
+  &.active {
+    border: 1px solid #f9163e;
+    & .btn {
+      background: #f9163e;
+    }
+  }
+  input {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  & .btn {
+    display: block;
+    width: calc(100% - 20px);
+    background: #262f3b;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    padding: 10px 20px;
+  }
+  h3 {
+    @include cp-pb-h3;
+  }
+  h4 {
+    @include cp-pb-h4;
+  }
+}
+
+.plan-box {
+  margin: 40px 0;
+}
+
+.plan-benefit {
+  h3 {
+    @include pb-h3;
+  }
+  h4 {
+    @include pb-h4;
+  }
+  ul {
+    li {
+      @include pb-ul-li;
+    }
+  }
+}
+
+/* The check_plan */
+.check_plan {
+  display: block;
+  position: absolute;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.check_plan {
+  & .checkmark_plan {
+    &:after {
+      top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: none;
+    }
+  }
+  &:hover {
+    input {
+      /* On mouse-over, add a grey background color */
+      & ~ .checkmark_plan {
+        background-color: #ccc;
+      }
+    }
+  }
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    &:checked {
+      /* When the radio button is checked, add a blue background */
+      & ~ .checkmark_plan {
+        background: url(../assests/icon-check-big.png) no-repeat;
+        border: 1px solid #f9163e;
+        background-size: 100%;
+      }
+    }
+  }
+}
+
+/* Show the indicator (dot/circle) when checked */
+.check_plan input:checked ~ .checkmark_plan:after {
+  display: block;
+}
+
+/* Create a custom radio button */
+.checkmark_plan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  &:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+}
+
+// no error at this point in build #2426
+/*========== BANNER SUB PRODUCT ========*/
+
+.banner-subproducts {
+  min-height: 200px;
+  background-size: cover;
+  background-position: center right;
+  &.bg-govbuddy {
+    background-image: url("../assests/bg-govbuddy.jpg");
+  }
+  &.bg-printed {
+    background-image: url("../assests/bg-pocket-book.jpg");
+  }
+  &.bg-policy {
+    background-image: url("../assests/bg-policy-guru.jpg");
+  }
+  &.bg-maps {
+    background-image: url("../assests/bg-map.jpg");
+  }
+  &.bg-digital {
+    background-image: url("../assests/bg-digital.jpg");
+  }
+  &.bg-pritchardu {
+    background-image: url("../assests/bg-pritchardu.jpg");
+  }
+  & .text-banner {
+    padding: 70px 0px;
+    max-width: 80%;
+    img {
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-family: poppins, Sans-serif;
+      font-size: 48px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      color: #000;
+    }
+    h5 {
+      font-family: poppins, Sans-serif;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 1.4em;
+      color: #676d75;
+    }
+  }
+}
+
+#sub-products {
+  &.sub-policy {
+    .box {
+      border: 1px solid #f9163e;
+      padding: 40px;
+      border-radius: 8px;
+      & .btn {
+        border-radius: 0px;
+        padding: 15px 30px;
+      }
+    }
+    & .plan-benefit {
+      h4 {
+        color: #000;
+      }
+      & .col-md-10 {
+        border-top: 0px;
+        padding: 0px;
+      }
+    }
+  }
+  & .filter {
+    a {
+      color: #000;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+/*==========LIST OF COURSE===========*/
+
+.list-of-courses {
+  .title-top {
+    h3 {
+      font-family: poppins, Sans-serif;
+      font-size: 34px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    p {
+      font-family: inter, Sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.5em;
+      color: #54595f;
+      margin-bottom: 30px;
+    }
+  }
+  & .list {
+    & .list-item {
+      box-shadow: 0 6px 20px 3px rgba(0, 0, 0, 0.11);
+      margin-top: 0;
+      margin-bottom: 20px;
+      border-radius: 8px 8px 8px 8px;
+      padding: 20px;
+      position: relative;
+
+      & .item-content {
+        border-right: 1px solid #ccc;
+        padding-left: 20px;
+      }
+      & .img {
+        img {
+          width: 100%;
+        }
+      }
+      & .author-detail {
+        & .img {
+          img {
+            width: auto;
+          }
+        }
+        h6 {
+          margin-bottom: 7px;
+          color: $primary-color;
+          font-family: inter, Sans-serif;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 1.2em;
+        }
+      }
+      & .title {
+        color: #2c2c2c;
+        font-family: "Poppins", Sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      & .author {
+        color: #2c2c2c;
+        font-family: "Poppins", Sans-serif;
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+      & .ratings {
+        font-family: "Poppins", Sans-serif;
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+      & .price {
+        color: $primary-color;
+        font-family: "Inter", Sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+      & .badge {
+        color: #ffbd00;
+        font-family: "Inter", Sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        border: 1px solid #ffbd00;
+      }
+      & .morepr {
+        font-family: inter, Sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: #ff173d;
+        background-color: #fff;
+        border-radius: 40px 40px 40px 40px;
+        box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.09);
+        padding: 20px;
+        position: absolute;
+        top: 35%;
+        left: 35%;
+      }
+    }
+  }
+}
