@@ -22,7 +22,7 @@ const DataServices = () => {
                     <div className="product-list">
                         <a href="#" className="text-center">
                             <div className="product-image">
-                                <StaticImage src="../assests/sample.jpeg" />
+                                <StaticImage src="../../assests/sample.jpeg" />
                             </div>
                             <div className="product-title">
                                 2021 US Congress Directory
@@ -34,7 +34,7 @@ const DataServices = () => {
                     <div className="product-list">
                         <a href="#" className="text-center">
                             <div className="product-image">
-                                <StaticImage src="../assests/sample.jpeg" />
+                                <StaticImage src="../../assests/sample.jpeg" />
                             </div>
                             <div className="product-title">
                                 2021 US Congress Directory
@@ -46,7 +46,7 @@ const DataServices = () => {
                     <div className="product-list">
                         <a href="#" className="text-center">
                             <div className="product-image">
-                                <StaticImage src="../assests/sample.jpeg" />
+                                <StaticImage src="../../assests/sample.jpeg" />
                             </div>
                             <div className="product-title">
                                 2021 US Congress Directory
@@ -58,7 +58,7 @@ const DataServices = () => {
                     <div className="product-list">
                         <a href="#" className="text-center">
                             <div className="product-image">
-                                <StaticImage src="../assests/sample.jpeg" />
+                                <StaticImage src="../../assests/sample.jpeg" />
                             </div>
                             <div className="product-title">
                                 2021 US Congress Directory
@@ -73,7 +73,7 @@ const DataServices = () => {
                     More Info{" "}
                     <StaticImage
                         className="svg"
-                        src="../assests/octicons/arrow-right-16.svg"
+                        src="../../assests/octicons/arrow-right-16.svg"
                     />
                 </Link>
             </div>
