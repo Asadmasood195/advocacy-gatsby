@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import ArrowRight16 from "../assests/octicons/arrow-right-16.svg"
 
-const products = () => {
+const Products = () => {
   return (
     <Layout>
       <div id="breadcrumbsTop">
@@ -180,4 +180,4 @@ const products = () => {
   )
 }
 
-export default products
+export default Products

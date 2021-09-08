@@ -1,7 +1,7 @@
 import * as React from "react"
 import Layout from "../components/layout"
 
-const forgot = () => {
+const Forgot = () => {
   return (
     <Layout>
       <div id="breadcrumbsTop">
@@ -53,4 +53,4 @@ const forgot = () => {
   )
 }
 
-export default forgot
+export default Forgot

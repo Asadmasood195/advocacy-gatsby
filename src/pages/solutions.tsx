@@ -1,11 +1,11 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import ArrowRight16 from "../assests/octicons/arrow-right-16.svg"
-import { Link } from "gatsby"
+import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
 
-const solutions = () => {
+const Solutions = () => {
   return (
     <Layout>
       <div id="breadcrumbsTop">
@@ -262,8 +262,10 @@ const solutions = () => {
           </div>
         </div>
       </div>
+
+      <HowCanWeHelpSimple />
     </Layout>
   )
 }
 
-export default solutions
+export default Solutions

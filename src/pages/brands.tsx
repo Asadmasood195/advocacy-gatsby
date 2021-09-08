@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import ArrowRight16 from "../assests/octicons/arrow-right-16.svg"
 import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
 
-const brands = () => {
+const Brands = () => {
   return (
     <Layout>
       <div id="breadcrumbsTop">
@@ -156,4 +156,4 @@ const brands = () => {
   )
 }
 
-export default brands
+export default Brands

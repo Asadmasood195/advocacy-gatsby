@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
-const login = () => {
+const Login = () => {
   return (
     <Layout>
       <div id="breadcrumbsTop">
@@ -79,4 +79,4 @@ const login = () => {
   )
 }
 
-export default login
+export default Login
