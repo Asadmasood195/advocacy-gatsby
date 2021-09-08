@@ -70,7 +70,7 @@ const FederalExecutive = () => {
                         More Info{" "}
                         <StaticImage
                             className="svg"
-                            src="..assests/octicons/arrow-right-16.svg"
+                            src="../../assests/octicons/arrow-right-16.svg"
                         />
                     </Link>
                 </div>
