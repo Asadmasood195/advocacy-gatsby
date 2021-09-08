@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
-const contact = () => {
+const Contact = () => {
   return (
     <Layout>
       <div id="breadcrumbsTop">
@@ -127,4 +127,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default Contact

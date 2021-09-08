@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
 
-const about = () => {
+const About = () => {
   return (
     <Layout>
       <div id="breadcrumbsTop">
@@ -168,4 +168,4 @@ const about = () => {
   )
 }
 
-export default about
+export default About

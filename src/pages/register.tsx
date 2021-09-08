@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 
-const register = () => {
+const Register = () => {
   return (
     <Layout>
       <div id="breadcrumbsTop">
@@ -92,4 +92,4 @@ const register = () => {
   )
 }
 
-export default register
+export default Register
