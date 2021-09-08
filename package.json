@@ -1,11 +1,13 @@
 {
-  "name": "advocasy-gatsby-project",
-  "version": "1.0.0",
+  "name": "advocacy-gatsby-project",
+  "version": "1.0.1",
   "author": "Zaid",
-  "description": "advocasy-gatsby-project",
+  "description": "advocacy-gatsby-project",
   "keywords": [
     "gatsby,typescript"
   ],
+  "license": "MIT",
+  "main": "n/a",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
