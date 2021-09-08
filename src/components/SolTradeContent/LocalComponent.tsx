@@ -19,7 +19,7 @@ const LocalComponent = () => {
                         <div className="product-list">
                             <a href="#" className="text-center">
                                 <div className="product-image">
-                                    <StaticImage src="../assests/sample.jpeg" />
+                                    <StaticImage src="../../assests/sample.jpeg" />
                                 </div>
                                 <div className="product-title">
                                     2021 US Congress Directory
@@ -31,7 +31,7 @@ const LocalComponent = () => {
                         <div className="product-list">
                             <a href="#" className="text-center">
                                 <div className="product-image">
-                                    <StaticImage src="../assests/sample.jpeg" />
+                                    <StaticImage src="../../assests/sample.jpeg" />
                                 </div>
                                 <div className="product-title">
                                     2021 US Congress Directory
@@ -43,7 +43,7 @@ const LocalComponent = () => {
                         <div className="product-list">
                             <a href="#" className="text-center">
                                 <div className="product-image">
-                                    <StaticImage src="../assests/sample.jpeg" />
+                                    <StaticImage src="../../assests/sample.jpeg" />
                                 </div>
                                 <div className="product-title">
                                     2021 US Congress Directory
@@ -55,7 +55,7 @@ const LocalComponent = () => {
                         <div className="product-list">
                             <a href="#" className="text-center">
                                 <div className="product-image">
-                                    <StaticImage src="../assests/sample.jpeg" />
+                                    <StaticImage src="../../assests/sample.jpeg" />
                                 </div>
                                 <div className="product-title">
                                     2021 US Congress Directory
@@ -70,7 +70,7 @@ const LocalComponent = () => {
                         More Info{" "}
                         <StaticImage
                             className="svg"
-                            src="./plugins/octicons/arrow-right-16.svg"
+                            src="../../assests/octicons/arrow-right-16.svg"
                         />
                     </Link>
                 </div>

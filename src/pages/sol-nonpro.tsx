@@ -109,7 +109,7 @@ const SolNonPro = () => {
                                                 More Info{" "}
                                                 <StaticImage
                                                     className="svg"
-                                                    src="./plugins/octicons/arrow-right-16.svg"
+                                                    src="../assests/octicons/arrow-right-16.svg"
                                                 />
                                             </Link>
                                         </div>

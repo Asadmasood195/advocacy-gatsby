@@ -4,7 +4,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
+
 
 const SolLobby = () => {
     return (
@@ -108,7 +108,7 @@ const SolLobby = () => {
                                                 More Info{" "}
                                                 <StaticImage
                                                     className="svg"
-                                                    src="./plugins/octicons/arrow-right-16.svg"
+                                                    src="../assests/octicons/arrow-right-16.svg"
                                                 />
                                             </Link>
                                         </div>
