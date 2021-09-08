@@ -11,18 +11,18 @@ import TrustedCompany from "../components/banner/TrustedCompany"
 import MoreDetails from "../components/banner/MoreDetails"
 import HowCanWeHelp from "../components/banner/HowCanWeHelp"
 
-const IndexPage = () => (
-  <Layout>
-    <SliderBanner />
-    <CompanyLogos />
-    <ProductCategories />
-    <ProductCards />
-    <PrinchardU />
-    <PrintedDirectory />
-    <MoreDetails />
-    <TrustedCompany />
-    <HowCanWeHelp />
-  </Layout>
-)
-
-export default IndexPage
+export default function IndexPage() {
+  return (
+    <Layout>
+      <SliderBanner />
+      <CompanyLogos />
+      <ProductCategories />
+      <ProductCards />
+      <PrinchardU />
+      <PrintedDirectory />
+      <MoreDetails />
+      <TrustedCompany />
+      <HowCanWeHelp />
+    </Layout>
+  )
+}

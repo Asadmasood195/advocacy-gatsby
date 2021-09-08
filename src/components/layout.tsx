@@ -2,7 +2,7 @@ import * as React from "react"
 import Helmet from "react-helmet"
 import Header from "./header/Header"
 import Footer from "./footer/Footer"
-import "../styles/app.scss"
+import "../styles/custom.css"
 import "react-multi-carousel/lib/styles.css"
 
 const Layout = ({ children }: any) => {

@@ -2,6 +2,99 @@ import * as React from "react"
 import { Link } from "gatsby"
 
 import CartIcon from "../../assests/octicons/cart.svg"
+import Image1 from "../../assests/sample0.jpeg"
+import Image2 from "../../assests/sample1.jpeg"
+import Image3 from "../../assests/sample2.jpeg"
+
+const Product2021 = [
+  {
+    id: 1,
+    title: "2021 State Agency Directory Digital Edition",
+    productImage: Image2,
+    price: "299.95",
+  },
+  {
+    id: 2,
+    title: "2021 State Agency Directory Digital Edition",
+    productImage: Image2,
+    price: "299.95",
+  },
+  {
+    id: 3,
+    title: "2021 State Agency Directory Digital Edition",
+    productImage: Image3,
+    price: "299.95",
+  },
+  {
+    id: 4,
+    title: "2021 State Agency Directory Digital Edition",
+    productImage: Image3,
+    price: "299.95",
+  },
+  {
+    id: 5,
+    title: "2021 State Agency Directory Digital Edition",
+    productImage: Image1,
+    price: "299.95",
+  },
+  {
+    id: 6,
+    title: "2021 State Agency Directory Digital Edition",
+    productImage: Image1,
+    price: "299.95",
+  },
+  {
+    id: 7,
+    title: "2021 State Agency Directory Digital Edition",
+    productImage: Image1,
+    price: "299.95",
+  },
+  {
+    id: 8,
+    title: "2021 State Agency Directory Digital Edition",
+    productImage: Image3,
+    price: "299.95",
+  },
+  {
+    id: 9,
+    title: "2021 State Agency Directory Digital Edition",
+    productImage: Image2,
+    price: "299.95",
+  },
+  {
+    id: 10,
+    title: "2021 State Agency Directory Digital Edition",
+    productImage: Image2,
+    price: "299.95",
+  },
+]
+
+const Product2022 = [
+  {
+    id: 1,
+    title: "2022 State Agency Directory Digital Edition",
+    productImage: Image2,
+    price: "299.95",
+  },
+  {
+    id: 2,
+    title: "2022 State Agency Directory Digital Edition",
+    productImage: Image3,
+    price: "299.95",
+  },
+  {
+    id: 3,
+    title: "2022 State Agency Directory Digital Edition",
+    productImage: Image3,
+    price: "299.95",
+  },
+  {
+    id: 4,
+    title: "2022 State Agency Directory Digital Edition",
+    productImage: Image1,
+    price: "299.95",
+  },
+]
 
 const ProductCards = () => {
   const [currentTab, setCurentTab] = React.useState("2021")
@@ -63,213 +156,38 @@ const ProductCards = () => {
                 aria-labelledby="tab-2021"
               >
                 <div className="row">
-                  <div className="col-md-3">
-                    <div className="product-item">
-                      <Link to="/product-detail" className="product-detail">
-                        <div
-                          className="product-item-Card"
-                          id="Card1Styles"
-                        ></div>
-                        <div className="product-item-title">
-                          2021 State Agency Directory Digital Edition
+                  {Product2021.map(product => {
+                    return (
+                      <div className="col-md-3">
+                        <div className="product-item">
+                          <Link to="/product-detail" className="product-detail">
+                            <div
+                              className="product-item-Card"
+                              // id="Card1Styles"
+                              style={{
+                                background: `url(${product.productImage})`,
+                              }}
+                            ></div>
+                            <div className="product-item-title">
+                              {product.title}
+                            </div>
+                            <div className="product-item-price">
+                              ${product.price}
+                            </div>
+                          </Link>
+                          <div className="product-item-button">
+                            <Link
+                              to="/cart"
+                              className="btn btn-primary add-to-cart"
+                            >
+                              <CartIcon className="svg" />
+                              Add to Cart
+                            </Link>
+                          </div>
                         </div>
-                        <div className="product-item-price">$299.95</div>
-                      </Link>
-                      <div className="product-item-button">
-                        <Link
-                          to="/cart"
-                          className="btn btn-primary add-to-cart"
-                        >
-                          <CartIcon className="svg" />
-                          Add to Cart
-                        </Link>
                       </div>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <div className="product-item">
-                      <Link to="/product-detail" className="product-detail">
-                        <div
-                          className="product-item-Card"
-                          id="Card1Styles"
-                        ></div>
-                        <div className="product-item-title">
-                          2021 State Agency Directory Digital Edition
-                        </div>
-                        <div className="product-item-price">$299.95</div>
-                      </Link>
-                      <div className="product-item-button">
-                        <Link
-                          to="/cart"
-                          className="btn btn-primary add-to-cart"
-                        >
-                          <CartIcon className="svg" />
-                          Add to Cart
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <div className="product-item">
-                      <Link to="/product-detail" className="product-detail">
-                        <div
-                          className="product-item-Card"
-                          id="Card2Styles"
-                        ></div>
-                        <div className="product-item-title">
-                          2021 State Agency Directory Digital Edition
-                        </div>
-                        <div className="product-item-price">$299.95</div>
-                      </Link>
-                      <div className="product-item-button">
-                        <Link
-                          to="/cart"
-                          className="btn btn-primary add-to-cart"
-                        >
-                          <CartIcon className="svg" />
-                          Add to Cart
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <div className="product-item">
-                      <Link to="/product-detail" className="product-detail">
-                        <div
-                          className="product-item-Card"
-                          id="Card2Styles"
-                        ></div>
-                        <div className="product-item-title">
-                          2021 State Agency Directory Digital Edition
-                        </div>
-                        <div className="product-item-price">$299.95</div>
-                      </Link>
-                      <div className="product-item-button">
-                        <Link
-                          to="/cart"
-                          className="btn btn-primary add-to-cart"
-                        >
-                          <CartIcon className="svg" />
-                          Add to Cart
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <div className="product-item">
-                      <Link to="/product-detail" className="product-detail">
-                        <div
-                          className="product-item-Card"
-                          id="Card0Styles"
-                        ></div>
-                        <div className="product-item-title">
-                          2021 State Agency Directory Digital Edition
-                        </div>
-                        <div className="product-item-price">$299.95</div>
-                      </Link>
-                      <div className="product-item-button">
-                        <Link
-                          to="/cart"
-                          className="btn btn-primary add-to-cart"
-                        >
-                          <CartIcon className="svg" />
-                          Add to Cart
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <div className="product-item">
-                      <Link to="/product-detail" className="product-detail">
-                        <div
-                          className="product-item-Card"
-                          id="Card0Styles"
-                        ></div>
-                        <div className="product-item-title">
-                          2021 State Agency Directory Digital Edition
-                        </div>
-                        <div className="product-item-price">$299.95</div>
-                      </Link>
-                      <div className="product-item-button">
-                        <Link
-                          to="/cart"
-                          className="btn btn-primary add-to-cart"
-                        >
-                          <CartIcon className="svg" />
-                          Add to Cart
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <div className="product-item">
-                      <Link to="/product-detail" className="product-detail">
-                        <div
-                          className="product-item-Card"
-                          id="Card0Styles"
-                        ></div>
-                        <div className="product-item-title">
-                          2021 State Agency Directory Digital Edition
-                        </div>
-                        <div className="product-item-price">$299.95</div>
-                      </Link>
-                      <div className="product-item-button">
-                        <Link
-                          to="/cart"
-                          className="btn btn-primary add-to-cart"
-                        >
-                          <CartIcon className="svg" />
-                          Add to Cart
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <div className="product-item">
-                      <Link to="/product-detail" className="product-detail">
-                        <div
-                          className="product-item-Card"
-                          id="Card2Styles"
-                        ></div>
-                        <div className="product-item-title">
-                          2021 State Agency Directory Digital Edition
-                        </div>
-                        <div className="product-item-price">$299.95</div>
-                      </Link>
-                      <div className="product-item-button">
-                        <Link
-                          to="/cart"
-                          className="btn btn-primary add-to-cart"
-                        >
-                          <CartIcon className="svg" />
-                          Add to Cart
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <div className="product-item">
-                      <Link to="/product-detail" className="product-detail">
-                        <div
-                          className="product-item-Card"
-                          id="Card1Styles"
-                        ></div>
-                        <div className="product-item-title">
-                          2021 State Agency Directory Digital Edition
-                        </div>
-                        <div className="product-item-price">$299.95</div>
-                      </Link>
-                      <div className="product-item-button">
-                        <Link
-                          to="/cart"
-                          className="btn btn-primary add-to-cart"
-                        >
-                          <CartIcon className="svg" />
-                          Add to Cart
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
+                    )
+                  })}
                 </div>
               </div>
               <div
@@ -281,98 +199,38 @@ const ProductCards = () => {
                 aria-labelledby="tab-2021"
               >
                 <div className="row">
-                  <div className="col-md-3">
-                    <div className="product-item">
-                      <Link to="/product-detail" className="product-detail">
-                        <div
-                          className="product-item-Card"
-                          id="Card1Styles"
-                        ></div>
-                        <div className="product-item-title">
-                          2022 State Agency Directory Digital Edition
+                  {Product2022.map(product => {
+                    return (
+                      <div className="col-md-3">
+                        <div className="product-item">
+                          <Link to="/product-detail" className="product-detail">
+                            <div
+                              className="product-item-Card"
+                              // id="Card1Styles"
+                              style={{
+                                background: `url(${product.productImage})`,
+                              }}
+                            ></div>
+                            <div className="product-item-title">
+                              {product.title}
+                            </div>
+                            <div className="product-item-price">
+                              ${product.price}
+                            </div>
+                          </Link>
+                          <div className="product-item-button">
+                            <Link
+                              to="/cart"
+                              className="btn btn-primary add-to-cart"
+                            >
+                              <CartIcon className="svg" />
+                              Add to Cart
+                            </Link>
+                          </div>
                         </div>
-                        <div className="product-item-price">$299.95</div>
-                      </Link>
-                      <div className="product-item-button">
-                        <Link
-                          to="/cart"
-                          className="btn btn-primary add-to-cart"
-                        >
-                          <CartIcon className="svg" />
-                          Add to Cart
-                        </Link>
                       </div>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <div className="product-item">
-                      <Link to="/product-detail" className="product-detail">
-                        <div
-                          className="product-item-Card"
-                          id="Card2Styles"
-                        ></div>
-                        <div className="product-item-title">
-                          2022 State Agency Directory Digital Edition
-                        </div>
-                        <div className="product-item-price">$299.95</div>
-                      </Link>
-                      <div className="product-item-button">
-                        <Link
-                          to="/cart"
-                          className="btn btn-primary add-to-cart"
-                        >
-                          <CartIcon className="svg" />
-                          Add to Cart
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <div className="product-item">
-                      <Link to="/product-detail" className="product-detail">
-                        <div
-                          className="product-item-Card"
-                          id="Card2Styles"
-                        ></div>
-                        <div className="product-item-title">
-                          2022 State Agency Directory Digital Edition
-                        </div>
-                        <div className="product-item-price">$299.95</div>
-                      </Link>
-                      <div className="product-item-button">
-                        <Link
-                          to="/cart"
-                          className="btn btn-primary add-to-cart"
-                        >
-                          <CartIcon className="svg" />
-                          Add to Cart
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <div className="product-item">
-                      <Link to="/product-detail" className="product-detail">
-                        <div
-                          className="product-item-Card"
-                          id="Card0Styles"
-                        ></div>
-                        <div className="product-item-title">
-                          2022 State Agency Directory Digital Edition
-                        </div>
-                        <div className="product-item-price">$299.95</div>
-                      </Link>
-                      <div className="product-item-button">
-                        <Link
-                          to="/cart"
-                          className="btn btn-primary add-to-cart"
-                        >
-                          <CartIcon className="svg" />
-                          Add to Cart
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
+                    )
+                  })}
                 </div>
               </div>
             </div>

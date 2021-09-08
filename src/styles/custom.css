@@ -145,7 +145,7 @@ input.form-control {
   border-top: 1px solid #ff173d !important;
 }
 #breadcrumbsTop {
-  border-bottom-color: #ff173d !important;
+  border-bottom: 1px solid #ff173d !important;
 }
 
 #breadcrumbsTop a {
@@ -583,9 +583,9 @@ nav .pagination li.active a {
   padding: 80px 0px;
 }
 
-.banner-about .text-banner img {
+/* .banner-about .text-banner img {
   margin-bottom: 20px;
-}
+} */
 
 .banner-about .text-banner h1 {
   font-family: poppins, Sans-serif;
@@ -989,9 +989,9 @@ nav .pagination li.active a {
   padding: 80px 0px 30px;
 }
 
-#about #product-list-overview img {
+/* #about #product-list-overview img {
   margin-bottom: 20px;
-}
+} */
 
 #about #product-list-overview h5 {
   font-family: poppins, Sans-serif;
@@ -1240,8 +1240,10 @@ nav .pagination li.active a {
   text-align: center;
   max-width: 100%;
   height: 240px;
-  background-size: 100%;
-  background-position: center center;
+  /* background-size: 100% !important; */
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: contain !important;
 }
 
 .product-item .product-item-title {
@@ -1455,7 +1457,7 @@ nav .pagination li.active a {
 }
 
 #homepage .banner-homepage .slider-homepage img {
-  height: 450px;
+  /* height: 350px; */
   display: inline-block;
 }
 
@@ -1782,7 +1784,7 @@ nav .pagination li.active a {
 }
 
 #product-detail .product-info ul li:before {
-  background: url(../assests/octicons/check-circle-fill-24.svg) no-repeat 0px
+  background: url(../assests/icons-png/check-circle-fill-24.png) no-repeat 0px
     2px;
   content: " ";
   width: 30px;
@@ -1794,7 +1796,7 @@ nav .pagination li.active a {
 }
 
 #product-detail .product-info ul li li:before {
-  background: url(../assests/octicons/check-24.svg) no-repeat 0px 2px;
+  background: url(../assests/icons-png/check-24.png) no-repeat 0px 2px;
 }
 
 /*========CART==============*/
@@ -1840,7 +1842,7 @@ nav .pagination li.active a {
 }
 
 #cart #recommended-product .select-arr:after {
-  background: url(../assests/octicons/chevron-down-24.svg) no-repeat center;
+  background: url(../assests/icons-png/chevron-down-24.png) no-repeat center;
   content: " ";
   width: 30px;
   height: 30px;
@@ -1984,12 +1986,12 @@ nav .pagination li.active a {
 }
 
 #checkout .form-group select {
-  background: #fff url(../assests/octicons/chevron-down-24.svg) no-repeat 99%
+  background: #fff url(../assests/icons-png/chevron-down-24.png) no-repeat 99%
     center;
 }
 
 #checkout #ch-card-num {
-  background: #fff url(../assests/octicons/credit-card-24.svg) no-repeat 99%
+  background: #fff url(../assests/icons-png/credit-card-24.png) no-repeat 99%
     center;
 }
 
@@ -2070,8 +2072,13 @@ nav .pagination li.active a {
 
 #login img {
   max-width: 100%;
+  /* margin-bottom: 20px; */
+}
+
+#login .loginImage {
   margin-bottom: 20px;
 }
+
 #login .box2 {
   border: 1px solid #ccc;
   padding: 20px;

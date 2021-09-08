@@ -88,6 +88,7 @@ const brands = () => {
                     className="btn btn-outline-primary"
                   >
                     Go to website
+                    <ArrowRight16 className="svg" />
                   </Link>
                 </div>
               </div>
@@ -112,7 +113,8 @@ const brands = () => {
                     to="http://pritchardu.com/"
                     className="btn btn-outline-primary"
                   >
-                    Go to website <img className="svg" />
+                    Go to website
+                    <ArrowRight16 className="svg" />
                   </Link>
                 </div>
               </div>

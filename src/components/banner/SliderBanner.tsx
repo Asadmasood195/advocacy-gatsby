@@ -43,7 +43,7 @@ const SliderBanner = () => {
               infinite={true}
               draggable={true}
               autoPlaySpeed={5000}
-              autoPlay
+              // autoPlay
               arrows={false}
               swipeable
               keyBoardControl={true}

@@ -2,7 +2,7 @@
 
 body {
   font-family: "inter";
-  overflow: hidden;
+  overflow-x: hidden;
 }
 #error404 {
   min-height: 500px;
@@ -248,17 +248,17 @@ header .py-3 {
       border-bottom: 1px solid $primary-color;
       &:hover {
         background: #000;
-        a {
-          padding: 10px;
-          font-family: poppins, Sans-serif;
-          font-weight: 400;
-          color: #494c4f;
-          font-size: 14px;
-          &:hover,
-          &:active {
-            background: #000;
-            color: #fff;
-          }
+      }
+      a {
+        padding: 10px;
+        font-family: poppins, Sans-serif;
+        font-weight: 400;
+        color: #494c4f;
+        font-size: 14px;
+        &:hover,
+        &:active {
+          background: #000;
+          color: #fff;
         }
       }
     }
@@ -513,9 +513,9 @@ nav {
     h5 {
       @include ba-tb-h5;
     }
-    img {
-      margin-bottom: 20px;
-    }
+    // img {
+    //   margin-bottom: 20px;
+    // }
   }
 }
 
@@ -772,9 +772,9 @@ nav {
     padding: 80px 0px 30px;
   }
   & #product-list-overview {
-    img {
-      margin-bottom: 20px;
-    }
+    // img {
+    //   margin-bottom: 20px;
+    // }
     p {
       @include a-plo-p;
     }
@@ -1052,14 +1052,23 @@ nav {
       font-family: poppins, Sans-serif;
       font-size: 22px;
       font-weight: 600;
+      margin: 10px;
       &:active {
-        color: $primary-color;
-        border: $primary-color 1px solid;
-        background: none;
-        border-radius: 40px;
+        color: $primary-color !important;
+        border: $primary-color 1px solid !important;
+        background: none !important;
+        border-radius: 40px !important;
       }
     }
   }
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: $primary-color !important;
+  border: $primary-color 1px solid !important;
+  background: none !important;
+  border-radius: 40px !important;
 }
 
 #Card0Styles {
@@ -1157,7 +1166,7 @@ nav {
     & .slider-homepage {
       @include homepage-bh-shp;
       img {
-        height: 450px;
+        // height: 450px;
         display: inline-block;
       }
       h2 {
