@@ -2044,6 +2044,10 @@ nav .pagination li.active a {
 #checkout #choose-payment .card-logo img {
   max-width: 40px;
 }
+#checkout #choose-payment .card-logo svg {
+  max-width: 40px;
+  margin-right:5px;
+}
 
 #checkout #choose-payment .card {
   background: #eee;
