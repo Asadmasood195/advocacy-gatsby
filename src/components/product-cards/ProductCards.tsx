@@ -148,9 +148,8 @@ const ProductCards = () => {
             </ul>
             <div className="tab-content" id="productTabContent">
               <div
-                className={`tab-pane fade ${
-                  currentTab === "2021" && "active show"
-                }`}
+                className={`tab-pane fade ${currentTab === "2021" && "active show"
+                  }`}
                 id="tab-2021"
                 role="tabpanel"
                 aria-labelledby="tab-2021"
@@ -191,9 +190,8 @@ const ProductCards = () => {
                 </div>
               </div>
               <div
-                className={`tab-pane fade ${
-                  currentTab === "2022" && "active show"
-                }`}
+                className={`tab-pane fade ${currentTab === "2022" && "active show"
+                  }`}
                 id="tab-2022"
                 role="tabpanel"
                 aria-labelledby="tab-2021"
