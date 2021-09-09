@@ -4,7 +4,6 @@ module.exports = {
     title: "advocasy-gatsby-project",
   },
   plugins: [
-    "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
