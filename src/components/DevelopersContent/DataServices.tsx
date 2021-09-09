@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import { Link } from "gatsby"
+import ArrowRight16 from "../../assests/octicons/arrow-right-16.svg"
 import { StaticImage } from "gatsby-plugin-image"
 
 const DataServices = () => {
@@ -69,10 +70,7 @@ const DataServices = () => {
             <div className="text-center">
                 <Link to="/shop" className="btn btn-outline-primary">
                     More Info{" "}
-                    <StaticImage
-                        className="svg"
-                        src="../../assests/octicons/arrow-right-16.svg"
-                    />
+                    <ArrowRight16 className="svg" />
                 </Link>
             </div>
         </div>

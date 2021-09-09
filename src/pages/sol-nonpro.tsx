@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
+import ArrowRight16 from "../assests/octicons/arrow-right-16.svg"
 
 const SolNonPro = () => {
     return (
@@ -107,10 +108,7 @@ const SolNonPro = () => {
                                         <div className="text-center">
                                             <Link to="/shop" className="btn btn-outline-primary">
                                                 More Info{" "}
-                                                <StaticImage
-                                                    className="svg"
-                                                    src="../assests/octicons/arrow-right-16.svg"
-                                                />
+                                                <ArrowRight16 className="svg" />
                                             </Link>
                                         </div>
                                     </div>

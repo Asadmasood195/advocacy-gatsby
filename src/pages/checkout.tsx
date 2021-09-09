@@ -504,7 +504,7 @@ const Checkout = () => {
                           Credit Card <br />
                         </label>
                         <div className="card-logo">
-                          <CrdVisa  className="svg" />
+                          <CrdVisa className="svg" />
                           <CrdMaster className="svg" />
                           <CrdAe className="svg" />
                           <CrdDisc className="svg" />
@@ -564,7 +564,7 @@ const Checkout = () => {
                         <div className="card" style={{ display: "none" }}>
                           <p>Pay securely using your credit card.</p>
                           <p className="info-check" style={{ display: "none" }}>
-                            <StaticImage src="../assets/ech-info.webp" />
+                            <StaticImage src="../assests/ech-info.webp" />
                           </p>
                           <div className="card-body">
                             <div className="form-group">

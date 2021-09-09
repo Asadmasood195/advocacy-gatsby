@@ -3,6 +3,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-Image"
+import CartIcon from "../assests/octicons/cart.svg"
 import { ShopProducts2021 } from "../Data/shopData"
 import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
 
@@ -49,7 +50,7 @@ const Shop = () => {
                                         </Link>
                                         <div className="product-item-button">
                                             <Link to="/cart" className="btn btn-primary add-to-cart">
-                                                <StaticImage src="../assests/octicons/cart.svg" className="svg" />
+                                                <CartIcon className='svg' />
                                                 Add to Cart
                                             </Link>
                                         </div>
