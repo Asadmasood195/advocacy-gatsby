@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+
 import CartIcon from "../../assests/octicons/cart.svg"
 import Search from "../../assests/octicons/search-16.svg"
 
@@ -110,7 +111,7 @@ const Header = ({ children }: any) => {
                     className="nav-link dropdown-toggle menu-main-product"
                     to="/products"
                     id="navbarDarkDropdownMenuLink"
-                    role="button"
+                    // role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
