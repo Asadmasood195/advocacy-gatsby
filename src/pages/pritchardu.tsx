@@ -122,7 +122,7 @@ const PritchardU = () => {
                     <span>Get in touch</span> with us
                   </p>
                   <Link to="/contact" className="btn btn-outline-primary">
-                    Contact Us{" "}
+                    Contact Us
                     <ArrowRight16
                       className="svg"
                     />
@@ -131,7 +131,7 @@ const PritchardU = () => {
               </div>
             </div>
           </div>
-        </div>{" "}
+        </div>
       </div>
     </Layout>
   )
