@@ -7,7 +7,7 @@ const CompanyLogos = () => {
       <div id="content">
         <div id="brand-logo">
           <div className="container">
-            <div className="row text-center">
+            <div className="row text-center align-items-end">
               <div className="col-md-3">
                 <StaticImage src="../../assests/br-capitol.webp" />
               </div>
