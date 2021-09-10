@@ -1,6 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import Pritchard from "../../assests/br-pritchard.webp"
+import Prit2 from "../../assests/sc-prit2.webp"
 
 const PrinchardU = () => {
   return (
@@ -9,10 +11,13 @@ const PrinchardU = () => {
         <div className="row">
           <div className="col-md-6">
             <div className="p-5">
-              <StaticImage
-                src="../../assests/br-pritchard.webp"
+              <img
+                src={Pritchard}
                 className="logo"
+                alt="Pritchard"
+                width="90%"
               />
+
               <h4>Online Educational Courses</h4>
               <p>
                 Legislative Pathways and Ethical Leadership is our first course
@@ -40,7 +45,7 @@ const PrinchardU = () => {
             </div>
           </div>
           <div className="col-md-6 align-right">
-            <StaticImage src="../../assests/sc-prit2.webp" />
+            <img src={Prit2} alt="" />
           </div>
         </div>
       </div>

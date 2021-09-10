@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import Carousel from "react-multi-carousel"
 
+import Svg49 from "../../assests/49.svg"
 import BackgroundImg from "../../assests/bg-slide1.jpg"
 import ArrowRight16 from "../../assests/octicons/arrow-right-16.svg"
 
@@ -50,7 +50,7 @@ const HowCanWeHelp = () => {
                     }}
                     className="slide-content"
                   >
-                    <StaticImage src="../../assests/49.svg" />
+                    <img src={Svg49} alt="" />
                     <h4>Government Directory Expertise & Innovation</h4>
                   </div>
                 </div>

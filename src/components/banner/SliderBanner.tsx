@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import Carousel from "react-multi-carousel"
 
 import GovBuddyBanner from "../../assests/slide-govbuddy.jpg"
@@ -10,6 +9,12 @@ import PritBanner from "../../assests/slide-prit.jpg"
 import DigitalBanner from "../../assests/slide-digital.jpg"
 import MapBanner from "../../assests/slide-map.jpg"
 import ArrowRight16 from "../../assests/octicons/arrow-right-16.svg"
+import SlGovBuddy from "../../assests/sl-govbuddy.png"
+import SlPolicy from "../../assests/sl-policy.png"
+import SlPrinted from "../../assests/sl-printed.png"
+import SlPrit from "../../assests/sl-prit.png"
+import SlDigital from "../../assests/sl-digital.png"
+import SlMaps from "../../assests/sl-maps.png"
 
 const responsive = {
   superLargeDesktop: {
@@ -77,7 +82,7 @@ const SliderBanner = () => {
                         </Link>
                       </div>
                       <div className="col-md-6 text-center">
-                        <StaticImage src="../../assests/sl-govbuddy.png" />
+                        <img src={SlGovBuddy} alt="SlGovBuddy" />
                       </div>
                     </div>
                   </div>
@@ -108,7 +113,7 @@ const SliderBanner = () => {
                         </Link>
                       </div>
                       <div className="col-md-6 text-center">
-                        <StaticImage src="../../assests/sl-policy.png" />
+                        <img src={SlPolicy} alt="Sl Policy" />
                       </div>
                     </div>
                   </div>
@@ -143,7 +148,7 @@ const SliderBanner = () => {
                         </Link>
                       </div>
                       <div className="col-md-6 align-right">
-                        <StaticImage src="../../assests/sl-printed.png" />
+                        <img src={SlPrinted} alt="Sl Print" />
                       </div>
                     </div>
                   </div>
@@ -180,8 +185,9 @@ const SliderBanner = () => {
                         className="col-md-6"
                         style={{ padding: "100px 0px" }}
                       >
-                        <StaticImage
-                          src="../../assests/sl-prit.png"
+                        <img
+                          src={SlPrit}
+                          alt=""
                           style={{ height: "auto", width: "500px" }}
                         />
                       </div>
@@ -224,10 +230,7 @@ const SliderBanner = () => {
                         className="col-md-6 text-center"
                         style={{ padding: "50px 0px" }}
                       >
-                        <StaticImage
-                          src="../../assests/sl-digital.png"
-                          style={{ height: "400px" }}
-                        />
+                        <img src={SlDigital} style={{ height: "400px" }} />
                       </div>
                     </div>
                   </div>
@@ -265,7 +268,7 @@ const SliderBanner = () => {
                         </Link>
                       </div>
                       <div className="col-md-6 align-right">
-                        <StaticImage src="../../assests/sl-maps.png" />
+                        <img src={SlMaps} alt="Sl Maps" />
                       </div>
                     </div>
                   </div>

@@ -1,6 +1,12 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+
+import ProdPrint from "../../assests/prod-printed.webp"
+import ProdDigital from "../../assests/prod-digital.webp"
+import ProdPrit from "../../assests/prod-prit.webp"
+import ProdMap from "../../assests/prod-maps.webp"
+import ProdGov from "../../assests/prod-govbuddy.webp"
+import ProdPolicy from "../../assests/prod-policy.webp"
 
 const ProductCategories = () => {
   return (
@@ -14,7 +20,7 @@ const ProductCategories = () => {
             <div className="col-md-4">
               <div className="box-prod-cat">
                 <div className="prod-img">
-                  <StaticImage src="../../assests/prod-printed.webp" />
+                  <img src={ProdPrint} alt="Prod Print" />
                 </div>
                 <h4 className="prod-title">Printed Directories</h4>
                 <div className="prod-desc">
@@ -31,7 +37,7 @@ const ProductCategories = () => {
             <div className="col-md-4">
               <div className="box-prod-cat">
                 <div className="prod-img">
-                  <StaticImage src="../../assests/prod-digital.webp" />
+                  <img src={ProdDigital} alt="Prod Digital" />
                 </div>
                 <h4 className="prod-title">Digital Editions</h4>
                 <div className="prod-desc">
@@ -48,7 +54,7 @@ const ProductCategories = () => {
             <div className="col-md-4">
               <div className="box-prod-cat">
                 <div className="prod-img">
-                  <StaticImage src="../../assests/prod-prit.webp" />
+                  <img src={ProdPrit} alt="Prod Prit" />
                 </div>
                 <h4 className="prod-title">PritchardU</h4>
                 <div className="prod-desc">
@@ -64,7 +70,7 @@ const ProductCategories = () => {
             <div className="col-md-4">
               <div className="box-prod-cat">
                 <div className="prod-img">
-                  <StaticImage src="../../assests/prod-maps.webp" />
+                  <img src={ProdMap} alt="Prod Map" />
                 </div>
                 <h4 className="prod-title">Maps</h4>
                 <div className="prod-desc">
@@ -79,7 +85,7 @@ const ProductCategories = () => {
             <div className="col-md-4">
               <div className="box-prod-cat">
                 <div className="prod-img">
-                  <StaticImage src="../../assests/prod-govbuddy.webp" />
+                  <img src={ProdGov} alt="Prod GovBuddy" />
                 </div>
                 <h4 className="prod-title">GovBuddy</h4>
                 <div className="prod-desc">
@@ -94,7 +100,7 @@ const ProductCategories = () => {
             <div className="col-md-4">
               <div className="box-prod-cat">
                 <div className="prod-img">
-                  <StaticImage src="../../assests/prod-policy.webp" />
+                  <img src={ProdPolicy} alt="Prod Policy" />
                 </div>
                 <h4 className="prod-title">PolicyGuru</h4>
                 <div className="prod-desc">

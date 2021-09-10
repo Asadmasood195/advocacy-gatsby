@@ -1,7 +1,12 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
+import MainLogo from "../../assests/logo.svg"
+import Govbuddy from "../../assests/mnu-govbuddy.png"
+import Printed from "../../assests/mnu-printed.png"
+import Maps from "../../assests/mnu-maps.png"
+import Digital from "../../assests/mnu-digital.png"
+import PolicyGuru from "../../assests/mnu-policyguru.png"
+import Pritchard from "../../assests/mnu-prit.png"
 import CartIcon from "../../assests/octicons/cart.svg"
 import Search from "../../assests/octicons/search-16.svg"
 
@@ -53,7 +58,7 @@ const Header = ({ children }: any) => {
     "
       >
         <Link to="/" className="d-flex align-items-center">
-          <StaticImage src="../../assests/logo.svg" />
+          <img src={MainLogo} alt="Company Logo" />
         </Link>
         <div className="col-md-8">
           <div
@@ -139,48 +144,44 @@ const Header = ({ children }: any) => {
 
                       <div className="product-image">
                         {imgSrc === "1" && (
-                          <StaticImage
-                            src="../../assests/mnu-govbuddy.png"
-                            alt=""
+                          <img
+                            src={Govbuddy}
+                            alt="Gov buddy banner"
                             height={254}
                           />
                         )}
                         {imgSrc === "2" && (
-                          <StaticImage
-                            src="../../assests/mnu-printed.png"
-                            alt=""
+                          <img
+                            src={Printed}
+                            alt="Printed Banner"
                             height={254}
                           />
                         )}
 
                         {imgSrc === "3" && (
-                          <StaticImage
-                            src="../../assests/mnu-maps.png"
-                            alt=""
-                            height={254}
-                          />
+                          <img src={Maps} alt="Maps Banner" height={254} />
                         )}
 
                         {imgSrc === "4" && (
-                          <StaticImage
-                            src="../../assests/mnu-digital.png"
-                            alt=""
+                          <img
+                            src={Digital}
+                            alt="Digital Banner"
                             height={254}
                           />
                         )}
 
                         {imgSrc === "5" && (
-                          <StaticImage
-                            src="../../assests/mnu-policyguru.png"
-                            alt=""
+                          <img
+                            src={PolicyGuru}
+                            alt="Policy Guru Banner"
                             height={254}
                           />
                         )}
 
                         {imgSrc === "6" && (
-                          <StaticImage
-                            src="../../assests/mnu-prit.png"
-                            alt=""
+                          <img
+                            src={Pritchard}
+                            alt="Pritchard Banner"
                             height={254}
                           />
                         )}
