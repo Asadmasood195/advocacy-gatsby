@@ -1,5 +1,8 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import Capitol from "../../assests/br-capitol.webp"
+import Govbuddy from "../../assests/br-govbuddy.webp"
+import PolicyGuru from "../../assests/br-policy.webp"
+import Pritchard from "../../assests/br-pritchard.webp"
 
 const CompanyLogos = () => {
   return (
@@ -9,16 +12,16 @@ const CompanyLogos = () => {
           <div className="container">
             <div className="row text-center align-items-end">
               <div className="col-md-3">
-                <StaticImage src="../../assests/br-capitol.webp" />
+                <img src={Capitol} alt="Capitol" />
               </div>
               <div className="col-md-3">
-                <StaticImage src="../../assests/br-govbuddy.webp" />
+                <img src={Govbuddy} alt="Govbuddy" />
               </div>
               <div className="col-md-3">
-                <StaticImage src="../../assests/br-policy.webp" />
+                <img src={PolicyGuru} alt="PolicyGuru" />
               </div>
               <div className="col-md-3">
-                <StaticImage src="../../assests/br-pritchard.webp" />
+                <img src={Pritchard} alt="Pritchard" width="90%" />
               </div>
             </div>
           </div>
