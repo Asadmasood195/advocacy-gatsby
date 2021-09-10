@@ -1,11 +1,14 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import Congress from "../components/SolTradeContent/Congress"
 import FederalExecutive from "../components/SolTradeContent/FederalExecutive"
 import StateComponent from "../components/SolTradeContent/StateComponent"
 import LocalComponent from "../components/SolTradeContent/LocalComponent"
+import scCongress from "../assests/sc-congress.webp";
+import scFederal from "../assests/sc-federal.webp";
+import scState from "../assests/sc-state.webp";
+import scLocal from "../assests/sc-local.webp";
 
 const SolGovernment = () => {
     return (
@@ -38,7 +41,7 @@ const SolGovernment = () => {
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-md-6">
-                                <StaticImage src="../assests/sc-congress.webp" />
+                                <img src={scCongress} alt="sc-congress" />
                             </div>
                             <div className="col-md-6">
                                 <Congress />
@@ -50,13 +53,13 @@ const SolGovernment = () => {
                                 <FederalExecutive />
                             </div>
                             <div className="col-md-6">
-                                <StaticImage src="../assests/sc-federal.png" />
+                                <img src={scFederal} alt="sc-federal" />
                             </div>
                         </div>
                         <br />
                         <div className="row align-items-center">
                             <div className="col-md-6">
-                                <StaticImage src="../assests/sc-state.webp" />
+                                <img src={scState} alt="sc-state" />
                             </div>
                             <div className="col-md-6">
                                 <StateComponent />
@@ -68,7 +71,7 @@ const SolGovernment = () => {
                                 <LocalComponent />
                             </div>
                             <div className="col-md-6">
-                                <StaticImage src="../assests/sc-local.webp" />
+                                <img src={scLocal} alt="sc-local" />
                             </div>
                         </div>
                     </div>

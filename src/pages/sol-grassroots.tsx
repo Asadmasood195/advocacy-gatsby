@@ -3,12 +3,16 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
 import Congress from "../components/SolTradeContent/Congress"
 import FederalExecutive from "../components/SolTradeContent/FederalExecutive"
 import StateComponent from "../components/SolTradeContent/StateComponent"
 import LocalComponent from "../components/SolTradeContent/LocalComponent"
+import scCongress2 from "../assests/sc-congress2.webp";
+import scfederal from "../assests/sc-federal.webp";
+import scState from "../assests/sc-state.webp";
+import scLocal2 from "../assests/sc-local2.webp";
+
 
 const SolGrassRoot = () => {
     return (
@@ -41,7 +45,7 @@ const SolGrassRoot = () => {
                         <div className="container">
                             <div className="row align-items-center">
                                 <div className="col-md-6">
-                                    <StaticImage src="../assests/sc-congress2.webp" />
+                                    <img src={scCongress2} alt="sc-congress2" />
                                 </div>
                                 <div className="col-md-6">
                                     <Congress />
@@ -53,13 +57,13 @@ const SolGrassRoot = () => {
                                     <FederalExecutive />
                                 </div>
                                 <div className="col-md-6">
-                                    <StaticImage src="../assests/sc-federal.png" />
+                                    <img src={scfederal} alt="sc-federal" />
                                 </div>
                             </div>
                             <br />
                             <div className="row align-items-center">
                                 <div className="col-md-6">
-                                    <StaticImage src="../assests/sc-state.webp" />
+                                    <img src={scState} alt="sc-state" />
                                 </div>
                                 <div className="col-md-6">
                                     <StateComponent />
@@ -71,7 +75,7 @@ const SolGrassRoot = () => {
                                     <LocalComponent />
                                 </div>
                                 <div className="col-md-6">
-                                    <StaticImage src="../assests/sc-local2.png" />
+                                    <img src={scLocal2} alt="sc-local2" />
                                 </div>
                             </div>
                         </div>
