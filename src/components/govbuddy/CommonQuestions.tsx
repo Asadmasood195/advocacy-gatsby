@@ -3,13 +3,17 @@ import { QuestionsList } from "../../Data/commonQuestionsData"
 
 const CommonQuestions = () => {
     const [list, setList] = React.useState(QuestionsList)
+    const [collapsing, setCollapsing] = React.useState('')
+
     const showHandler = (id:number) => {
+        setCollapsing('collapsing');
         setList(list.filter((item)=>{
             if(item.id === id){
                 item.show = !item.show
             }
             return item;
         }))
+        setCollapsing('');
     }
   return (
     <>
@@ -31,7 +35,7 @@ const CommonQuestions = () => {
                             </a>
                         </h4>
                         </div>
-                        <div id="collapse1" className={`panel-collapse in collapse ${item.show && "show"}`}>
+                        <div id="collapse1" className={`panel-collapse in collapse ${collapsing} ${item.show && "show"}`}>
                         <div className="panel-body">
                             {item.answer}
                         </div>
