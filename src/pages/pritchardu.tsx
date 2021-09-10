@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import ArrowRight16 from "../assests/octicons/arrow-right-16.svg"
+import Banner from "../components/banner/Banner"
 
 const PritchardU = () => {
   return (
@@ -17,25 +18,14 @@ const PritchardU = () => {
 
       <div id="main">
         <div id="sub-products" className="sub-pritchardu">
-          <div id="banner" className="banner-subproducts bg-pritchardu">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-1"></div>
-                <div className="col-md-8">
-                  <div className="text-left text-banner">
-                    <h1>PritchardU</h1>
-                    <h5>
-                      Nothing beats an education from experts. At PritchardU,
-                      professionals learn new skills and earn certifications.
-                      Each student who successfully completes a PritchardU
-                      course earns a certificate of Lobbying Science.
-                    </h5>
-                  </div>
-                </div>
-                <div className="col-md-3"></div>
-              </div>
-            </div>
-          </div>
+          <Banner 
+          bg="bg-pritchardu"
+          title="PritchardU"
+          description="Nothing beats an education from experts. At PritchardU,
+          professionals learn new skills and earn certifications.
+          Each student who successfully completes a PritchardU
+          course earns a certificate of Lobbying Science."
+          />
           <div id="content">
             <div className="container">
               <div className="list-of-courses">
