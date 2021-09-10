@@ -1,6 +1,31 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
+import Apple from "../../assests/ico-apple.webp"
+import Google from "../../assests/ico-google.webp"
+import Microsoft from "../../assests/ico-microsoft.webp"
+import Chase from "../../assests/ico-chase.webp"
+import Exxon from "../../assests/ico-exxon.webp"
+import GreenPeace from "../../assests/ico-greenpeace.webp"
+import Aarp from "../../assests/ico-aarp.webp"
+import Wsap from "../../assests/ico-wsap.webp"
+import Chevron from "../../assests/ico-chevron.webp"
+import Seu from "../../assests/ico-seu.webp"
+import Chamber from "../../assests/ico-chamber.webp"
+import Cpha from "../../assests/ico-cpha.webp"
+import Custom1 from "../../assests/ico-custom1.webp"
+import Cta from "../../assests/ico-cta.webp"
+import Pge from "../../assests/ico-pge.webp"
+import Afscme from "../../assests/ico-afscme.webp"
+import CapitolLadv from "../../assests/ico-capitoladv.webp"
+import Kp from "../../assests/ico-kp.webp"
+import Lang from "../../assests/ico-lang.webp"
+import California from "../../assests/ico-california.webp"
+import Axiom from "../../assests/ico-axiom.webp"
+import Major from "../../assests/ico-major.webp"
+import Nossaman from "../../assests/ico-nossaman.webp"
+import Gualco from "../../assests/ico-gualco.webp"
+
 const TrustedCompany = () => {
   return (
     <div id="homepage">
@@ -15,30 +40,30 @@ const TrustedCompany = () => {
               legislators easy and manageable.
             </p>
             <div className="image-list">
-              <StaticImage src="../../assests/ico-apple.webp" />
-              <StaticImage src="../../assests/ico-google.webp" />
-              <StaticImage src="../../assests/ico-microsoft.webp" />
-              <StaticImage src="../../assests/ico-chase.webp" />
-              <StaticImage src="../../assests/ico-exxon.webp" />
-              <StaticImage src="../../assests/ico-greenpeace.webp" />
-              <StaticImage src="../../assests/ico-aarp.webp" />
-              <StaticImage src="../../assests/ico-wsap.webp" />
-              <StaticImage src="../../assests/ico-chevron.webp" />
-              <StaticImage src="../../assests/ico-seu.webp" />
-              <StaticImage src="../../assests/ico-chamber.webp" />
-              <StaticImage src="../../assests/ico-cpha.webp" />
-              <StaticImage src="../../assests/ico-custom1.webp" />
-              <StaticImage src="../../assests/ico-cta.webp" />
-              <StaticImage src="../../assests/ico-pge.webp" />
-              <StaticImage src="../../assests/ico-afscme.webp" />
-              <StaticImage src="../../assests/ico-capitoladv.webp" />
-              <StaticImage src="../../assests/ico-kp.webp" />
-              <StaticImage src="../../assests/ico-lang.webp" />
-              <StaticImage src="../../assests/ico-california.webp" />
-              <StaticImage src="../../assests/ico-axiom.webp" />
-              <StaticImage src="../../assests/ico-major.webp" />
-              <StaticImage src="../../assests/ico-nossaman.webp" />
-              <StaticImage src="../../assests/ico-gualco.webp" />
+              <img src={Apple} alt="" />
+              <img src={Google} alt="" />
+              <img src={Microsoft} alt="" />
+              <img src={Chase} alt="" />
+              <img src={Exxon} alt="" />
+              <img src={GreenPeace} alt="" />
+              <img src={Aarp} alt="" />
+              <img src={Wsap} alt="" />
+              <img src={Chevron} alt="" />
+              <img src={Seu} alt="" />
+              <img src={Chamber} alt="" />
+              <img src={Cpha} alt="" />
+              <img src={Custom1} alt="" />
+              <img src={Cta} alt="" />
+              <img src={Pge} alt="" />
+              <img src={Afscme} alt="" />
+              <img src={CapitolLadv} alt="" />
+              <img src={Kp} alt="" />
+              <img src={Lang} alt="" />
+              <img src={California} alt="" />
+              <img src={Axiom} alt="" />
+              <img src={Major} alt="" />
+              <img src={Nossaman} alt="" />
+              <img src={Gualco} alt="" />
             </div>
             <div className="text-center many-more">And many more</div>
           </div>

@@ -1,9 +1,17 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
 import Layout from "../components/layout"
 import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
+
+import Logo from "../assests/logo.webp"
+import CapitolInq from "../assests/capitol-enquiry-logo.webp"
+import GovBuddyLogo from "../assests/govbuddy-logo.webp"
+import GovBuddyIcon from "../assests/govbuddy-icon1.webp"
+import PolicyGuru from "../assests/policyguru-logo.webp"
+import Pritchard from "../assests/pritchardu-logo.webp"
+import PrintedIcon from "../assests/printed-icon.webp"
+import PritIcon from "../assests/prit-icon.webp"
+import PolicyIcon from "../assests/policy-icon.webp"
 
 const About = () => {
   return (
@@ -24,7 +32,7 @@ const About = () => {
                 <div className="col-md-2"></div>
                 <div className="col-md-5">
                   <div className="text-center text-banner">
-                    <StaticImage src="../assests/logo.png" width="200" />
+                    <img src={Logo} width="200" alt="Logo" />
                     <h1>Game Changing Products for Advocacy</h1>
                     <h5>
                       We offer physical books, digital editions, online
@@ -54,22 +62,22 @@ const About = () => {
                   <div className="row">
                     <div className="col-md-3">
                       <div className="brand-logo text-center">
-                        <StaticImage src="../assests/capitol-enquiry-logo.webp" />
+                        <img src={CapitolInq} alt="" />
                       </div>
                     </div>
                     <div className="col-md-3">
                       <div className="brand-logo text-center">
-                        <StaticImage src="../assests/govbuddy-logo.webp" />
+                        <img src={GovBuddyLogo} alt="" />
                       </div>
                     </div>
                     <div className="col-md-3">
                       <div className="brand-logo text-center">
-                        <StaticImage src="../assests/policyguru-logo.webp" />
+                        <img src={PolicyGuru} alt="" />
                       </div>
                     </div>
                     <div className="col-md-3">
                       <div className="brand-logo text-center">
-                        <StaticImage src="../assests/pritchardu-logo.webp" />
+                        <img src={Pritchard} alt="" />
                       </div>
                     </div>
                   </div>
@@ -120,7 +128,7 @@ const About = () => {
                   <div className="row">
                     <div className="col-md-6">
                       <div className="image">
-                        <StaticImage src="../assests/govbuddy-icon1.webp" />
+                        <img src={GovBuddyIcon} />
                         <h5>GovBuddy</h5>
                         <p>
                           Collaboration platform and directory. The premier
@@ -130,7 +138,7 @@ const About = () => {
                       </div>
                     </div>
                     <div className="col-md-6">
-                      <StaticImage src="../assests/printed-icon.webp" />
+                      <img src={PrintedIcon} alt="" />
                       <h5>Printed Directories</h5>
                       <p>
                         In print since 1973, our Printed Directories including
@@ -141,7 +149,7 @@ const About = () => {
                   </div>
                   <div className="row">
                     <div className="col-md-6">
-                      <StaticImage src="../assests/prit-icon.webp" />
+                      <img src={PritIcon} alt="" />
                       <h5>PritchardU</h5>
                       <p>
                         The industry's first online educational resource for
@@ -149,7 +157,7 @@ const About = () => {
                       </p>
                     </div>
                     <div className="col-md-6">
-                      <StaticImage src="../assests/policy-icon.webp" />
+                      <img src={PolicyIcon} alt="" />
                       <h5>Policy Guru</h5>
                       <p>
                         The premier source of contact information for cities and

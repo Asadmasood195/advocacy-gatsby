@@ -1,9 +1,17 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import ArrowRight16 from "../assests/octicons/arrow-right-16.svg"
+import Govbuddy from "../assests/br-govbuddy.webp"
+import Government from "../assests/sc-gov.webp"
+import Printed from "../assests/sc-printed.webp"
+import Digital from "../assests/sc-digital.webp"
+import Maps from "../assests/sc-maps.webp"
+import Policy from "../assests/br-policy.webp"
+import Policy2 from "../assests/sc-policy2.webp"
+import Prit from "../assests/sc-prit.webp"
+import pritchard from "../assests/br-pritchard.webp"
 
 const Products = () => {
   return (
@@ -37,10 +45,7 @@ const Products = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="body-content">
-                  <StaticImage
-                    src="../assests/br-govbuddy.webp"
-                    className="logo-icon"
-                  />
+                  <img src={Govbuddy} alt="" className="logo-icon" />
                   <h4>California Legislature: Desktop Access with App</h4>
                   <p>
                     All the legislative information in our Pocket Directory of
@@ -54,13 +59,13 @@ const Products = () => {
                 </div>
               </div>
               <div className="col-md-6">
-                <StaticImage src="../assests/sc-gov.webp" />
+                <img src={Government} alt="" />
               </div>
             </div>
             <br />
             <div className="row">
               <div className="col-md-6">
-                <StaticImage src="../assests/sc-printed.webp" />
+                <img src={Printed} alt="" />
               </div>
               <div className="col-md-6">
                 <div className="body-content">
@@ -99,13 +104,13 @@ const Products = () => {
                 </div>
               </div>
               <div className="col-md-6">
-                <StaticImage src="../assests/sc-digital.webp" />
+                <img src={Digital} alt="" />
               </div>
             </div>
             <br />
             <div className="row">
               <div className="col-md-6 p-5">
-                <StaticImage src="../assests/sc-maps.webp" />
+                <img src={Maps} alt="" />
               </div>
               <div className="col-md-6">
                 <div className="body-content">
@@ -128,10 +133,7 @@ const Products = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="body-content">
-                  <StaticImage
-                    src="../assests/br-policy.webp"
-                    className="logo-icon"
-                  />
+                  <img src={Policy} className="logo-icon" />
                   <h4>Comprehensive Guide to City and County Officials</h4>
                   <p>
                     PolicyGuru is a searchable database of local government
@@ -145,21 +147,18 @@ const Products = () => {
                 </div>
               </div>
               <div className="col-md-6">
-                <StaticImage src="../assests/sc-policy2.webp" />
+                <img src={Policy2} alt="" />
               </div>
             </div>
             <br />
             <div className="row">
               <div className="col-md-6">
-                <StaticImage src="../assests/sc-prit.webp" />
+                <img src={Prit} alt="" />
               </div>
               <div className="col-md-6">
                 <div className="body-content">
                   <br />
-                  <StaticImage
-                    src="../assests/br-pritchard.webp"
-                    className="logo-icon"
-                  />
+                  <img src={pritchard} className="logo-icon" alt="" />
                   <h4>Industry leading educational courses</h4>
                   <p>
                     Online educational courses from experts on key areas of

@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
+import RegStep from "../assests/reg-step.webp"
 
 const Register = () => {
   return (
@@ -24,7 +24,7 @@ const Register = () => {
                   <div className="col-md-6">
                     <h2>Registration</h2>
                     <div className="loginImage">
-                      <StaticImage src="../assests/reg-step.png" />
+                      <img src={RegStep} alt="" />
                     </div>
                     <div className="box2">
                       Thank you for starting the registration process on

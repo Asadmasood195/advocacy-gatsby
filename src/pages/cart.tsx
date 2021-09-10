@@ -8,6 +8,8 @@ import X16 from "../assests/octicons/x-16.svg"
 import CartInput from "../components/cart/CartInput"
 import HowCanWeHelp from "../components/banner/HowCanWeHelp"
 import Summary from "../components/cart/Summary"
+import Image from "../assests/sample.webp"
+import GovbuddyIcon from "../assests/ico-govbuddy.webp"
 
 const Cart = () => {
   return (
@@ -25,7 +27,7 @@ const Cart = () => {
               <div id="recommended-product">
                 <div className="row">
                   <div className="col-md-4">
-                    <StaticImage src="../assests/ico-govbuddy.png" />
+                    <img src={GovbuddyIcon} alt="" />
                   </div>
                   <div className="col-md-8">
                     <form method="post" action="cart.html">
@@ -71,10 +73,7 @@ const Cart = () => {
                             </a>
                           </td>
                           <td className="product-image">
-                            <StaticImage
-                              src="../assests/sample.jpeg"
-                              alt="sample"
-                            />
+                            <img src={Image} alt="sample" />
                           </td>
                           <td>
                             <div className="product-title">
@@ -104,10 +103,7 @@ const Cart = () => {
                             </a>
                           </td>
                           <td className="product-image">
-                            <StaticImage
-                              src="../assests/sample.jpeg"
-                              alt="sample"
-                            />
+                            <img src={Image} alt="sample" />
                           </td>
                           <td>
                             <div className="product-title">

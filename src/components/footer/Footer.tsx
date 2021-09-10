@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import Logo from "../../assests/logo.svg"
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="col-lg-3">
             <div className="col-footer">
               <div className="logo-footer">
-                <StaticImage src="../../assests/logo.svg" />
+                <img src={Logo} alt="" />
               </div>
               <p>
                 Empowering Advocacy Professionals to Coordinate Strategic

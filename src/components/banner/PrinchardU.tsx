@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import Pritchard from "../../assests/br-pritchard.webp"
 import Prit2 from "../../assests/sc-prit2.webp"
 

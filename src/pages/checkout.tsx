@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import ArrowRight16 from "../assests/octicons/arrow-right-16.svg"
@@ -11,6 +10,7 @@ import CrdDisc from "../assests/octicons/crd-disc.svg"
 import CrdDc from "../assests/octicons/crd-dc.svg"
 import CrdJcb from "../assests/octicons/crd-jcb.svg"
 import CardEcheck from "../assests/octicons/card-echeck.svg"
+import EchInfo from "../assests/ech-info.webp"
 
 const Checkout = () => {
   return (
@@ -564,7 +564,7 @@ const Checkout = () => {
                         <div className="card" style={{ display: "none" }}>
                           <p>Pay securely using your credit card.</p>
                           <p className="info-check" style={{ display: "none" }}>
-                            <StaticImage src="../assests/ech-info.webp" />
+                            <img src={EchInfo} alt="" />
                           </p>
                           <div className="card-body">
                             <div className="form-group">

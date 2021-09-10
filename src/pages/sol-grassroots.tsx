@@ -9,6 +9,7 @@ import Congress from "../components/SolTradeContent/Congress"
 import FederalExecutive from "../components/SolTradeContent/FederalExecutive"
 import StateComponent from "../components/SolTradeContent/StateComponent"
 import LocalComponent from "../components/SolTradeContent/LocalComponent"
+import Congress2 from "../assests/sc-congress2.webp"
 
 const SolGrassRoot = () => {
     return (
@@ -41,7 +42,7 @@ const SolGrassRoot = () => {
                         <div className="container">
                             <div className="row align-items-center">
                                 <div className="col-md-6">
-                                    <StaticImage src="../assests/sc-congress2.webp" />
+                                    <img src={Congress2} alt=""/>
                                 </div>
                                 <div className="col-md-6">
                                     <Congress />
@@ -53,7 +54,7 @@ const SolGrassRoot = () => {
                                     <FederalExecutive />
                                 </div>
                                 <div className="col-md-6">
-                                    <StaticImage src="../assests/sc-federal.png" />
+                                     src="../assests/sc-federal.png" />
                                 </div>
                             </div>
                             <br />
