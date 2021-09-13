@@ -1404,8 +1404,8 @@ nav .pagination li.active a {
   line-height: 28px;
   padding-bottom: 40px;
 }
-#homepage #trusted .image-list .gatsby-image-wrapper-constrained {
-  margin: 15px !important;
+#homepage #trusted .image-list img{
+  margin: 15px;
 }
 
 #homepage #trusted .many-more {
