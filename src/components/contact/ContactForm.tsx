@@ -1,6 +1,10 @@
 import * as React from 'react'
 
 const ContactForm = () => {
+    const throwError = (e:any) => {
+        e.preventDefault();
+        throw Error('Component Error')
+    }
     return (
         <form method="POST">
             <div className="mb-3">
@@ -48,7 +52,7 @@ const ContactForm = () => {
             ></textarea>
             </div>
             <div className="mb-3 align-right">
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" onClick={throwError} className="btn btn-primary">
                 SEND MESSAGE
             </button>
             </div>

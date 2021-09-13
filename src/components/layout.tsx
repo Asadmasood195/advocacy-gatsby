@@ -4,10 +4,13 @@ import Header from "./header/Header"
 import Footer from "./footer/Footer"
 import "../styles/custom.css"
 import "react-multi-carousel/lib/styles.css"
+//sentry
+import ErrorBoundaryContainer from "../components/common/ErrorBoundryContainer"
 
 const Layout = ({ children }: any) => {
   return (
     <>
+    <ErrorBoundaryContainer>
       <Helmet>
         <html lang="en" />
         <title>Advocacy</title>
@@ -26,6 +29,7 @@ const Layout = ({ children }: any) => {
         <main>{children}</main>
       </div>
       <Footer />
+      </ErrorBoundaryContainer>
     </>
   )
 }
