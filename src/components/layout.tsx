@@ -18,7 +18,7 @@ const Layout = ({ children }: any) => {
         />
         <link
           rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          href="../../src/assests/fontAwesome/css/min.css"
         />
       </Helmet>
       <Header />

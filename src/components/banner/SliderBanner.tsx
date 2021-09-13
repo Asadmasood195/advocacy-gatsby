@@ -9,12 +9,12 @@ import PritBanner from "../../assests/slide-prit.webp"
 import DigitalBanner from "../../assests/slide-digital.webp"
 import MapBanner from "../../assests/slide-map.webp"
 import ArrowRight16 from "../../assests/octicons/arrow-right-16.svg"
-import SlGovBuddy from "../../assests/sl-govbuddy.webp"
-import SlPolicy from "../../assests/sl-policy.webp"
-import SlPrinted from "../../assests/sl-printed.webp"
-import SlPrit from "../../assests/sl-prit.webp"
-import SlDigital from "../../assests/sl-digital.webp"
-import SlMaps from "../../assests/sl-maps.webp"
+import SlGovBuddy from "../../assests/sl-govbuddy.png"
+import SlPolicy from "../../assests/sl-policy.png"
+import SlPrinted from "../../assests/sl-printed.png"
+import SlPrit from "../../assests/sl-prit.png"
+import SlDigital from "../../assests/sl-digital.png"
+import SlMaps from "../../assests/sl-maps.png"
 
 const responsive = {
   superLargeDesktop: {
