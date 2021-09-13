@@ -1224,15 +1224,15 @@ nav .pagination li.active a {
 /* .product-item {
 } */
 #Card0Styles {
-  background: url("../assests/sample0.jpeg") no-repeat center center;
+  background: url("../assests/sample0.webp") no-repeat center center;
   background-size: contain;
 }
 #Card1Styles {
-  background: url("../assests/sample1.jpeg") no-repeat center center;
+  background: url("../assests/sample1.webp") no-repeat center center;
   background-size: contain;
 }
 #Card2Styles {
-  background: url("../assests/sample2.jpeg") no-repeat center center;
+  background: url("../assests/sample2.webp") no-repeat center center;
   background-size: contain;
 }
 
@@ -2046,7 +2046,7 @@ nav .pagination li.active a {
 }
 #checkout #choose-payment .card-logo svg {
   max-width: 40px;
-  margin-right:5px;
+  margin-right: 5px;
 }
 
 #checkout #choose-payment .card {

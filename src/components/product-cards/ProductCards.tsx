@@ -2,9 +2,9 @@ import * as React from "react"
 import { Link } from "gatsby"
 
 import CartIcon from "../../assests/octicons/cart.svg"
-import Image1 from "../../assests/sample0.jpeg"
-import Image2 from "../../assests/sample1.jpeg"
-import Image3 from "../../assests/sample2.jpeg"
+import Image1 from "../../assests/sample0.webp"
+import Image2 from "../../assests/sample1.webp"
+import Image3 from "../../assests/sample2.webp"
 
 const Product2021 = [
   {
@@ -148,8 +148,9 @@ const ProductCards = () => {
             </ul>
             <div className="tab-content" id="productTabContent">
               <div
-                className={`tab-pane fade ${currentTab === "2021" && "active show"
-                  }`}
+                className={`tab-pane fade ${
+                  currentTab === "2021" && "active show"
+                }`}
                 id="tab-2021"
                 role="tabpanel"
                 aria-labelledby="tab-2021"
@@ -190,8 +191,9 @@ const ProductCards = () => {
                 </div>
               </div>
               <div
-                className={`tab-pane fade ${currentTab === "2022" && "active show"
-                  }`}
+                className={`tab-pane fade ${
+                  currentTab === "2022" && "active show"
+                }`}
                 id="tab-2022"
                 role="tabpanel"
                 aria-labelledby="tab-2021"

@@ -2,11 +2,11 @@ import * as React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import CartIcon from "../assests/octicons/cart.svg"
-import Image1 from "../assests/sample.jpeg"
-import Image2 from "../assests/sample0.jpeg"
-import Image3 from "../assests/sample1.jpeg"
-import Image4 from "../assests/sample2.jpeg"
-import Image5 from "../assests/sample4.jpeg"
+import Image1 from "../assests/sample.webp"
+import Image2 from "../assests/sample0.webp"
+import Image3 from "../assests/sample1.webp"
+import Image4 from "../assests/sample2.webp"
+import Image5 from "../assests/sample4.webp"
 
 const ProductImages = [
   { Image: Image1 },

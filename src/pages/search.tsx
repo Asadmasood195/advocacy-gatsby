@@ -3,9 +3,9 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
 import CartIcon from "../assests/octicons/cart.svg"
-import Image1 from "../assests/sample0.jpeg"
-import Image2 from "../assests/sample1.jpeg"
-import Image3 from "../assests/sample2.jpeg"
+import Image1 from "../assests/sample0.webp"
+import Image2 from "../assests/sample1.webp"
+import Image3 from "../assests/sample2.webp"
 
 const AllProducts = [
   {

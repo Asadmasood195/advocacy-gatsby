@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
 import CartIcon from "../assests/octicons/cart.svg"
-import Image4 from "../assests/sample4.jpeg"
+import Image4 from "../assests/sample4.webp"
 
 const Product2021 = [
   {

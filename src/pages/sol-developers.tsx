@@ -7,7 +7,7 @@ import ArrowRight16 from "../assests/octicons/arrow-right-16.svg"
 import DataServices from "../components/DevelopersContent/DataServices"
 import DevSc from "../assests/sc-dev.webp"
 import DevSc1 from "../assests/sc-dev2.webp"
-import Image from "../assests/sample.jpeg"
+import Image from "../assests/sample.webp"
 
 const SolDevelopers = () => {
   return (
