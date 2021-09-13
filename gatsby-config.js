@@ -25,6 +25,12 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-load-script",
+      options: {
+        src: "/test-script.js", // Change to the script filename
+      },
+    },
+    {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
