@@ -54,7 +54,7 @@ const Cart = () => {
               <div id="shopping-cart">
                 <h2>Shopping Cart</h2>
                 <div className="row">
-                  <div className="col-md-9">
+                  <div className="col-md-9" style={{ overflowY: "auto" }}>
                     <table>
                       <thead>
                         <tr>
