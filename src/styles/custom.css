@@ -167,6 +167,8 @@ input.form-control {
 
 #header {
   padding-top: 20px;
+  max-width: 38%;
+  margin: auto !important;
 }
 #header.border-bottom {
   border-bottom-color: #ff173d !important;
@@ -357,9 +359,10 @@ input.form-control {
 
 /* Banner Carousel override */
 .react-multi-carousel-dot-list {
-  right: 50% !important;
+  /* right: 50% !important; */
   bottom: 4% !important;
   justify-content: center !important;
+  margin: auto !important;
 }
 .react-multi-carousel-dot-list li {
   padding-right: 1.3% !important;
