@@ -52,7 +52,6 @@ const Products = () => {
                     the California Legislature, continuously updated throughout
                     the year.
                   </p>
-
                   <Link to="/shop" className="btn btn-outline-primary">
                     View All Products <ArrowRight16 className="svg" />
                   </Link>
