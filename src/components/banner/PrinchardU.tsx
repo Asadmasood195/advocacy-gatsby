@@ -44,7 +44,7 @@ const PrinchardU = () => {
             </div>
           </div>
           <div className="col-md-6 align-right">
-            <img src={Prit2} alt="" />
+            <img src={Prit2} alt="" className='imgStyle' />
           </div>
         </div>
       </div>

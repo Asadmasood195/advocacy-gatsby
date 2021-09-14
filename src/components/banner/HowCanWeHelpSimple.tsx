@@ -9,7 +9,7 @@ const HowCanWeHelpSimple = () => {
       <div id="how-we-can-help">
         <div className="container">
           <div className="row">
-            <div className="col-lg-5 offset-lg-4 ">
+            <div className="col-md-8 col-lg-5 offset-lg-4 ">
               <div className="content">
                 <h3>How can we help you?</h3>
                 <p>
