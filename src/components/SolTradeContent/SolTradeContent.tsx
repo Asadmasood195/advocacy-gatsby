@@ -15,7 +15,7 @@ const SolTradeContent = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6">
-              <img src={CongressImg} alt="" />
+              <img src={CongressImg} alt="" className='imgStyle' />
             </div>
             <div className="col-md-6">
               <Congress />
@@ -27,13 +27,13 @@ const SolTradeContent = () => {
               <FederalExecutive />
             </div>
             <div className="col-md-6">
-              <img src={FedralImg} alt="" />
+              <img src={FedralImg} alt="" className='imgStyle' />
             </div>
           </div>
           <br />
           <div className="row align-items-center">
             <div className="col-md-6">
-              <img src={StateImg} alt="" />
+              <img src={StateImg} alt="" className='imgStyle' />
             </div>
             <div className="col-md-6">
               <StateComponent />
@@ -45,7 +45,7 @@ const SolTradeContent = () => {
               <LocalComponent />
             </div>
             <div className="col-md-6">
-              <img src={LocalImg} alt="" />
+              <img src={LocalImg} alt="" className='imgStyle' />
             </div>
           </div>
         </div>

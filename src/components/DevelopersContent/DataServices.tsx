@@ -14,11 +14,11 @@ const DataServices = () => {
         staff, KnowWho has the data you need.
       </p>
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-xs-10 col-md-6">
           <div className="product-list">
             <a href="#" className="text-center">
               <div className="product-image">
-                <img src={Image} alt="" />
+                <img src={Image} alt="" className='imgStyle' />
               </div>
               <div className="product-title">2021 US Congress Directory</div>
             </a>
