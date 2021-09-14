@@ -54,7 +54,7 @@ const Header = ({ children }: any) => {
       flex-wrap
       align-items-center
       justify-content-center justify-content-md-between
-      container
+      container-fluid
     "
       >
         <Link to="/" className="d-flex align-items-center">
@@ -110,7 +110,7 @@ const Header = ({ children }: any) => {
               className="collapse navbar-collapse"
               id="navbarNavDarkDropdown"
             >
-              <ul className="navbar-nav">
+              <ul className="nav navbar-nav">
                 <li className="nav-item dropdown">
                   <Link
                     className="nav-link dropdown-toggle menu-main-product"
