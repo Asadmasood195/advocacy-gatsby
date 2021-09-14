@@ -42,8 +42,8 @@ const SolGrassRoot = () => {
           <div id="content">
             <div className="container">
               <div className="row align-items-center">
-                <div className="col-md-6">
-                  <img src={scCongress2} alt="sc-congress2" />
+                <div className="col-sm-5 col-md-6">
+                  <img src={scCongress2} alt="sc-congress2" className='imgStyle' />
                 </div>
                 <div className="col-md-6">
                   <Congress />
@@ -55,13 +55,13 @@ const SolGrassRoot = () => {
                   <FederalExecutive />
                 </div>
                 <div className="col-md-6">
-                  <img src={scfederal} alt="sc-federal" />
+                  <img src={scfederal} alt="sc-federal" className='imgStyle' />
                 </div>
               </div>
               <br />
               <div className="row align-items-center">
                 <div className="col-md-6">
-                  <img src={scState} alt="sc-state" />
+                  <img src={scState} alt="sc-state" className='imgStyle' />
                 </div>
                 <div className="col-md-6">
                   <StateComponent />
@@ -73,7 +73,7 @@ const SolGrassRoot = () => {
                   <LocalComponent />
                 </div>
                 <div className="col-md-6">
-                  <img src={scLocal2} alt="sc-local2" />
+                  <img src={scLocal2} alt="sc-local2" className='imgStyle' />
                 </div>
               </div>
             </div>

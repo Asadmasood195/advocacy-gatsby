@@ -2690,3 +2690,8 @@ nav .pagination li.active a {
   top: 35%;
   left: 35%;
 }
+
+.imgStyle {
+  width: 98%;
+  height: 100%;
+}

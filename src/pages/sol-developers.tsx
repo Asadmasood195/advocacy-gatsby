@@ -25,7 +25,7 @@ const SolDevelopers = () => {
             <div className="container">
               <div className="row">
                 <div className="col-md-1"></div>
-                <div className="col-md-8">
+                <div className="col-xs-12 col-md-8">
                   <div className="text-left text-banner">
                     <h1>DEVELOPERS</h1>
                     <h5>
@@ -35,15 +35,15 @@ const SolDevelopers = () => {
                     </h5>
                   </div>
                 </div>
-                <div className="col-md-3"></div>
+                {/* <div className="col-xs-10 col-md-3"></div> */}
               </div>
             </div>
           </div>
           <div id="content">
             <div className="container">
               <div className="row align-items-center">
-                <div className="col-md-6">
-                  <img src={DevSc} alt="" />
+                <div className="col-xs-10 col-md-10 ">
+                  <img src={DevSc} alt="" className='imgStyle' />
                 </div>
                 <div className="col-md-6">
                   <DataServices />
@@ -62,11 +62,11 @@ const SolDevelopers = () => {
                       has the data you need.
                     </p>
                     <div className="row">
-                      <div className="col-md-6">
+                      <div className="col-xs-10 col-md-6 ">
                         <div className="product-list">
                           <a href="#" className="text-center">
                             <div className="product-image">
-                              <img src={Image} alt="" />
+                              <img src={Image} alt="" className='imgStyle' />
                             </div>
                             <div className="product-title">
                               2021 US Congress Directory
@@ -78,7 +78,7 @@ const SolDevelopers = () => {
                         <div className="product-list">
                           <a href="#" className="text-center">
                             <div className="product-image">
-                              <img src={Image} alt="" />
+                              <img src={Image} alt="" className='imgStyle' />
                             </div>
                             <div className="product-title">
                               2021 US Congress Directory
@@ -90,7 +90,7 @@ const SolDevelopers = () => {
                         <div className="product-list">
                           <a href="#" className="text-center">
                             <div className="product-image">
-                              <img src={Image} alt="" />
+                              <img src={Image} alt="" className='imgStyle' />
                             </div>
                             <div className="product-title">
                               2021 US Congress Directory
@@ -102,7 +102,7 @@ const SolDevelopers = () => {
                         <div className="product-list">
                           <a href="#" className="text-center">
                             <div className="product-image">
-                              <img src={Image} alt="" />
+                              <img src={Image} alt="" className='imgStyle' />
                             </div>
                             <div className="product-title">
                               2021 US Congress Directory
@@ -120,7 +120,7 @@ const SolDevelopers = () => {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <img src={DevSc1} alt="" />
+                  <img src={DevSc1} alt="" className='imgStyle' />
                 </div>
               </div>
             </div>

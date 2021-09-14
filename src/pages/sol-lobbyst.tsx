@@ -38,7 +38,7 @@ const SolLobby = () => {
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-md-6">
-                  <StaticImage src="../assests/sc-lobbyst2.webp" />
+                  <StaticImage src="../assests/sc-lobbyst2.webp" className='imgStyle' />
                 </div>
                 <div className="col-md-6">
                   <div className="body-content">
