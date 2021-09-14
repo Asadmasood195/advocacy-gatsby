@@ -1677,7 +1677,7 @@
   dependencies:
     dequal "^2.0.2"
 
-"@sentry/browser@6.12.0":
+"@sentry/browser@6.12.0", "@sentry/browser@latest":
   version "6.12.0"
   resolved "https://registry.yarnpkg.com/@sentry/browser/-/browser-6.12.0.tgz#970cd68fa117a1e1336fdb373e3b1fa76cd63e2d"
   integrity sha512-wsJi1NLOmfwtPNYxEC50dpDcVY7sdYckzwfqz1/zHrede1mtxpqSw+7iP4bHADOJXuF+ObYYTHND0v38GSXznQ==
@@ -5557,6 +5557,13 @@ gatsby-plugin-scss-typescript@^5.1.0:
     core-js "^3.0.0"
     resolve-url-loader "^3.1.2"
     sass-loader "^10.1.1"
+
+gatsby-plugin-sentry@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sentry/-/gatsby-plugin-sentry-1.0.1.tgz#d146e3851488c9545f2c0689cad62bf6e7d1c653"
+  integrity sha512-rKIngbFbBwwGYJi1ayUtEz34tXxpLXvSMD3WWVmdtXs0wrYrlGs30nFJ4JJIxcA7fWtx3hQ2yd5O2ZyQ832G2g==
+  dependencies:
+    "@sentry/browser" latest
 
 gatsby-plugin-sharp@^3.13.0:
   version "3.13.0"

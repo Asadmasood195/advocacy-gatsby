@@ -5,17 +5,16 @@ module.exports = {
     title: "advocasy-gatsby-project",
   },
   plugins: [
-    {
-      resolve: "@sentry/gatsby",
-      options: {
-        dsn: "https://44bb0565459c44428e76fd2b96514e81@o997824.ingest.sentry.io/5956154",
-        sampleRate: 0.7,
-      },
-    },
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-plugin-sentry",
+      options: {
+        dsn: "https://44bb0565459c44428e76fd2b96514e81@o997824.ingest.sentry.io/5956154",
+      }
+    },
     {
       resolve: "gatsby-plugin-typescript",
       options: {
