@@ -84,7 +84,6 @@ const SolGovernment = () => {
         </div>
         <HowCanWeHelpSimple />
       </div>
-
     </Layout>
   )
 }

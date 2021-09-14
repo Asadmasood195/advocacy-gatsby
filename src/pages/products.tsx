@@ -45,7 +45,7 @@ const Products = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="body-content">
-                  <img src={Govbuddy} alt="" className="logo-icon" />
+                  <img src={Govbuddy} alt="" className="logo-icon imgStyle" />
                   <h4>California Legislature: Desktop Access with App</h4>
                   <p>
                     All the legislative information in our Pocket Directory of
@@ -59,13 +59,13 @@ const Products = () => {
                 </div>
               </div>
               <div className="col-md-6">
-                <img src={Government} alt="" />
+                <img src={Government} alt="" className='imgStyle' />
               </div>
             </div>
             <br />
             <div className="row">
               <div className="col-md-6">
-                <img src={Printed} alt="" />
+                <img src={Printed} alt="" className='imgStyle' />
               </div>
               <div className="col-md-6">
                 <div className="body-content">
@@ -104,13 +104,13 @@ const Products = () => {
                 </div>
               </div>
               <div className="col-md-6">
-                <img src={Digital} alt="" />
+                <img src={Digital} alt="" className='imgStyle' />
               </div>
             </div>
             <br />
             <div className="row">
               <div className="col-md-6 p-5">
-                <img src={Maps} alt="" />
+                <img src={Maps} alt="" className='imgStyle' />
               </div>
               <div className="col-md-6">
                 <div className="body-content">
@@ -133,7 +133,7 @@ const Products = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="body-content">
-                  <img src={Policy} className="logo-icon" />
+                  <img src={Policy} className="logo-icon imgStyle" />
                   <h4>Comprehensive Guide to City and County Officials</h4>
                   <p>
                     PolicyGuru is a searchable database of local government
@@ -147,18 +147,18 @@ const Products = () => {
                 </div>
               </div>
               <div className="col-md-6">
-                <img src={Policy2} alt="" />
+                <img src={Policy2} alt="" className='imgStyle' />
               </div>
             </div>
             <br />
             <div className="row">
               <div className="col-md-6">
-                <img src={Prit} alt="" />
+                <img src={Prit} alt="" className='imgStyle' />
               </div>
               <div className="col-md-6">
                 <div className="body-content">
                   <br />
-                  <img src={pritchard} className="logo-icon" alt="" />
+                  <img src={pritchard} className="logo-icon imgStyle" alt="" />
                   <h4>Industry leading educational courses</h4>
                   <p>
                     Online educational courses from experts on key areas of

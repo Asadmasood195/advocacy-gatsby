@@ -4,6 +4,12 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import ArrowRight16 from "../assests/octicons/arrow-right-16.svg"
 import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
+import scDev from "../assests/sc-dev.webp"
+import scLobby from "../assests/sc-lobbyst.webp"
+import scGovernment from "../assests/sc-government.webp"
+import scTrade from "../assests/sc-trade.webp"
+import scNonPro from "../assests/sc-nonpro.webp"
+import scGrass from "../assests/sc-grass.webp"
 
 const Solutions = () => {
   return (
@@ -20,7 +26,7 @@ const Solutions = () => {
             <div className="container">
               <div className="row">
                 <div className="col-md-1"></div>
-                <div className="col-md-8">
+                <div className="col-md-6">
                   <div className="text-left text-banner">
                     <h1>Advocacy’s Solutions</h1>
                     <h5>
@@ -36,10 +42,10 @@ const Solutions = () => {
           </div>
           <div id="content">
             <div className="row">
-              <div className="col-md-6">
-                <StaticImage src="../assests/sc-government.webp" />
+              <div className="col-xs-10 col-md-6">
+                <img src={scGovernment} className='imgStyle' />
               </div>
-              <div className="col-md-6">
+              <div className="col-xs-10 col-md-6">
                 <div className="body-content">
                   <h4>Government</h4>
                   <p>
@@ -106,13 +112,13 @@ const Solutions = () => {
                 </div>
               </div>
               <div className="col-md-6 align-right">
-                <StaticImage src="../assests/sc-trade.webp" />
+                <img src={scTrade} className='imgStyle' />
               </div>
             </div>
             <br />
             <div className="row">
               <div className="col-md-6">
-                <StaticImage src="../assests/sc-nonpro.webp" />
+                <img src={scNonPro} className='imgStyle' />
               </div>
               <div className="col-md-6">
                 <div className="body-content">
@@ -177,14 +183,14 @@ const Solutions = () => {
                   </Link>
                 </div>
               </div>
-              <div className="col-md-6 align-right">
-                <StaticImage src="../assests/sc-lobbyst.webp" />
+              <div className="col-md-6 ">
+                <img src={scLobby} className='imgStyle' />
               </div>
             </div>
             <br />
             <div className="row">
               <div className="col-md-6">
-                <StaticImage src="../assests/sc-grass.webp" />
+                <img src={scGrass} className='imgStyle' />
               </div>
               <div className="col-md-6">
                 <div className="body-content">
@@ -255,14 +261,13 @@ const Solutions = () => {
                   </Link>
                 </div>
               </div>
-              <div className="col-md-6 align-right">
-                <StaticImage src="../assests/sc-dev.webp" />
+              <div className="col-xs-10 col-md-6 ">
+                <img src={scDev} className='imgStyle' />
               </div>
             </div>
           </div>
         </div>
       </div>
-
       <HowCanWeHelpSimple />
     </Layout>
   )
