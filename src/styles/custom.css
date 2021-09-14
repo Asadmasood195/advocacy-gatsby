@@ -165,6 +165,28 @@ input.form-control {
    padding-bottom:20px; 
 } */
 
+/* mobile nav */
+.me-auto {
+  margin-top: 10%;
+}
+
+.dropdown-toggle.nav-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000 !important;
+  font-family: "Poppins", Sans-serif;
+}
+
+.dropdown-item {
+  text-align: center;
+}
+.nav-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000 !important;
+  font-family: "Poppins", Sans-serif;
+}
+
 #header {
   padding-top: 20px;
   max-width: 1320px;
@@ -278,6 +300,15 @@ input.form-control {
   padding: 4px 5px;
   vertical-align: top;
   margin-left: -10px;
+}
+#lblCartCountMobile {
+  font-size: 12px;
+  background: #ff0000;
+  color: #fff;
+  padding: 4px 5px;
+  vertical-align: top;
+  margin-left: -10px;
+  float: right;
 }
 
 #header .input-group input.form-control {

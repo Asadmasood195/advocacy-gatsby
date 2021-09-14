@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap"
 import MainLogo from "../../assests/logo.svg"
 import Govbuddy from "../../assests/mnu-govbuddy.webp"
 import Printed from "../../assests/mnu-printed.webp"
@@ -9,6 +10,7 @@ import PolicyGuru from "../../assests/mnu-policyguru.webp"
 import Pritchard from "../../assests/mnu-prit.webp"
 import CartIcon from "../../assests/octicons/cart.svg"
 import Search from "../../assests/octicons/search-16.svg"
+import useWindowDimensions from "../../hooks/UseDimenstion"
 
 const ProductsList = [
   {
@@ -43,10 +45,139 @@ const ProductsList = [
   },
 ]
 
+const Solutions = [
+  { title: "Government", link: "/sol-government" },
+  { title: "Trade Assoications", link: "/sol-trade" },
+  { title: " Non Profits", link: "/sol-nonpro" },
+  { title: "Lobbyist", link: "/sol-lobbyst" },
+  { title: "Grassroots Efforts", link: "/sol-grassroots" },
+  { title: "Developers", link: "/sol-developers" },
+]
+
 const Header = ({ children }: any) => {
   const [imgSrc, setImgSrc] = React.useState("1")
+  const { width } = useWindowDimensions()
 
-  return (
+  return width <= 768 ? (
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+      <Container>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Brand className="m-auto">
+          <Link to="/" className="d-flex align-items-center">
+            <img src={MainLogo} alt="Company Logo" width="100%" height="100%" />
+          </Link>
+        </Navbar.Brand>
+
+        <Nav.Item id="header">
+          <Nav.Item className="text-end" id="accounts">
+            <Link to="/cart" className="btn cart-icon">
+              <span className="badge badge-warning" id="lblCartCountMobile">
+                19
+              </span>
+              <CartIcon />
+            </Link>
+          </Nav.Item>
+        </Nav.Item>
+
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link>
+              <NavDropdown title="Products" id="collasible-nav-dropdown">
+                {ProductsList?.map(product => (
+                  <NavDropdown.Item>
+                    <Link className="dropdown-item" to={product.link}>
+                      {product.title}
+                    </Link>
+                  </NavDropdown.Item>
+                ))}
+              </NavDropdown>
+            </Nav.Link>
+
+            <Nav.Link>
+              <NavDropdown title="Solutions" id="collasible-nav-dropdown">
+                {Solutions?.map(solution => (
+                  <NavDropdown.Item>
+                    <Link className="dropdown-item" to={solution.link}>
+                      {solution.title}
+                    </Link>
+                  </NavDropdown.Item>
+                ))}
+              </NavDropdown>
+            </Nav.Link>
+
+            <Nav.Link>
+              <Link
+                className="nav-link"
+                to="/about"
+                role="button"
+                aria-expanded="false"
+              >
+                About Us
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                className="nav-link"
+                to="/brands"
+                role="button"
+                aria-expanded="false"
+              >
+                Our Brands
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                className="nav-link"
+                to="/contact"
+                role="button"
+                aria-expanded="false"
+              >
+                Contact Us
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                className="nav-link"
+                to="/register"
+                role="button"
+                aria-expanded="false"
+              >
+                Register
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                className="nav-link"
+                to="/login"
+                role="button"
+                aria-expanded="false"
+              >
+                Login
+              </Link>
+            </Nav.Link>
+          </Nav>
+          <form id="search" action="search" method="GET">
+            <div className="input-group">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Search Product Here..."
+                aria-label="Search Product Here..."
+                aria-describedby="button-addon2"
+              />
+              <button
+                className="btn btn-primary"
+                type="submit"
+                id="button-addon2"
+              >
+                <Search />
+              </button>
+            </div>
+          </form>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  ) : (
     <header className="border-bottom" id="header">
       <div
         className="
@@ -55,6 +186,7 @@ const Header = ({ children }: any) => {
       align-items-center
       justify-content-center justify-content-md-between
       container-fluid
+      navbar navbar-expand-lg
     "
       >
         <Link to="/" className="d-flex align-items-center">
@@ -204,36 +336,13 @@ const Header = ({ children }: any) => {
                     className="dropdown-menu"
                     aria-labelledby="navbarDarkDropdownMenuLink"
                   >
-                    <li>
-                      <Link className="dropdown-item" to="/sol-government">
-                        Government
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dropdown-item" to="/sol-trade">
-                        Trade Assoications
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dropdown-item" to="/sol-nonpro">
-                        Non Profits
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dropdown-item" to="/sol-lobbyst">
-                        Lobbyist
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dropdown-item" to="/sol-grassroots">
-                        Grassroots Efforts
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dropdown-item" to="/sol-developers">
-                        Developers
-                      </Link>
-                    </li>
+                    {Solutions?.map(solution => (
+                      <li>
+                        <Link className="dropdown-item" to={solution.link}>
+                          {solution.title}
+                        </Link>
+                      </li>
+                    ))}
                   </ul>
                 </li>
                 <li className="nav-item">
@@ -274,5 +383,4 @@ const Header = ({ children }: any) => {
     </header>
   )
 }
-
 export default Header
