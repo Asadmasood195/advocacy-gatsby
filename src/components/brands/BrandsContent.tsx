@@ -40,13 +40,13 @@ const BrandsContent = () => {
                 </div>
               </div>
               <div className="col-md-6">
-                <img src={scGov} alt="sc-gov" />
+                <img src={scGov} className="imgStyle" alt="sc-gov" />
               </div>
             </div>
             <br />
             <div className="row">
               <div className="col-md-6">
-                <img src={scPolicyguru} alt="sc-policyguru" />
+                <img src={scPolicyguru} className="imgStyle" alt="sc-policyguru" />
               </div>
               <div className="col-md-6">
                 <div className="body-content">
@@ -97,13 +97,13 @@ const BrandsContent = () => {
                 </div>
               </div>
               <div className="col-md-6">
-                <img src={scPritchard} alt="sc-pritchard" />
+                <img src={scPritchard} className="imgStyle" alt="sc-pritchard" />
               </div>
             </div>
             <br />
             <div className="row">
               <div className="col-md-6">
-                <img src={scCapitol} alt="sc-capitol" />
+                <img src={scCapitol} className="imgStyle" alt="sc-capitol" />
               </div>
               <div className="col-md-6">
                 <div className="body-content">

@@ -69,7 +69,7 @@ const Courses = () => {
               </div>
             </div>
             <div className="list-item">
-              <img src={PritchardSample} alt="sample" />
+              <img src={PritchardSample} className="imgStyle" alt="sample" />
               <Link to="#" className="morepr">
                 MORE COURSES COMING SOON
               </Link>
