@@ -1,11 +1,34 @@
-import { Link } from 'gatsby'
 import * as React from 'react'
+import { Link } from 'gatsby'
+import { Formik, Form } from 'formik';
+import * as yup from 'yup';
+import { useForm } from '../common/hooks/useForm';
 
 const LoginForm = () => {
+
+    const { onChange, onSubmit, values, setValues } = useForm(submitHandler, {
+        email: '',
+        password: '',
+    });
+
+    const loginFormSchema = yup.object().shape({
+        email: yup.string().email('Please Enter a valid Email').required('Please Enter an Email'),
+        password: yup.string().required('Please Enter The Password'),
+    });
+
+    function submitHandler() {
+        console.log('submit');
+    }
+
     return (
-        <form
-            //  method="post"
-            >
+        
+        <Formik initialValues={values}
+            validationSchema={loginFormSchema} 
+            onSubmit={values => {
+                console.log(values);
+            }}>
+            {({ errors, touched, values, handleChange }) => (
+            <Form>
             <div className="container">
             <div className="row">
                 <div className="col-md-6">
@@ -15,12 +38,20 @@ const LoginForm = () => {
                     Username or email <span className="red">*</span>
                     </label>
                     <input
-                    type="text"
-                    className="form-control"
+                    type="email"
+                    className={`form-control ${errors.email ? 'is-invalid' : ''}`}
                     id="ch-username"
                     aria-describedby="emailHelp"
                     placeholder="Your Username or email"
+                    name="email"            
+                    value={values.email}
+                    onChange={handleChange}
                     />
+                    {errors.email &&
+                    touched.email &&
+                    <span className="input-feedback">
+                        {errors.email}
+                    </span>}   
                 </div>
                 <div className="form-group">
                     <label htmlFor="ch-password">
@@ -28,11 +59,19 @@ const LoginForm = () => {
                     </label>
                     <input
                     type="password"
-                    className="form-control"
+                    className={`form-control ${errors.password ? 'is-invalid' : ''}`}
                     id="ch-password"
                     aria-describedby="emailHelp"
                     placeholder="Your Password"
+                    name="password"            
+                    value={values.password}
+                    onChange={handleChange}
                     />
+                    {errors.password &&
+                    touched.password &&
+                    <span className="input-feedback">
+                        {errors.password}
+                    </span>}   
                 </div>
                 </div>
             </div>
@@ -59,7 +98,9 @@ const LoginForm = () => {
                 <Link to="/forgot">Lost your password</Link>
             </p>
             </div>
-        </form>
+            </Form>
+        )}
+    </Formik>
     )
 }
 

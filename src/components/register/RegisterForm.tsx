@@ -1,11 +1,35 @@
-import { Link } from 'gatsby'
 import * as React from 'react'
+import { Formik, Form } from 'formik';
+import * as yup from 'yup';
+import { Link } from 'gatsby'
 import regStep from "../../assests/reg-step.png"
+import { useForm } from '../common/hooks/useForm';
+
 const RegisterForm = () => {
+    
+    const { onChange, onSubmit, values, setValues } = useForm(submitHandler, {
+        first_name: '',
+        last_name: '',
+    });
+
+    const registerFormSchema = yup.object().shape({
+        first_name: yup.string().required('Please Enter First Name'),
+        last_name: yup.string().required('Please Enter Last Name'),
+        email: yup.string().required('Please Enter an Email'),
+    });
+
+    function submitHandler() {
+        console.log('submit');
+    }
+
     return (
-        <form
-            //  method="post"
-            >
+        <Formik initialValues={values}
+        validationSchema={registerFormSchema} 
+        onSubmit={values => {
+            console.log(values);
+        }}>
+        {({ errors, touched, values, handleChange }) => (
+        <Form>
             <div className="container">
             <div className="row">
                 <div className="col-md-6">
@@ -31,10 +55,18 @@ const RegisterForm = () => {
                     </label>
                     <input
                     type="text"
-                    className="form-control"
+                    className={`form-control ${errors.first_name ? 'is-invalid' : ''}`}
                     id="ch-firstname"
                     placeholder="John"
+                    name="first_name"            
+                    value={values.first_name}
+                    onChange={handleChange}
                     />
+                    {errors.first_name &&
+                    touched.first_name &&
+                    <span className="input-feedback">
+                        {errors.first_name}
+                    </span>}   
                 </div>
                 <div className="form-group">
                     <label htmlFor="ch-lastname">
@@ -42,10 +74,18 @@ const RegisterForm = () => {
                     </label>
                     <input
                     type="text"
-                    className="form-control"
+                    className={`form-control ${errors.last_name ? 'is-invalid' : ''}`}
                     id="ch-lastname"
                     placeholder="Doe"
+                    name="last_name"            
+                    value={values.last_name}
+                    onChange={handleChange}
                     />
+                    {errors.last_name &&
+                    touched.last_name &&
+                    <span className="input-feedback">
+                        {errors.last_name}
+                    </span>}   
                 </div>
                 <div className="form-group">
                     <label htmlFor="ch-username">
@@ -53,10 +93,18 @@ const RegisterForm = () => {
                     </label>
                     <input
                     type="email"
-                    className="form-control"
+                    className={`form-control ${errors.email ? 'is-invalid' : ''}`}
                     id="ch-username"
                     placeholder="email@example.com"
+                    name="email"            
+                    value={values.email}
+                    onChange={handleChange}
                     />
+                    {errors.email &&
+                    touched.email &&
+                    <span className="input-feedback">
+                        {errors.email}
+                    </span>}   
                 </div>
                 </div>
             </div>
@@ -71,7 +119,9 @@ const RegisterForm = () => {
                 <Link to="/forgot">Lost your password</Link>
             </p>
             </div>
-        </form>
+            </Form>
+        )}
+    </Formik>
     )
 }
 

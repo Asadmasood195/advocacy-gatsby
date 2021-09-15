@@ -2664,3 +2664,6 @@ nav .pagination li.active a {
   width: 98%;
   height: 100%;
 }
+.input-feedback{
+  color: red;
+}
