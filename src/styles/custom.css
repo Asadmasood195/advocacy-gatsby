@@ -189,11 +189,7 @@ input.form-control {
   max-width: 1320px;
   margin: auto !important;
 }
-/* #mobileHeader {
-  /* padding-top: 20px; */
-  /* max-width: 1320px; */
-  /* margin: auto !important; */
-} */
+
 #header.border-bottom {
   border-bottom-color: #ff173d !important;
 }
@@ -2731,12 +2727,4 @@ nav .pagination li.active a {
 .imgStyle {
   width: 98%;
   height: 100%;
-}
-.input-feedback{
-  color: red;
-}
-.product-slider-img{
-  height:300px;
-  margin:0 auto;
-  display: block;
 }
