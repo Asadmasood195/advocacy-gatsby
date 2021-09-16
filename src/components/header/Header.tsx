@@ -67,7 +67,7 @@ const Header = ({ children }: any) => {
           <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
             <Container>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-              <Navbar.Brand className="m-auto">
+              <Navbar.Brand className="m-auto" style={{ paddingRight: "30px" }}>
                 <Link to="/" className="d-flex align-items-center">
                   <img
                     src={MainLogo}
@@ -78,8 +78,8 @@ const Header = ({ children }: any) => {
                 </Link>
               </Navbar.Brand>
 
-              <Nav.Item id="header">
-                <Nav.Item className="text-end" id="accounts">
+              <Nav.Item id="mobileHeader">
+                <Nav.Item className="text-end float-right" id="accounts">
                   <Link to="/cart" className="btn cart-icon">
                     <span
                       className="badge badge-warning"
