@@ -2667,3 +2667,8 @@ nav .pagination li.active a {
 .input-feedback{
   color: red;
 }
+.product-slider-img{
+  height:300px;
+  margin:0 auto;
+  display: block;
+}

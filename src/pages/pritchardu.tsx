@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Banner from "../components/banner/Banner"
 import Courses from "../components/pritchardu/Courses"
-import HowCanWeHelp from "../components/banner/HowCanWeHelp"
+import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
 
 const PritchardU = () => {
   return (
@@ -28,7 +28,7 @@ const PritchardU = () => {
           />
           <Courses />
         </div>
-        <HowCanWeHelp />
+        <HowCanWeHelpSimple />
       </div>
     </Layout>
   )

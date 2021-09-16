@@ -8,6 +8,21 @@ interface InitialStateInterface {
     password?: string
     phone?: string
     message?: string
+    company_name? : string
+    country? : string
+    city? : string
+    state? : string
+    zip? : string
+    street_address? : string
+    notes? : string
+    sales_tax? : string
+    customer_number? : string
+    po_number? : string
+    card_number? : string
+    expiration? : string
+    card_security? : string
+    e_check? : string
+    terms? : boolean
 }
 
 export const useForm = (callback: () => void,

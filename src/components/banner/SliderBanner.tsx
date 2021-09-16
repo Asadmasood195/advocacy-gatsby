@@ -200,47 +200,6 @@ const SliderBanner = () => {
                 </div>
               </section>
 
-              {/* <section>
-                <div
-                  style={{ backgroundImage: ` url(${PritBanner})` }}
-                  className="slider-homepage printed-dir"
-                >
-                  <div className="container">
-                    <div className="row align-items-center">
-                      <div className="col-md-6">
-                        <h2>Empowering Advocates with courses from experts.</h2>
-                        <p>
-                          At PritchardU, professionals learn new skills and earn
-                          certifications. Each student who successfully
-                          completes a PritchardU course earns a certificate of
-                          completion.
-                        </p>
-                        <div className="details">
-                          <span className="price">$600.00 </span>
-                          <span className="priceinfo">
-                            Per Student to Enroll
-                          </span>
-                        </div>
-                        <Link to="/pritchardu" className="btn btn-primary">
-                          LEARN MORE
-                          <ArrowRight16 className="svg" />
-                        </Link>
-                      </div>
-                      <div
-                        className="col-md-6"
-                        style={{ padding: "100px 0px" }}
-                      >
-                        <img
-                          src={SlPrit}
-                          alt=""
-                          style={{ height: "auto", width: "500px" }}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section> */}
-
               <section>
                 <div
                   style={{ backgroundImage: `url(${MapBanner})`, width: '100%' }}

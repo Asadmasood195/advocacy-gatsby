@@ -1,10 +1,9 @@
 import * as React from "react"
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import Banner from "../components/banner/Banner"
 import CustomPlans from "../components/policyGuru/CustomPlans"
-import HowCanWeHelp from "../components/banner/HowCanWeHelp"
+import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
 
 const PolicyGuru = () => {
   return (
@@ -25,7 +24,7 @@ const PolicyGuru = () => {
           />
           <CustomPlans />
         </div>
-        <HowCanWeHelp />
+        <HowCanWeHelpSimple />
       </div>
     </Layout>
   )
