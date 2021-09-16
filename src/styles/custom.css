@@ -165,10 +165,34 @@ input.form-control {
    padding-bottom:20px; 
 } */
 
+/* mobile nav */
+.me-auto {
+  margin-top: 10%;
+}
+
+.dropdown-toggle.nav-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000 !important;
+  font-family: "Poppins", Sans-serif;
+}
+
+.nav-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000 !important;
+  font-family: "Poppins", Sans-serif;
+}
+
 #header {
   padding-top: 20px;
   max-width: 1320px;
   margin: auto !important;
+}
+#mobileHeader {
+  padding-top: 20px;
+  /* max-width: 1320px; */
+  /* margin: auto !important; */
 }
 #header.border-bottom {
   border-bottom-color: #ff173d !important;
@@ -219,6 +243,9 @@ input.form-control {
 
 #header .nav-item {
   padding-right: 20px;
+}
+#mobileHeader .nav-item {
+  padding-right: 0px;
 }
 #header .nav-item a.nav-link {
   color: #000 !important;
@@ -271,6 +298,33 @@ input.form-control {
 #header #accounts .cart-icon .badge-warning[href] {
   background-color: #c67605;
 }
+#mobileHeader #accounts .me-2 {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff173d;
+}
+
+#mobileHeader #accounts .cart-icon img,
+#mobileHeader #accounts .cart-icon svg {
+  color: #000;
+  fill: #000;
+  width: 30px;
+  height: 30px;
+}
+
+#mobileHeader #accounts .cart-icon .badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+#mobileHeader #accounts .cart-icon .label-warning[href],
+#mobileHeader #accounts .cart-icon .badge-warning[href] {
+  background-color: #c67605;
+}
 #header #accounts .cart-icon #lblCartCount {
   font-size: 12px;
   background: #ff0000;
@@ -278,6 +332,15 @@ input.form-control {
   padding: 4px 5px;
   vertical-align: top;
   margin-left: -10px;
+}
+#lblCartCountMobile {
+  font-size: 12px;
+  background: #ff0000;
+  color: #fff;
+  padding: 4px 5px;
+  vertical-align: top;
+  margin-left: -10px;
+  float: right;
 }
 
 #header .input-group input.form-control {
@@ -339,6 +402,11 @@ input.form-control {
   width: 500px;
   /* display: block; */
 }
+
+/* .dropdown-toggle::after {
+  float: right !important;
+  margin-top: 15px !important;
+} */
 
 /* #header .menu-products li{
  
@@ -1185,7 +1253,7 @@ nav .pagination li.active a {
 }
 
 #homepage #product-categories {
-  padding: 80px 0px;
+  padding: 0px 0px 80px 0px;
 }
 #homepage #product-categories .box-prod-cat {
   padding: 20px 20px 0px;
@@ -1485,7 +1553,7 @@ nav .pagination li.active a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 550px;
+  min-height: 650px;
   position: relative;
 }
 
