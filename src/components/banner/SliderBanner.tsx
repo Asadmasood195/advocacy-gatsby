@@ -14,6 +14,8 @@ import SlPrinted from "../../assests/sl-printed.png"
 import SlPrit from "../../assests/sl-prit.png"
 import SlDigital from "../../assests/sl-digital.png"
 import SlMaps from "../../assests/sl-maps.png"
+import { useTheme } from "@material-ui/core/styles"
+import useMediaQuery from "@material-ui/core/useMediaQuery"
 
 const responsive = {
   superLargeDesktop: {
@@ -36,6 +38,8 @@ const responsive = {
 }
 
 const SliderBanner = () => {
+  const theme = useTheme()
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"))
   return (
     <>
       <div id="main">
@@ -80,13 +84,13 @@ const SliderBanner = () => {
                           <ArrowRight16 className="svg" />
                         </Link>
                       </div>
-                      {/* {width >= 700 ? ( */}
-                      <div className="col-md-6 text-center">
-                        <img src={SlGovBuddy} alt="SlGovBuddy" />
-                      </div>
-                      {/* ) : (
+                      {!isMobile ? (
+                        <div className="col-md-6 text-center">
+                          <img src={SlGovBuddy} alt="SlGovBuddy" />
+                        </div>
+                      ) : (
                         ""
-                      )} */}
+                      )}
                     </div>
                   </div>
                 </div>
@@ -115,13 +119,13 @@ const SliderBanner = () => {
                           <ArrowRight16 className="svg" />
                         </Link>
                       </div>
-                      {/* {width >= 700 ? ( */}
-                      <div className="col-md-6 text-center">
-                        <img src={SlPolicy} alt="Sl Policy" />
-                      </div>
-                      {/* ) : (
+                      {!isMobile ? (
+                        <div className="col-md-6 text-center">
+                          <img src={SlPolicy} alt="Sl Policy" />
+                        </div>
+                      ) : (
                         ""
-                      )} */}
+                      )}
                     </div>
                   </div>
                 </div>
@@ -154,13 +158,13 @@ const SliderBanner = () => {
                           <ArrowRight16 className="svg" />
                         </Link>
                       </div>
-                      {/* {width >= 700 ? ( */}
-                      <div className="col-md-6 align-right">
-                        <img src={SlPrinted} alt="Sl Print" />
-                      </div>
-                      {/* ) : (
+                      {!isMobile ? (
+                        <div className="col-md-6 align-right">
+                          <img src={SlPrinted} alt="Sl Print" />
+                        </div>
+                      ) : (
                         ""
-                      )} */}
+                      )}
                     </div>
                   </div>
                 </div>
@@ -192,17 +196,17 @@ const SliderBanner = () => {
                           <ArrowRight16 className="svg" />
                         </Link>
                       </div>
-                      {/* {width > 700 ? ( */}
-                      <div className="col-md-6 text-center">
-                        <img
-                          src={SlPrit}
-                          alt="SlGovBuddy"
-                          className="imgStyle"
-                        />
-                      </div>
-                      {/* ) : (
+                      {!isMobile ? (
+                        <div className="col-md-6 text-center">
+                          <img
+                            src={SlPrit}
+                            alt="SlGovBuddy"
+                            className="imgStyle"
+                          />
+                        </div>
+                      ) : (
                         ""
-                      )} */}
+                      )}
                     </div>
                   </div>
                 </div>
@@ -282,16 +286,16 @@ const SliderBanner = () => {
                           <ArrowRight16 className="svg" />
                         </Link>
                       </div>
-                      {/* {width >= 700 ? ( */}
-                      <div
-                        className="col-md-6 text-center"
-                        style={{ padding: "50px 0px" }}
-                      >
-                        <img src={SlDigital} style={{ height: "400px" }} />
-                      </div>
-                      {/* ) : (
+                      {!isMobile ? (
+                        <div
+                          className="col-md-6 text-center"
+                          style={{ padding: "50px 0px" }}
+                        >
+                          <img src={SlDigital} style={{ height: "400px" }} />
+                        </div>
+                      ) : (
                         ""
-                      )} */}
+                      )}
                     </div>
                   </div>
                 </div>
@@ -327,13 +331,13 @@ const SliderBanner = () => {
                           <ArrowRight16 className="svg" />
                         </Link>
                       </div>
-                      {/* {width >= 700 ? ( */}
-                      <div className="col-md-6 align-right">
-                        <img src={SlMaps} alt="Sl Maps" />
-                      </div>
-                      {/* ) : (
+                      {!isMobile ? (
+                        <div className="col-md-6 align-right">
+                          <img src={SlMaps} alt="Sl Maps" />
+                        </div>
+                      ) : (
                         ""
-                      )} */}
+                      )}
                     </div>
                   </div>
                 </div>

@@ -1,10 +1,14 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { useTheme } from "@material-ui/core/styles"
+import useMediaQuery from "@material-ui/core/useMediaQuery"
 
 const PrintedDirectory = () => {
+  const theme = useTheme()
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"))
   return (
     <div id="homepage">
-      <div id="printed-directories">
+      <div id={!isMobile ? "printed-directories" : ""}>
         <div className="row">
           <div className="col-md-3"></div>
           <div className="col-md-6">
