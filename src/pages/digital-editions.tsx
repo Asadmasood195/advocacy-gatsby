@@ -5,6 +5,9 @@ import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
 import CartIcon from "../assests/octicons/cart.svg"
 import Image2 from "../assests/sample2.webp"
 
+
+// Cards Data for Product Card
+
 const Product2021 = [
   {
     id: 1,
