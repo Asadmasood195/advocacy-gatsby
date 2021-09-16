@@ -65,32 +65,42 @@ const Header = ({ children }: any) => {
       {isMobile ? (
         <>
           <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-            <Container>
-              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-              <Navbar.Brand className="m-auto" style={{ paddingRight: "30px" }}>
-                <Link to="/" className="d-flex align-items-center">
-                  <img
-                    src={MainLogo}
-                    alt="Company Logo"
-                    width="100%"
-                    height="100%"
-                  />
-                </Link>
-              </Navbar.Brand>
-
-              <Nav.Item id="mobileHeader">
-                <Nav.Item className="text-end float-right" id="accounts">
-                  <Link to="/cart" className="btn cart-icon">
-                    <span
-                      className="badge badge-warning"
-                      id="lblCartCountMobile"
-                    >
-                      19
-                    </span>
-                    <CartIcon />
+            <Container className="align-center">
+              <div className="col-3">
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+              </div>
+              <div className="col-6">
+                <Navbar.Brand
+                  className="m-auto"
+                  style={{ paddingRight: "30px" }}
+                >
+                  <Link to="/" className="d-flex align-items-center">
+                    <img
+                      src={MainLogo}
+                      style={{ marginTop: "20px" }}
+                      alt="Company Logo"
+                      width="100%"
+                      height="100%"
+                    />
                   </Link>
+                </Navbar.Brand>
+              </div>
+
+              <div className="col-3">
+                <Nav.Item id="mobileHeader">
+                  <Nav.Item className="text-end float-right" id="accounts">
+                    <Link to="/cart" className="btn cart-icon">
+                      <span
+                        className="badge badge-warning"
+                        id="lblCartCountMobile"
+                      >
+                        19
+                      </span>
+                      <CartIcon />
+                    </Link>
+                  </Nav.Item>
                 </Nav.Item>
-              </Nav.Item>
+              </div>
 
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
