@@ -1,15 +1,13 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import ArrowRight16 from "../assests/octicons/arrow-right-16.svg"
 import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
-import scDev from "../assests/sc-dev.webp"
-import scLobby from "../assests/sc-lobbyst.webp"
-import scGovernment from "../assests/sc-government.webp"
-import scTrade from "../assests/sc-trade.webp"
-import scNonPro from "../assests/sc-nonpro.webp"
-import scGrass from "../assests/sc-grass.webp"
+import Government from "../components/solutions/Government"
+import Trade from "../components/solutions/Trade"
+import NonProfit from "../components/solutions/NonProfit"
+import Lobby from "../components/solutions/Lobby"
+import GrassRoots from "../components/solutions/GrassRoots"
+import Developer from "../components/solutions/Developer"
 
 const Solutions = () => {
   return (
@@ -41,230 +39,17 @@ const Solutions = () => {
             </div>
           </div>
           <div id="content">
-            <div className="row">
-              <div className="col-xs-10 col-md-6">
-                <img src={scGovernment} className='imgStyle' />
-              </div>
-              <div className="col-xs-10 col-md-6">
-                <div className="body-content">
-                  <h4>Government</h4>
-                  <p>
-                    Grassroots and advocacy professionals have unique needs, and
-                    Advocacy has your solutions listed below.
-                  </p>
-                  <ul>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      Congress
-                    </li>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      Federal Executive
-                    </li>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      State
-                    </li>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      Local
-                    </li>
-                  </ul>
-                  <Link
-                    to="/sol-government"
-                    className="btn btn-outline-primary"
-                  >
-                    More Info
-                  </Link>
-                </div>
-              </div>
-            </div>
+              <Government />
             <br />
-            <div className="row">
-              <div className="col-md-6">
-                <div className="body-content">
-                  <h4>Trade Associations</h4>
-                  <p>
-                    Grassroots and advocacy professionals have unique needs, and
-                    Advocacy has your solutions listed below.
-                  </p>
-                  <ul>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      Congress
-                    </li>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      Federal Executive
-                    </li>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      State
-                    </li>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      Local
-                    </li>
-                  </ul>
-                  <Link to="/sol-trade" className="btn btn-outline-primary">
-                    More Info
-                  </Link>
-                </div>
-              </div>
-              <div className="col-md-6 align-right">
-                <img src={scTrade} className='imgStyle' />
-              </div>
-            </div>
+              <Trade />
             <br />
-            <div className="row">
-              <div className="col-md-6">
-                <img src={scNonPro} className='imgStyle' />
-              </div>
-              <div className="col-md-6">
-                <div className="body-content">
-                  <h4>Non-Profits</h4>
-                  <p>
-                    Grassroots and advocacy professionals have unique needs, and
-                    Advocacy has your solutions listed below.
-                  </p>
-                  <ul>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      Congress
-                    </li>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      Federal Executive
-                    </li>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      State
-                    </li>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      Local
-                    </li>
-                  </ul>
-                  <Link to="/sol-nonpro" className="btn btn-outline-primary">
-                    More Info
-                  </Link>
-                </div>
-              </div>
-            </div>
+              <NonProfit />
             <br />
-            <div className="row">
-              <div className="col-md-6">
-                <div className="body-content">
-                  <h4>Lobbyst</h4>
-                  <p>
-                    Grassroots and advocacy professionals have unique needs, and
-                    Advocacy has your solutions listed below.
-                  </p>
-                  <ul>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      Congress
-                    </li>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      Federal Executive
-                    </li>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      State
-                    </li>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      Local
-                    </li>
-                  </ul>
-                  <Link to="/sol-lobbyst" className="btn btn-outline-primary">
-                    More Info
-                  </Link>
-                </div>
-              </div>
-              <div className="col-md-6 ">
-                <img src={scLobby} className='imgStyle' />
-              </div>
-            </div>
+              <Lobby />
             <br />
-            <div className="row">
-              <div className="col-md-6">
-                <img src={scGrass} className='imgStyle' />
-              </div>
-              <div className="col-md-6">
-                <div className="body-content">
-                  <h4>Grassroots Efforts</h4>
-                  <p>
-                    Grassroots and advocacy professionals have unique needs, and
-                    Advocacy has your solutions listed below.
-                  </p>
-                  <ul>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      Congress
-                    </li>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      Federal Executive
-                    </li>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      State
-                    </li>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      Local
-                    </li>
-                  </ul>
-                  <Link
-                    to="/sol-grassroots"
-                    className="btn btn-outline-primary"
-                  >
-                    More Info
-                  </Link>
-                </div>
-              </div>
-            </div>
+              <GrassRoots />
             <br />
-            <div className="row">
-              <div className="col-md-6">
-                <div className="body-content">
-                  <h4>Developer</h4>
-                  <p>
-                    Grassroots and advocacy professionals have unique needs, and
-                    Advocacy has your solutions listed below.
-                  </p>
-                  <ul>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      Congress
-                    </li>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      Federal Executive
-                    </li>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      State
-                    </li>
-                    <li>
-                      <ArrowRight16 className="svg" />
-                      Local
-                    </li>
-                  </ul>
-                  <Link
-                    to="/sol-developers"
-                    className="btn btn-outline-primary"
-                  >
-                    More Info
-                  </Link>
-                </div>
-              </div>
-              <div className="col-xs-10 col-md-6 ">
-                <img src={scDev} className='imgStyle' />
-              </div>
-            </div>
+            <Developer />
           </div>
         </div>
       </div>

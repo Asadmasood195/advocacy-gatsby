@@ -41,7 +41,7 @@ const Summary = () => {
                 </tr>
             </tbody>
             </table>
-            <form action="checkout.html">
+            <form action="checkout">
             <button type="submit" className="btn btn-default">
                 Check out
             </button>

@@ -27,6 +27,7 @@
     "@types/react-dom": "^17.0.9",
     "@types/react-helmet": "^6.1.2",
     "bootstrap": "^5.1.1",
+    "formik": "^2.2.9",
     "gatsby": "^3.12.1",
     "gatsby-image": "^3.11.0",
     "gatsby-link": "^3.12.0",
@@ -50,6 +51,7 @@
     "react-helmet": "^6.1.0",
     "react-multi-carousel": "^2.6.5",
     "react-responsive-carousel": "^3.2.21",
-    "sass": "^1.38.1"
+    "sass": "^1.38.1",
+    "yup": "^0.32.9"
   }
 }

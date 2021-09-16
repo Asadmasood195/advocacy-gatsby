@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link } from "gatsby"
-
 import ArrowRight16 from "../../assests/octicons/arrow-right-16.svg"
 
 const HowCanWeHelpSimple = () => {

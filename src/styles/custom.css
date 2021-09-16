@@ -2732,3 +2732,11 @@ nav .pagination li.active a {
   width: 98%;
   height: 100%;
 }
+.input-feedback{
+  color: red;
+}
+.product-slider-img{
+  height:300px;
+  margin:0 auto;
+  display: block;
+}
