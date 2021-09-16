@@ -12,16 +12,21 @@ const CompanyLogos = () => {
           <div className="container">
             <div className="row text-center align-items-end">
               <div className="col-md-3">
-                <img src={Capitol} alt="Capitol" />
+                <img className="mb-5" src={Capitol} alt="Capitol" />
               </div>
               <div className="col-md-3">
-                <img src={Govbuddy} alt="Govbuddy" />
+                <img className="mb-5" src={Govbuddy} alt="Govbuddy" />
               </div>
               <div className="col-md-3">
-                <img src={PolicyGuru} alt="PolicyGuru" />
+                <img className="mb-5" src={PolicyGuru} alt="PolicyGuru" />
               </div>
               <div className="col-md-3">
-                <img src={Pritchard} alt="Pritchard" width="90%" />
+                <img
+                  className="mb-5"
+                  src={Pritchard}
+                  alt="Pritchard"
+                  width="90%"
+                />
               </div>
             </div>
           </div>

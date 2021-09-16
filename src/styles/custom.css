@@ -1253,7 +1253,7 @@ nav .pagination li.active a {
 }
 
 #homepage #product-categories {
-  padding: 80px 0px;
+  padding: 0px 0px 80px 0px;
 }
 #homepage #product-categories .box-prod-cat {
   padding: 20px 20px 0px;
@@ -1553,7 +1553,7 @@ nav .pagination li.active a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 550px;
+  min-height: 650px;
   position: relative;
 }
 
