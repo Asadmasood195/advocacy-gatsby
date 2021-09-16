@@ -1,12 +1,10 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import useWindowDimensions from "../../Hooks/useWindowDimensions"
 
 const PrintedDirectory = () => {
-  const { width } = useWindowDimensions()
   return (
     <div id="homepage">
-      <div id={width > 768 ? "printed-directories" : ''}>
+      <div id="printed-directories">
         <div className="row">
           <div className="col-md-3"></div>
           <div className="col-md-6">

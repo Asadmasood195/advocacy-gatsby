@@ -14,7 +14,6 @@ import SlPrinted from "../../assests/sl-printed.png"
 import SlPrit from "../../assests/sl-prit.png"
 import SlDigital from "../../assests/sl-digital.png"
 import SlMaps from "../../assests/sl-maps.png"
-import useWindowDimensions from "../../Hooks/useWindowDimensions"
 
 const responsive = {
   superLargeDesktop: {
@@ -37,8 +36,6 @@ const responsive = {
 }
 
 const SliderBanner = () => {
-  const { width } = useWindowDimensions()
-  console.log(width)
   return (
     <>
       <div id="main">
@@ -83,11 +80,13 @@ const SliderBanner = () => {
                           <ArrowRight16 className="svg" />
                         </Link>
                       </div>
-                      {width >= 700 ?
-                        <div className="col-md-6 text-center">
-                          <img src={SlGovBuddy} alt="SlGovBuddy" />
-                        </div>
-                        : ''}
+                      {/* {width >= 700 ? ( */}
+                      <div className="col-md-6 text-center">
+                        <img src={SlGovBuddy} alt="SlGovBuddy" />
+                      </div>
+                      {/* ) : (
+                        ""
+                      )} */}
                     </div>
                   </div>
                 </div>
@@ -116,11 +115,13 @@ const SliderBanner = () => {
                           <ArrowRight16 className="svg" />
                         </Link>
                       </div>
-                      {width >= 700 ?
-                        <div className="col-md-6 text-center">
-                          <img src={SlPolicy} alt="Sl Policy" />
-                        </div>
-                        : ''}
+                      {/* {width >= 700 ? ( */}
+                      <div className="col-md-6 text-center">
+                        <img src={SlPolicy} alt="Sl Policy" />
+                      </div>
+                      {/* ) : (
+                        ""
+                      )} */}
                     </div>
                   </div>
                 </div>
@@ -153,16 +154,17 @@ const SliderBanner = () => {
                           <ArrowRight16 className="svg" />
                         </Link>
                       </div>
-                      {width >= 700 ?
-                        <div className="col-md-6 align-right">
-                          <img src={SlPrinted} alt="Sl Print" />
-                        </div>
-                        : ''}
+                      {/* {width >= 700 ? ( */}
+                      <div className="col-md-6 align-right">
+                        <img src={SlPrinted} alt="Sl Print" />
+                      </div>
+                      {/* ) : (
+                        ""
+                      )} */}
                     </div>
                   </div>
                 </div>
               </section>
-
 
               <section>
                 <div
@@ -190,11 +192,17 @@ const SliderBanner = () => {
                           <ArrowRight16 className="svg" />
                         </Link>
                       </div>
-                      {width > 700 ?
-                        <div className="col-md-6 text-center">
-                          <img src={SlPrit} alt="SlGovBuddy" className="imgStyle" />
-                        </div>
-                        : ''}
+                      {/* {width > 700 ? ( */}
+                      <div className="col-md-6 text-center">
+                        <img
+                          src={SlPrit}
+                          alt="SlGovBuddy"
+                          className="imgStyle"
+                        />
+                      </div>
+                      {/* ) : (
+                        ""
+                      )} */}
                     </div>
                   </div>
                 </div>
@@ -243,7 +251,10 @@ const SliderBanner = () => {
 
               <section>
                 <div
-                  style={{ backgroundImage: `url(${MapBanner})`, width: '100%' }}
+                  style={{
+                    backgroundImage: `url(${MapBanner})`,
+                    width: "100%",
+                  }}
                   className="slider-homepage printed-dir"
                 >
                   <div className="container">
@@ -271,14 +282,16 @@ const SliderBanner = () => {
                           <ArrowRight16 className="svg" />
                         </Link>
                       </div>
-                      {width >= 700 ?
-                        <div
-                          className="col-md-6 text-center"
-                          style={{ padding: "50px 0px" }}
-                        >
-                          <img src={SlDigital} style={{ height: "400px" }} />
-                        </div>
-                        : ''}
+                      {/* {width >= 700 ? ( */}
+                      <div
+                        className="col-md-6 text-center"
+                        style={{ padding: "50px 0px" }}
+                      >
+                        <img src={SlDigital} style={{ height: "400px" }} />
+                      </div>
+                      {/* ) : (
+                        ""
+                      )} */}
                     </div>
                   </div>
                 </div>
@@ -314,11 +327,13 @@ const SliderBanner = () => {
                           <ArrowRight16 className="svg" />
                         </Link>
                       </div>
-                      {width >= 700 ?
-                        <div className="col-md-6 align-right">
-                          <img src={SlMaps} alt="Sl Maps" />
-                        </div>
-                        : ''}
+                      {/* {width >= 700 ? ( */}
+                      <div className="col-md-6 align-right">
+                        <img src={SlMaps} alt="Sl Maps" />
+                      </div>
+                      {/* ) : (
+                        ""
+                      )} */}
                     </div>
                   </div>
                 </div>
