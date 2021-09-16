@@ -189,11 +189,11 @@ input.form-control {
   max-width: 1320px;
   margin: auto !important;
 }
-#mobileHeader {
+/* #mobileHeader {
   /* padding-top: 20px; */
   /* max-width: 1320px; */
   /* margin: auto !important; */
-}
+} */
 #header.border-bottom {
   border-bottom-color: #ff173d !important;
 }
