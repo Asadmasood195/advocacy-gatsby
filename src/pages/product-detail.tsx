@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import AliceCarousel from 'react-alice-carousel';
 import Layout from "../components/layout"
 import CartIcon from "../assests/octicons/cart.svg"
 import Image1 from "../assests/sample.webp"
@@ -9,7 +8,6 @@ import Image3 from "../assests/sample1.webp"
 import Image4 from "../assests/sample2.webp"
 import Image5 from "../assests/sample4.webp"
 import CartInput from "../components/cart/CartInput"
-import { boolean } from "yup/lib/locale";
 
 const ProductImages = [
   { Image: Image1 },
@@ -69,7 +67,6 @@ const ProductDetail = () => {
                 <div className="row">
                   <div className="col-md-4">
                     <div className="product-images-for">
-                      <AliceCarousel mouseTracking items={items} />
                       {ProductImages.map(data => (
                         <div
                           className="image-item"
