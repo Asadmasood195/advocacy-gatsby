@@ -8,6 +8,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-3">
+
             <div className="col-footer">
               <div className="logo-footer">
                 <img src={Logo} alt="" />
@@ -25,7 +26,7 @@ const Footer = () => {
                   <Link to="/about">About Us</Link>
                 </li>
                 <li>
-                  <Link to="bbrands">Our Brands</Link>
+                  <Link to="brands">Our Brands</Link>
                 </li>
                 <li>
                   <Link to="/shop">Shop</Link>
