@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
+import ImageGallery from 'react-image-gallery'
 import Layout from "../components/layout"
 import CartIcon from "../assests/octicons/cart.svg"
 import Image1 from "../assests/sample.webp"
@@ -10,7 +9,6 @@ import Image3 from "../assests/sample1.webp"
 import Image4 from "../assests/sample2.webp"
 import Image5 from "../assests/sample4.webp"
 import CartInput from "../components/cart/CartInput"
-import { boolean } from "yup/lib/locale";
 
 const ProductImages = [
   { Image: Image1 },
@@ -46,11 +44,28 @@ const Products = [
   },
 ]
 
-const handleDragStart = (e:any) => e.preventDefault();
-
-const items = Products.map(product => {
-    return (<img key={product.id} className="product-slider-img" src={product.productImage} onDragStart={handleDragStart} />)
-  })
+const images = [
+  {
+    original: Image1,
+    thumbnail: Image1,
+  },
+  {
+    original: Image2,
+    thumbnail: Image2,
+  },
+  {
+    original: Image1,
+    thumbnail: Image1,
+  },
+  {
+    original: Image2,
+    thumbnail: Image2,
+  },
+  {
+    original: Image1,
+    thumbnail: Image1,
+  },
+];
 
 const ProductDetail = () => {
   return (
@@ -70,15 +85,7 @@ const ProductDetail = () => {
                 <div className="row">
                   <div className="col-md-4">
                     <div className="product-images-for">
-                    <AliceCarousel mouseTracking items={items} />
-                      {ProductImages.map(data => (
-                        <div
-                          className="image-item"
-                          style={{
-                            background: `url(${data.Image}) no-repeat center`,
-                          }}
-                        />
-                      ))}
+                      <ImageGallery showFullscreenButton={false} showPlayButton={false} className="product-slider" items={images} />
                     </div>
                   </div>
                   <div className="col-md-8">
@@ -193,7 +200,7 @@ const ProductDetail = () => {
                 <div className="row">
                   {Products.map(product => {
                     return (
-                      <div className="col-md-3">
+                      <div key={product.id} className="col-md-3">
                         <div className="product-item">
                           <Link to="/product-detail" className="product-detail">
                             <div

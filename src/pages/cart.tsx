@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import CartSvg from "../assests/octicons/cart.svg"
-import HowCanWeHelp from "../components/banner/HowCanWeHelp"
+import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
 import Summary from "../components/cart/Summary"
 import GovbuddyIcon from "../assests/ico-govbuddy.webp"
 import Products from "../components/cart/products"
@@ -66,7 +66,7 @@ const Cart = () => {
             </div>
           </div>
         </div>
-        <HowCanWeHelp />
+        <HowCanWeHelpSimple />
       </div>
     </Layout>
   )

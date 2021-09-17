@@ -29,6 +29,7 @@ const CartInput = () => {
                 className="form-control numspin"
                 placeholder=""
                 value={currentValue}
+                readOnly={true}
             />
             <button
                 style={{ minWidth: "2.5rem" }}

@@ -27,6 +27,7 @@
     url("../assests/googleFonts/Poppins/Poppins-Regular.ttf") format("truetype"),
     url("../assests/googleFonts/Poppins/Poppins-Thin.ttf") format("truetype");
 } */
+@import "~react-image-gallery/styles/css/image-gallery.css";
 
 body {
   font-family: "Inter";
@@ -2727,4 +2728,21 @@ nav .pagination li.active a {
 .imgStyle {
   width: 98%;
   height: 100%;
+}
+
+.input-feedback{
+  color: red;
+}
+.image-gallery-slide img{
+  height:200px !important;
+}
+.image-gallery-thumbnail-image{
+  height:100px;
+  width:auto !important;
+}
+.image-gallery-thumbnail.active, .image-gallery-thumbnail:focus, .image-gallery-thumbnail:hover{
+  border: 2px solid #fff !important;
+}
+.image-gallery-left-nav .image-gallery-svg, .image-gallery-right-nav .image-gallery-svg{
+  height:30px;
 }
