@@ -1,9 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-<<<<<<< HEAD
-=======
-import ImageGallery from 'react-image-gallery'
->>>>>>> 0c44feb49bb20ba24634121d0c230cc7215318f1
+import ImageGallery from "react-image-gallery"
 import Layout from "../components/layout"
 import CartIcon from "../assests/octicons/cart.svg"
 import Image1 from "../assests/sample.webp"
@@ -88,18 +85,7 @@ const ProductDetail = () => {
                 <div className="row">
                   <div className="col-md-4">
                     <div className="product-images-for">
-<<<<<<< HEAD
-                      {ProductImages.map(data => (
-                        <div
-                          className="image-item"
-                          style={{
-                            background: `url(${data.Image}) no-repeat center`,
-                          }}
-                        />
-                      ))}
-=======
                       <ImageGallery showFullscreenButton={false} showPlayButton={false} className="product-slider" items={images} />
->>>>>>> 0c44feb49bb20ba24634121d0c230cc7215318f1
                     </div>
                   </div>
                   <div className="col-md-8">
