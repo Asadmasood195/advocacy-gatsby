@@ -1,15 +1,16 @@
 import * as React from "react"
-import Layout from "../components/layout"
+import Layout from "../Components/Layout/Layout"
 import { Link } from "gatsby"
-import Congress from "../components/SolTradeContent/Congress"
-import FederalExecutive from "../components/SolTradeContent/FederalExecutive"
-import StateComponent from "../components/SolTradeContent/StateComponent"
-import LocalComponent from "../components/SolTradeContent/LocalComponent"
-import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
-import scCongress from "../assests/sc-congress.webp"
-import scFederal from "../assests/sc-federal.webp"
-import scState from "../assests/sc-state.webp"
-import scLocal from "../assests/sc-local.webp"
+import Congress from "../Components/SolTradeContent/Congress"
+import FederalExecutive from "../Components/SolTradeContent/FederalExecutive"
+import StateComponent from "../Components/SolTradeContent/StateComponent"
+import LocalComponent from "../Components/SolTradeContent/LocalComponent"
+import HowCanWeHelpSimple from "../Components/Banner/HowCanWeHelpSimple"
+import congressImg from "../Assests/sc-congress.webp"
+import scCongress from "../Assests/sc-congress.webp"
+import scFederal from "../Assests/sc-federal.webp"
+import scState from "../Assests/sc-state.webp"
+import scLocal from "../Assests/sc-local.webp"
 import { StaticImage } from "gatsby-plugin-image"
 
 const SolGovernment = () => {
@@ -44,7 +45,7 @@ const SolGovernment = () => {
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-md-6">
-                  <StaticImage src="../assests/sc-congress.webp" className='imgStyle' />
+                  <img src={scCongress} className='imgStyle' alt='imagePic' />
                 </div>
                 <div className="col-md-6">
                   <Congress />
@@ -56,13 +57,13 @@ const SolGovernment = () => {
                   <FederalExecutive />
                 </div>
                 <div className="col-md-6">
-                  <StaticImage src="../assests/sc-federal.png" className='imgStyle' />
+                  <img src={scFederal} className='imgStyle' alt='imagePic' />
                 </div>
               </div>
               <br />
               <div className="row align-items-center">
                 <div className="col-md-6">
-                  <StaticImage src="../assests/sc-state.webp" className='imgStyle' />
+                  <img src={scState} className='imgStyle' alt='imagePic' />
                 </div>
                 <div className="col-md-6">
                   <StateComponent />
@@ -76,7 +77,7 @@ const SolGovernment = () => {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <StaticImage src="../assests/sc-local.webp" className='imgStyle' />
+                  <img src={scLocal} className='imgStyle' alt='imagePic' />
                 </div>
               </div>
             </div>

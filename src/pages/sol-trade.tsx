@@ -1,9 +1,9 @@
 import * as React from "react"
-import Layout from "../components/layout"
+import Layout from "../Components/Layout/Layout"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
-import SolTradeContent from "../components/SolTradeContent/SolTradeContent"
+import HowCanWeHelpSimple from "../Components/Banner/HowCanWeHelpSimple"
+import SolTradeContent from "../Components/SolTradeContent/SolTradeContent"
 
 const SolTrade = () => {
     return (

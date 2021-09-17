@@ -1,15 +1,15 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap"
-import MainLogo from "../../assests/logo.svg"
-import Govbuddy from "../../assests/mnu-govbuddy.webp"
-import Printed from "../../assests/mnu-printed.webp"
-import Maps from "../../assests/mnu-maps.webp"
-import Digital from "../../assests/mnu-digital.webp"
-import PolicyGuru from "../../assests/mnu-policyguru.webp"
-import Pritchard from "../../assests/mnu-prit.webp"
-import CartIcon from "../../assests/octicons/cart.svg"
-import Search from "../../assests/octicons/search-16.svg"
+import MainLogo from "../../Assests/logo.svg"
+import Govbuddy from "../../Assests/mnu-govbuddy.webp"
+import Printed from "../../Assests/mnu-printed.webp"
+import Maps from "../../Assests/mnu-maps.webp"
+import Digital from "../../Assests/mnu-digital.webp"
+import PolicyGuru from "../../Assests/mnu-policyguru.webp"
+import Pritchard from "../../Assests/mnu-prit.webp"
+import CartIcon from "../../Assests/Svg-Icons/cart.svg"
+import Search from "../../Assests/Svg-Icons/search-16.svg"
 import { useTheme } from "@material-ui/core/styles"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
 
@@ -371,7 +371,7 @@ const Header = ({ children }: any) => {
                         >
                           {Solutions?.map((solution, index) => (
                             <li
-                            key={index}>
+                              key={index}>
                               <Link
                                 className="dropdown-item"
                                 to={solution.link}

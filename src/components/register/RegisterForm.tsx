@@ -2,8 +2,8 @@ import * as React from 'react'
 import { Formik, Form } from 'formik';
 import * as yup from 'yup';
 import { Link } from 'gatsby'
-import regStep from "../../assests/reg-step.png"
-import { useForm } from '../common/hooks/useForm';
+import regStep from "../../Assests/reg-step.png"
+import { useForm } from '../Common/hooks/useForm';
 
 const RegisterForm = () => {
     

@@ -1,9 +1,9 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Banner from "../components/banner/Banner"
-import PrivacyPolicy from "../components/legal/PrivacyPolicy"
+import Layout from "../Components/Layout/Layout"
+import Banner from "../Components/Banner/Banner"
+import PrivacyPolicy from "../Components/Legal/PrivacyPolicy"
 
 const privacy = () => {
   return (

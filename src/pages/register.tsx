@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import RegisterForm from "../components/register/RegisterForm"
+import Layout from "../Components/Layout/Layout"
+import RegisterForm from "../Components/Register/RegisterForm"
 
 const Register = () => {
   return (

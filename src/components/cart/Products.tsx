@@ -1,6 +1,7 @@
+import { Link } from 'gatsby'
 import * as React from 'react'
-import Image from "../../assests/sample.webp"
-import X16 from "../../assests/octicons/x-16.svg"
+import Image from "../../Assests/sample.webp"
+import X16 from "../../Assests/Svg-Icons/x-16.svg"
 import CartInput from "./CartInput"
 
 const Products = () => {
@@ -41,9 +42,9 @@ const Products = () => {
                         return (
                             <tr key={product.id}>
                                 <td>
-                                    <a href="#" className="btn-delete">
+                                    <Link to="/" className="btn-delete">
                                         <X16 className="svg" />
-                                    </a>
+                                    </Link>
                                 </td>
                                 <td className="product-image">
                                     <img src={product.img} alt="sample" />

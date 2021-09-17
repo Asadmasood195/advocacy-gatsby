@@ -1,11 +1,11 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import Layout from "../components/layout"
-import CartSvg from "../assests/octicons/cart.svg"
-import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
-import Summary from "../components/cart/Summary"
-import GovbuddyIcon from "../assests/ico-govbuddy.webp"
-import Products from "../components/cart/Products"
+import Layout from "../Components/Layout/Layout"
+import CartSvg from "../Assests/Svg-Icons/cart.svg"
+import HowCanWeHelpSimple from "../Components/Banner/HowCanWeHelpSimple"
+import Summary from "../Components/Cart/Summary"
+import GovbuddyIcon from "../Assests/ico-govbuddy.webp"
+import Products from "../Components/Cart/Products"
 
 const Cart = () => {
   return (

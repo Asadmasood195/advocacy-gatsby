@@ -1,13 +1,13 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import Layout from "../components/layout"
-import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
-import Government from "../components/solutions/Government"
-import Trade from "../components/solutions/Trade"
-import NonProfit from "../components/solutions/NonProfit"
-import Lobby from "../components/solutions/Lobby"
-import GrassRoots from "../components/solutions/GrassRoots"
-import Developer from "../components/solutions/Developer"
+import Layout from "../Components/Layout/Layout"
+import HowCanWeHelpSimple from "../Components/Banner/HowCanWeHelpSimple"
+import Government from "../Components/Solutions/Government"
+import Trade from "../Components/Solutions/Trade"
+import NonProfit from "../Components/Solutions/NonProfit"
+import Lobby from "../Components/Solutions/Lobby"
+import GrassRoots from "../Components/Solutions/GrassRoots"
+import Developer from "../Components/Solutions/Developer"
 
 const Solutions = () => {
   return (

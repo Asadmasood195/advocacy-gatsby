@@ -3,10 +3,10 @@ import Congress from "./Congress"
 import FederalExecutive from "./FederalExecutive"
 import LocalComponent from "./LocalComponent"
 import StateComponent from "./StateComponent"
-import CongressImg from "../../assests/sc-congress.webp"
-import FedralImg from "../../assests/sc-federal.webp"
-import StateImg from "../../assests/sc-state.webp"
-import LocalImg from "../../assests/sc-local.webp"
+import CongressImg from "../../Assests/sc-congress.webp"
+import FedralImg from "../../Assests/sc-federal.webp"
+import StateImg from "../../Assests/sc-state.webp"
+import LocalImg from "../../Assests/sc-local.webp"
 
 const SolTradeContent = () => {
   return (

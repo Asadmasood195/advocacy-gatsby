@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import ScRand from "../../assests/sc-rand1.webp"
-import ArrowRight16 from "../../assests/octicons/arrow-right-16.svg"
+import ScRand from "../../Assests/sc-rand1.webp"
+import ArrowRight16 from "../../Assests/Svg-Icons/arrow-right-16.svg"
 
 const MoreDetails = () => {
   return (

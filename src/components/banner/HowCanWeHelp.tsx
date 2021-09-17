@@ -2,9 +2,9 @@ import * as React from "react"
 import { Link } from "gatsby"
 import Carousel from "react-multi-carousel"
 
-import Svg49 from "../../assests/49.svg"
-import BackgroundImg from "../../assests/bg-slide1.webp"
-import ArrowRight16 from "../../assests/octicons/arrow-right-16.svg"
+import Svg49 from "../../Assests/49.svg"
+import BackgroundImg from "../../Assests/bg-slide1.webp"
+import ArrowRight16 from "../../Assests/Svg-Icons/arrow-right-16.svg"
 
 const responsive = {
   superLargeDesktop: {

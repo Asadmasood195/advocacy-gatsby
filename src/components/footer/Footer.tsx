@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import Logo from "../../assests/logo.svg"
+import Logo from "../../Assests/logo.svg"
 
 const Footer = () => {
   return (

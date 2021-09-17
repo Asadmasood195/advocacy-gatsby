@@ -1,9 +1,11 @@
 import * as React from "react"
-import Layout from "../components/layout"
+import Layout from "../Components/Layout/Layout"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
-import ArrowRight16 from "../assests/octicons/arrow-right-16.svg"
+import lobbyistImg from "../Assests/sc-lobbyst2.webp"
+import sampleImg from "../Assests/sample.webp"
+import HowCanWeHelpSimple from "../Components/Banner/HowCanWeHelpSimple"
+import ArrowRight16 from "../Assests/Svg-Icons/arrow-right-16.svg"
 
 const SolLobby = () => {
   return (
@@ -38,7 +40,7 @@ const SolLobby = () => {
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-md-6">
-                  <StaticImage src="../assests/sc-lobbyst2.webp" className='imgStyle' />
+                  <img src={lobbyistImg} className='imgStyle' alt='imagePic' />
                 </div>
                 <div className="col-md-6">
                   <div className="body-content">
@@ -55,7 +57,7 @@ const SolLobby = () => {
                         <div className="product-list">
                           <a href="#" className="text-center">
                             <div className="product-image">
-                              <StaticImage src="../assests/sample.webp" />
+                              <img src={sampleImg} alt='imagePic' className='imgStyle' />
                             </div>
                             <div className="product-title">
                               2021 US Congress Directory
@@ -67,7 +69,7 @@ const SolLobby = () => {
                         <div className="product-list">
                           <a href="#" className="text-center">
                             <div className="product-image">
-                              <StaticImage src="../assests/sample.webp" />
+                              <img src={sampleImg} alt='imagePic' className='imgStyle' />
                             </div>
                             <div className="product-title">
                               2021 US Congress Directory
@@ -79,7 +81,7 @@ const SolLobby = () => {
                         <div className="product-list">
                           <a href="#" className="text-center">
                             <div className="product-image">
-                              <StaticImage src="../assests/sample.webp" />
+                              <img src={sampleImg} className='imgStyle' alt='imagePic' />
                             </div>
                             <div className="product-title">
                               2021 US Congress Directory
@@ -91,7 +93,7 @@ const SolLobby = () => {
                         <div className="product-list">
                           <a href="#" className="text-center">
                             <div className="product-image">
-                              <StaticImage src="../assests/sample.webp" />
+                              <img src={sampleImg} className='imgStyle' alt='imagePic' />
                             </div>
                             <div className="product-title">
                               2021 US Congress Directory

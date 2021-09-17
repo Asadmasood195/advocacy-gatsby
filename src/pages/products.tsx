@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import ProductsContent from "../components/products/ProductsContent"
+import Layout from "../Components/Layout/Layout"
+import ProductsContent from "../Components/Products/ProductsContent"
 
 const Products = () => {
   return (

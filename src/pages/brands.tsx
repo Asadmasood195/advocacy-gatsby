@@ -1,9 +1,9 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
-import BrandsContent from "../components/brands/BrandsContent"
+import Layout from "../Components/Layout/Layout"
+import HowCanWeHelpSimple from "../Components/Banner/HowCanWeHelpSimple"
+import BrandsContent from "../Components/Brands/BrandsContent"
 
 const Brands = () => {
   return (

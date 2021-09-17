@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import TermsAndConditions from "../components/legal/TermsAndConditions"
+import Layout from "../Components/Layout/Layout"
+import TermsAndConditions from "../Components/Legal/TermsAndConditions"
 
 const terms = () => {
     return (

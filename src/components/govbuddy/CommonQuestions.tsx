@@ -1,5 +1,5 @@
 import * as React from "react"
-import { QuestionsList } from "../../Data/commonQuestionsData"
+import { QuestionsList } from "../../Data/CommonQuestionsData"
 
 const CommonQuestions = () => {
     const [list, setList] = React.useState(QuestionsList)

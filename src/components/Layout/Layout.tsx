@@ -1,11 +1,12 @@
 import * as React from "react"
 import Helmet from "react-helmet"
-import Header from "./header/Header"
-import Footer from "./footer/Footer"
-import "../styles/custom.css"
+import Header from "../Header/Header"
+import Footer from "../Footer/Footer"
+import "../../Styles/Custom.css"
 import "react-multi-carousel/lib/styles.css"
+import "react-image-gallery/styles/css/image-gallery.css"
 
-import ErrorBoundaryContainer from "../components/common/ErrorBoundryContainer"
+import ErrorBoundaryContainer from "../Common/ErrorBoundryContainer"
 
 const Layout = ({ children }: any) => {
   return (
@@ -21,7 +22,7 @@ const Layout = ({ children }: any) => {
           />
           <link
             rel="stylesheet"
-            href="../../src/assests/fontAwesome/css/min.css"
+            href="../../src/Assests/fontAwesome/css/min.css"
           />
         </Helmet>
         <Header />

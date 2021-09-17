@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import Layout from "../components/layout"
-import CartIcon from "../assests/octicons/cart.svg"
-import { AllProducts } from "../components/search/AllProducts"
+import Layout from "../Components/Layout/Layout"
+import CartIcon from "../Assests/Svg-Icons/cart.svg"
+import { AllProducts } from "../Components/Search/AllProducts"
 
 const Search = () => {
   return (
@@ -26,7 +26,7 @@ const Search = () => {
               <div className="row">
                 {AllProducts.map(product => {
                   return (
-                    <div className="col-md-3">
+                    <div key={product.id} className="col-md-3">
                       <div className="product-item">
                         <Link to="/product-detail" className="product-detail">
                           <div

@@ -14,7 +14,7 @@
     },
     "include": [
         "./src/**/*",
-        "src/components",
+        "src/Components",
         "src/config.d.ts"
     ]
 }

@@ -1,10 +1,10 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import Layout from "../components/layout"
-import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
-import CartIcon from "../assests/octicons/cart.svg"
-import { Product2021 } from "../components/printed_directory/Products"
-  
+import Layout from "../Components/Layout/Layout"
+import HowCanWeHelpSimple from "../Components/Banner/HowCanWeHelpSimple"
+import CartIcon from "../Assests/Svg-Icons/cart.svg"
+import { Product2021 } from "../Components/Printed_directory/Products"
+
 
 const PrintedDirectory = () => {
   return (
@@ -50,7 +50,7 @@ const PrintedDirectory = () => {
               <div className="row">
                 {Product2021.map(product => {
                   return (
-                    <div className="col-md-3">
+                    <div key={product.id} className="col-md-3">
                       <div className="product-item">
                         <Link to="/product-detail" className="product-detail">
                           <div

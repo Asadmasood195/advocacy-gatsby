@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import ArrowRight16 from "../../assests/octicons/arrow-right-16.svg"
-import Image from "../../assests/sample.webp"
+import ArrowRight16 from "../../Assests/Svg-Icons/arrow-right-16.svg"
+import Image from "../../Assests/sample.webp"
 
 const DataServices = () => {
   return (

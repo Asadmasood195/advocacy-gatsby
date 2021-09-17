@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Formik, Form } from 'formik';
 import * as yup from 'yup';
-import { useForm } from '../common/hooks/useForm';
+import { useForm } from '../Common/hooks/useForm';
 
 const ContactForm = () => {
     

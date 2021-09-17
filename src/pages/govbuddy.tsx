@@ -1,10 +1,10 @@
 import { Link } from "gatsby"
 import * as React from "react"
-import Layout from "../components/layout"
-import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
-import CommonQuestions from "../components/govbuddy/CommonQuestions"
-import Banner from "../components/banner/Banner"
-import Plans from "../components/govbuddy/Plans"
+import Layout from "../Components/Layout/Layout"
+import HowCanWeHelpSimple from "../Components/Banner/HowCanWeHelpSimple"
+import CommonQuestions from "../Components/Govbuddy/CommonQuestions"
+import Banner from "../Components/Banner/Banner"
+import Plans from "../Components/Govbuddy/Plans"
 
 const GovBuddy = () => {
   return (

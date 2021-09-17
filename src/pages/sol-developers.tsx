@@ -1,13 +1,13 @@
 import * as React from "react"
-import Layout from "../components/layout"
+import Layout from "../Components/Layout/Layout"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
-import ArrowRight16 from "../assests/octicons/arrow-right-16.svg"
-import DataServices from "../components/DevelopersContent/DataServices"
-import DevSc from "../assests/sc-dev.webp"
-import DevSc1 from "../assests/sc-dev2.webp"
-import Image from "../assests/sample.webp"
+import HowCanWeHelpSimple from "../Components/Banner/HowCanWeHelpSimple"
+import ArrowRight16 from "../Assests/Svg-Icons/arrow-right-16.svg"
+import DataServices from "../Components/DevelopersContent/DataServices"
+import DevSc from "../Assests/sc-dev.webp"
+import DevSc1 from "../Assests/sc-dev2.webp"
+import Image from "../Assests/sample.webp"
 
 const SolDevelopers = () => {
   return (

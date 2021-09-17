@@ -1,14 +1,14 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import ImageGallery from "react-image-gallery"
-import Layout from "../components/layout"
-import CartIcon from "../assests/octicons/cart.svg"
-import Image1 from "../assests/sample.webp"
-import Image2 from "../assests/sample0.webp"
-import Image3 from "../assests/sample1.webp"
-import Image4 from "../assests/sample2.webp"
-import Image5 from "../assests/sample4.webp"
-import CartInput from "../components/cart/CartInput"
+import Layout from "../Components/Layout/Layout"
+import CartIcon from "../Assests/Svg-Icons/cart.svg"
+import Image1 from "../Assests/sample.webp"
+import Image2 from "../Assests/sample0.webp"
+import Image3 from "../Assests/sample1.webp"
+import Image4 from "../Assests/sample2.webp"
+import Image5 from "../Assests/sample4.webp"
+import CartInput from "../Components/Cart/CartInput"
 
 const ProductImages = [
   { Image: Image1 },

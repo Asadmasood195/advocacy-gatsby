@@ -1,9 +1,9 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import Layout from "../components/layout"
-import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
-import CartIcon from "../assests/octicons/cart.svg"
-import Image4 from "../assests/sample4.webp"
+import Layout from "../Components/Layout/Layout"
+import HowCanWeHelpSimple from "../Components/Banner/HowCanWeHelpSimple"
+import CartIcon from "../Assests/Svg-Icons/cart.svg"
+import Image4 from "../Assests/sample4.webp"
 
 const Product2021 = [
   {
@@ -108,7 +108,7 @@ const Maps = () => {
               <div className="row">
                 {Product2021.map(product => {
                   return (
-                    <div className="col-md-3">
+                    <div key={product.id} className="col-md-3">
                       <div className="product-item">
                         <Link to="/product-detail" className="product-detail">
                           <div

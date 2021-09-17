@@ -1,10 +1,10 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Banner from "../components/banner/Banner"
-import Courses from "../components/pritchardu/Courses"
-import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
+import Layout from "../Components/Layout/Layout"
+import Banner from "../Components/Banner/Banner"
+import Courses from "../Components/Pritchardu/Courses"
+import HowCanWeHelpSimple from "../Components/Banner/HowCanWeHelpSimple"
 
 const PritchardU = () => {
   return (

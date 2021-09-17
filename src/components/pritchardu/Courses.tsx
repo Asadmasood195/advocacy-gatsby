@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import PritchardLesson from "../../assests/pritchard-lessons.webp"
-import PritchardAuthor from "../../assests/pritchardu-author.webp"
-import PritchardSample from "../../assests/pritchardu-sample1.webp"
+import PritchardLesson from "../../Assests/pritchard-lessons.webp"
+import PritchardAuthor from "../../Assests/pritchardu-author.webp"
+import PritchardSample from "../../Assests/pritchardu-sample1.webp"
 
 const Courses = () => {
   return (

@@ -1,15 +1,15 @@
 import * as React from "react"
 
-import Layout from "../components/layout"
-import SliderBanner from "../components/banner/SliderBanner"
-import CompanyLogos from "../components/banner/CompanyLogos"
-import ProductCategories from "../components/banner/ProductCategories"
-import ProductCards from "../components/product-cards/ProductCards"
-import PrinchardU from "../components/banner/PrinchardU"
-import PrintedDirectory from "../components/banner/PrintedDirectory"
-import TrustedCompany from "../components/banner/TrustedCompany"
-import MoreDetails from "../components/banner/MoreDetails"
-import HowCanWeHelp from "../components/banner/HowCanWeHelp"
+import Layout from "../Components/Layout/Layout"
+import SliderBanner from "../Components/Banner/SliderBanner"
+import CompanyLogos from "../Components/Banner/CompanyLogos"
+import ProductCategories from "../Components/Banner/ProductCategories"
+import ProductCards from "../Components/Product-cards/ProductCards"
+import PrinchardU from "../Components/Banner/PrinchardU"
+import PrintedDirectory from "../Components/Banner/PrintedDirectory"
+import TrustedCompany from "../Components/Banner/TrustedCompany"
+import MoreDetails from "../Components/Banner/MoreDetails"
+import HowCanWeHelp from "../Components/Banner/HowCanWeHelp"
 
 export default function IndexPage() {
   return (

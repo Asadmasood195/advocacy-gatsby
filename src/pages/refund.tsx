@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import Layout from "../components/layout"
-import RefundPolicy from "../components/legal/RefundPolicy"
+import Layout from "../Components/Layout/Layout"
+import RefundPolicy from "../Components/Legal/RefundPolicy"
 
 const refund = () => {
   return (

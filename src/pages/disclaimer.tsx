@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Disclaimer from "../components/legal/Disclaimer"
+import Layout from "../Components/Layout/Layout"
+import Disclaimer from "../Components/Legal/Disclaimer"
 
 const disclaimer = () => {
   const appname = "Advocacy"

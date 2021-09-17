@@ -1,12 +1,11 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
-import Layout from "../components/layout"
-import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
-import WhoWeAre from "../components/about/WhoWeAre"
-import MoreDetails from "../components/about/MoreDetails"
-import OurProducts from "../components/about/OurProducts"
+import Layout from "../Components/Layout/Layout"
+import HowCanWeHelpSimple from "../Components/Banner/HowCanWeHelpSimple"
+import WhoWeAre from "../Components/About/WhoWeAre"
+import MoreDetails from "../Components/About/MoreDetails"
+import OurProducts from "../Components/About/OurProducts"
+import logoImg from "../Assests/logo.png"
 
 const About = () => {
   return (
@@ -27,7 +26,7 @@ const About = () => {
                 <div className="col-md-2"></div>
                 <div className="col-md-5">
                   <div className="text-center text-banner">
-                    <StaticImage src="../assests/logo.png" width="200" />
+                    <img src={logoImg} width="200" alt='imagePic' />
                     <h1>Game Changing Products for Advocacy</h1>
                     <h5>
                       We offer physical books, digital editions, online

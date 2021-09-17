@@ -1,6 +1,6 @@
-import Image1 from "../../assests/sample0.webp"
-import Image2 from "../../assests/sample1.webp"
-import Image3 from "../../assests/sample2.webp"
+import Image1 from "../../Assests/sample0.webp"
+import Image2 from "../../Assests/sample1.webp"
+import Image3 from "../../Assests/sample2.webp"
 
 export const Product2021 = [
   {

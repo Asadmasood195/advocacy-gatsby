@@ -1,8 +1,8 @@
 import * as React from "react"
-import Capitol from "../../assests/br-capitol.webp"
-import Govbuddy from "../../assests/br-govbuddy.webp"
-import PolicyGuru from "../../assests/br-policy.webp"
-import Pritchard from "../../assests/br-pritchard.webp"
+import Capitol from "../../Assests/br-capitol.webp"
+import Govbuddy from "../../Assests/br-govbuddy.webp"
+import PolicyGuru from "../../Assests/br-policy.webp"
+import Pritchard from "../../Assests/br-pritchard.webp"
 
 const CompanyLogos = () => {
   return (

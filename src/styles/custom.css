@@ -1,33 +1,4 @@
-/* @font-face {
-  font-family: "Inter";
-  src: url("../assests/googleFonts/Inter/static/Inter-Bold.ttf")
-      format("truetype"),
-    url("../assests/googleFonts/Inter/static/Inter-Light.ttf")
-      format("truetype"),
-    url("../assests/googleFonts/Inter/static/Inter-Medium.ttf")
-      format("truetype"),
-    url("../assests/googleFonts/Inter/static/Inter-Regular.ttf")
-      format("truetype"),
-    url("../assests/googleFonts/Inter/static/Inter-SemiBold.ttf")
-      format("truetype"),
-    url("../assests/googleFonts/Inter/static/Inter-Black.ttf")
-      format("truetype");
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../assests/googleFonts/Poppins/Poppins-Black.ttf")
-      format("truetype"),
-    url("../assests/googleFonts/Poppins/Poppins-SemiBold.ttf")
-      format("truetype"),
-    url("../assests/googleFonts/Poppins/Poppins-Bold.ttf") format("truetype"),
-    url("../assests/googleFonts/Poppins/Poppins-ExtraBold.ttf")
-      format("truetype"),
-    url("../assests/googleFonts/Poppins/Poppins-Light.ttf") format("truetype"),
-    url("../assests/googleFonts/Poppins/Poppins-Medium.ttf") format("truetype"),
-    url("../assests/googleFonts/Poppins/Poppins-Regular.ttf") format("truetype"),
-    url("../assests/googleFonts/Poppins/Poppins-Thin.ttf") format("truetype");
-} */
-@import "~react-image-gallery/styles/css/image-gallery.css";
+
 
 body {
   font-family: "Inter";
@@ -560,7 +531,7 @@ nav .pagination li.active a {
 }
 
 #how-we-can-help {
-  background-image: url("../assests/bg-how-we.webp");
+  background-image: url("../Assests/bg-how-we.webp");
   background-position: center left;
   background-repeat: no-repeat;
 }
@@ -618,7 +589,7 @@ nav .pagination li.active a {
 
 #contact {
   padding: 40px 0px;
-  background-image: url("../assests/logo-bg-adv2.webp");
+  background-image: url("../Assests/logo-bg-adv2.webp");
   background-position: top right;
   background-repeat: no-repeat;
   border-top: 1px solid #ff173d;
@@ -671,7 +642,7 @@ nav .pagination li.active a {
 /*=========About========*/
 
 .banner-about {
-  background: url(../assests/about-banner.png);
+  background: url(../Assests/about-banner.png);
   min-height: 500px;
   background-size: cover;
   border-top: 1px solid #ff173d;
@@ -705,7 +676,7 @@ nav .pagination li.active a {
 /*=========Brands========*/
 
 .banner-brands {
-  background: url(../assests/banner-brands.webp);
+  background: url(../Assests/banner-brands.webp);
   min-height: 500px;
   background-size: cover;
   border-top: 1px solid #ff173d;
@@ -773,43 +744,43 @@ nav .pagination li.active a {
 
 /*=========Solutions========*/
 .banner-solutions {
-  background: url(../assests/banner-solutions.webp);
+  background: url(../Assests/banner-solutions.webp);
   min-height: 500px;
   background-size: cover;
 }
 
 .banner-solutions.sol-government {
-  background: url(../assests/sol-govern.webp);
+  background: url(../Assests/sol-govern.webp);
   min-height: 400px;
   background-size: cover;
 }
 
 .banner-solutions.sol-trade {
-  background: url(../assests/sol-trade.webp);
+  background: url(../Assests/sol-trade.webp);
   min-height: 400px;
   background-size: cover;
 }
 
 .banner-solutions.sol-nonpro {
-  background: url(../assests/sol-nonpro.webp);
+  background: url(../Assests/sol-nonpro.webp);
   min-height: 400px;
   background-size: cover;
 }
 
 .banner-solutions.sol-lobbyist {
-  background: url(../assests/sol-lobbyst.webp);
+  background: url(../Assests/sol-lobbyst.webp);
   min-height: 400px;
   background-size: cover;
 }
 
 .banner-solutions.sol-grassroots {
-  background: url(../assests/sol-grassroots.webp);
+  background: url(../Assests/sol-grassroots.webp);
   min-height: 400px;
   background-size: cover;
 }
 
 .banner-solutions.sol-developers {
-  background: url(../assests/sol-developers.png);
+  background: url(../Assests/sol-developers.png);
   min-height: 400px;
   background-size: cover;
 }
@@ -924,7 +895,7 @@ nav .pagination li.active a {
 
 /*=========Products========*/
 .banner-products {
-  background: url(../assests/banner-products.png);
+  background: url(../Assests/banner-products.png);
   min-height: 500px;
   background-size: cover;
 }
@@ -1114,7 +1085,7 @@ nav .pagination li.active a {
 /*============LEGAL==============*/
 
 .banner-legal {
-  background: url(../assests/banner-main.png);
+  background: url(../Assests/banner-main.png);
   min-height: 280px;
   background-size: cover;
 }
@@ -1145,7 +1116,7 @@ nav .pagination li.active a {
 
 #legal {
   padding: 40px 0px;
-  background-image: url("../assests/logo-bg-adv2.webp");
+  background-image: url("../Assests/logo-bg-adv2.webp");
   background-position: top right;
   background-repeat: no-repeat;
 }
@@ -1322,15 +1293,15 @@ nav .pagination li.active a {
 /* .product-item {
 } */
 #Card0Styles {
-  background: url("../assests/sample0.webp") no-repeat center center;
+  background: url("../Assests/sample0.webp") no-repeat center center;
   background-size: contain;
 }
 #Card1Styles {
-  background: url("../assests/sample1.webp") no-repeat center center;
+  background: url("../Assests/sample1.webp") no-repeat center center;
   background-size: contain;
 }
 #Card2Styles {
-  background: url("../assests/sample2.webp") no-repeat center center;
+  background: url("../Assests/sample2.webp") no-repeat center center;
   background-size: contain;
 }
 
@@ -1428,7 +1399,7 @@ nav .pagination li.active a {
 }
 
 #homepage #printed-directories {
-  background: url("../assests/banner-printed2.webp") no-repeat;
+  background: url("../Assests/banner-printed2.webp") no-repeat;
   background-size: 100% auto;
   height: 400px;
 }
@@ -1882,7 +1853,7 @@ nav .pagination li.active a {
 }
 
 #product-detail .product-info ul li:before {
-  background: url(../assests/icons-png/check-circle-fill-24.png) no-repeat 0px
+  background: url(../Assests/Png-Icons/check-circle-fill-24.png) no-repeat 0px
     2px;
   content: " ";
   width: 30px;
@@ -1894,7 +1865,7 @@ nav .pagination li.active a {
 }
 
 #product-detail .product-info ul li li:before {
-  background: url(../assests/icons-png/check-24.png) no-repeat 0px 2px;
+  background: url(../Assests/Png-Icons/check-24.png) no-repeat 0px 2px;
 }
 
 /*========CART==============*/
@@ -1940,7 +1911,7 @@ nav .pagination li.active a {
 }
 
 #cart #recommended-product .select-arr:after {
-  background: url(../assests/icons-png/chevron-down-24.png) no-repeat center;
+  background: url(../Assests/Png-Icons/chevron-down-24.png) no-repeat center;
   content: " ";
   width: 30px;
   height: 30px;
@@ -2084,12 +2055,12 @@ nav .pagination li.active a {
 }
 
 #checkout .form-group select {
-  background: #fff url(../assests/icons-png/chevron-down-24.png) no-repeat 99%
+  background: #fff url(../Assests/Png-Icons/chevron-down-24.png) no-repeat 99%
     center;
 }
 
 #checkout #ch-card-num {
-  background: #fff url(../assests/icons-png/credit-card-24.png) no-repeat 99%
+  background: #fff url(../Assests/Png-Icons/credit-card-24.png) no-repeat 99%
     center;
 }
 
@@ -2165,7 +2136,7 @@ nav .pagination li.active a {
 
 #login {
   padding: 40px 0px;
-  background-image: url("../assests/logo-bg-adv2.webp");
+  background-image: url("../Assests/logo-bg-adv2.webp");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 40%;
@@ -2217,7 +2188,7 @@ nav .pagination li.active a {
 
 .plan-benefit ul li {
   margin-bottom: 20px;
-  background: url(../assests/check.png) no-repeat;
+  background: url(../Assests/check.png) no-repeat;
   background-size: 25px;
   padding-left: 35px;
   font-size: 14px;
@@ -2408,7 +2379,7 @@ nav .pagination li.active a {
   transition: all 0.5s;
   top: 8px;
   right: 10px;
-  background: url(../assests/arrow-faq.png) no-repeat 0;
+  background: url(../Assests/arrow-faq.png) no-repeat 0;
   display: block;
   width: 20px;
   height: 20px;
@@ -2460,7 +2431,7 @@ nav .pagination li.active a {
 
 .plan-benefit ul li {
   margin-bottom: 20px;
-  background: url(../assests/check.png) no-repeat;
+  background: url(../Assests/check.png) no-repeat;
   background-size: 25px;
   padding-left: 35px;
   font-size: 14px;
@@ -2507,7 +2478,7 @@ nav .pagination li.active a {
 
 /* When the radio button is checked, add a blue background */
 .check_plan input:checked ~ .checkmark_plan {
-  background: url(../assests/icon-check-big.png) no-repeat;
+  background: url(../Assests/icon-check-big.png) no-repeat;
   border: 1px solid #f9163e;
   background-size: 100%;
 }
@@ -2543,27 +2514,27 @@ nav .pagination li.active a {
 }
 
 .banner-subproducts.bg-govbuddy {
-  background-image: url("../assests/bg-govbuddy.jpg");
+  background-image: url("../Assests/bg-govbuddy.jpg");
 }
 
 .banner-subproducts.bg-printed {
-  background-image: url("../assests/bg-pocket-book.jpg");
+  background-image: url("../Assests/bg-pocket-book.jpg");
 }
 
 .banner-subproducts.bg-policy {
-  background-image: url("../assests/bg-policy-guru.jpg");
+  background-image: url("../Assests/bg-policy-guru.jpg");
 }
 
 .banner-subproducts.bg-maps {
-  background-image: url("../assests/bg-map.jpg");
+  background-image: url("../Assests/bg-map.jpg");
 }
 
 .banner-subproducts.bg-digital {
-  background-image: url("../assests/bg-digital.jpg");
+  background-image: url("../Assests/bg-digital.jpg");
 }
 
 .banner-subproducts.bg-pritchardu {
-  background-image: url("../assests/bg-pritchardu.jpg");
+  background-image: url("../Assests/bg-pritchardu.jpg");
 }
 
 .banner-subproducts .text-banner {

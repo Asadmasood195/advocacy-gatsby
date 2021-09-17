@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import CookiePolicy from "../components/legal/CookiePolicy"
+import Layout from "../Components/Layout/Layout"
+import CookiePolicy from "../Components/Legal/CookiePolicy"
 
 const cookie = () => {
   return (

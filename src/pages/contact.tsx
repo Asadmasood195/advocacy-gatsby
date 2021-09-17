@@ -1,7 +1,7 @@
 import * as React from "react"
-import Layout from "../components/layout"
-import ContactForm from "../components/contact/ContactForm"
-import CapitolEnquiry from "../components/contact/CapitolEnquiry"
+import Layout from "../Components/Layout/Layout"
+import ContactForm from "../Components/Contact/ContactForm"
+import CapitolEnquiry from "../Components/Contact/CapitolEnquiry"
 
 const Contact = () => {
   return (

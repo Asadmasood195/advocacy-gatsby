@@ -1,12 +1,12 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import ProdPrint from "../../assests/prod-printed.webp"
-import ProdDigital from "../../assests/prod-digital.webp"
-import ProdPrit from "../../assests/prod-prit.webp"
-import ProdMap from "../../assests/prod-maps.webp"
-import ProdGov from "../../assests/prod-govbuddy.webp"
-import ProdPolicy from "../../assests/prod-policy.webp"
+import ProdPrint from "../../Assests/prod-printed.webp"
+import ProdDigital from "../../Assests/prod-digital.webp"
+import ProdPrit from "../../Assests/prod-prit.webp"
+import ProdMap from "../../Assests/prod-maps.webp"
+import ProdGov from "../../Assests/prod-govbuddy.webp"
+import ProdPolicy from "../../Assests/prod-policy.webp"
 
 const ProductCategories = () => {
   return (

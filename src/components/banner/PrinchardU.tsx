@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import Pritchard from "../../assests/br-pritchard.webp"
-import Prit2 from "../../assests/sc-prit2.webp"
+import Pritchard from "../../Assests/br-pritchard.webp"
+import Prit2 from "../../Assests/sc-prit2.webp"
 
 const PrinchardU = () => {
   return (
