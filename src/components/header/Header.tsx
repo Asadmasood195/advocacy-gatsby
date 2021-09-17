@@ -107,7 +107,7 @@ const Header = ({ children }: any) => {
                   <Nav.Link>
                     <NavDropdown title="Products" id="collasible-nav-dropdown">
                       {ProductsList?.map(product => (
-                        <NavDropdown.Item>
+                        <NavDropdown.Item key={product.id}>
                           <Link className="dropdown-item" to={product.link}>
                             {product.title}
                           </Link>
@@ -118,8 +118,8 @@ const Header = ({ children }: any) => {
 
                   <Nav.Link>
                     <NavDropdown title="Solutions" id="collasible-nav-dropdown">
-                      {Solutions?.map(solution => (
-                        <NavDropdown.Item>
+                      {Solutions?.map((solution, index) => (
+                        <NavDropdown.Item key={index}>
                           <Link className="dropdown-item" to={solution.link}>
                             {solution.title}
                           </Link>
@@ -286,8 +286,9 @@ const Header = ({ children }: any) => {
                             aria-labelledby="navbarDarkDropdownMenuLink"
                           >
                             <div>
-                              {ProductsList?.map(product => (
+                              {ProductsList?.map((product, index) => (
                                 <li
+                                  key={index}
                                   className="productList"
                                   onMouseOver={() => setImgSrc(product.id)}
                                   id={product.id}
@@ -368,8 +369,9 @@ const Header = ({ children }: any) => {
                           className="dropdown-menu"
                           aria-labelledby="navbarDarkDropdownMenuLink"
                         >
-                          {Solutions?.map(solution => (
-                            <li>
+                          {Solutions?.map((solution, index) => (
+                            <li
+                            key={index}>
                               <Link
                                 className="dropdown-item"
                                 to={solution.link}

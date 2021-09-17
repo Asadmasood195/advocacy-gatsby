@@ -1,5 +1,9 @@
 import * as React from "react"
 import { Link } from "gatsby"
+<<<<<<< HEAD
+=======
+import ImageGallery from 'react-image-gallery'
+>>>>>>> 0c44feb49bb20ba24634121d0c230cc7215318f1
 import Layout from "../components/layout"
 import CartIcon from "../assests/octicons/cart.svg"
 import Image1 from "../assests/sample.webp"
@@ -43,11 +47,28 @@ const Products = [
   },
 ]
 
-const handleDragStart = (e: any) => e.preventDefault();
-
-const items = Products.map(product => {
-  return (<img key={product.id} className="product-slider-img" src={product.productImage} onDragStart={handleDragStart} />)
-})
+const images = [
+  {
+    original: Image1,
+    thumbnail: Image1,
+  },
+  {
+    original: Image2,
+    thumbnail: Image2,
+  },
+  {
+    original: Image1,
+    thumbnail: Image1,
+  },
+  {
+    original: Image2,
+    thumbnail: Image2,
+  },
+  {
+    original: Image1,
+    thumbnail: Image1,
+  },
+];
 
 const ProductDetail = () => {
   return (
@@ -67,6 +88,7 @@ const ProductDetail = () => {
                 <div className="row">
                   <div className="col-md-4">
                     <div className="product-images-for">
+<<<<<<< HEAD
                       {ProductImages.map(data => (
                         <div
                           className="image-item"
@@ -75,6 +97,9 @@ const ProductDetail = () => {
                           }}
                         />
                       ))}
+=======
+                      <ImageGallery showFullscreenButton={false} showPlayButton={false} className="product-slider" items={images} />
+>>>>>>> 0c44feb49bb20ba24634121d0c230cc7215318f1
                     </div>
                   </div>
                   <div className="col-md-8">
@@ -189,7 +214,7 @@ const ProductDetail = () => {
                 <div className="row">
                   {Products.map(product => {
                     return (
-                      <div className="col-md-3">
+                      <div key={product.id} className="col-md-3">
                         <div className="product-item">
                           <Link to="/product-detail" className="product-detail">
                             <div
