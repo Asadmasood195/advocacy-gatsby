@@ -4,6 +4,8 @@ import Header from "./header/Header"
 import Footer from "./footer/Footer"
 import "../styles/custom.css"
 import "react-multi-carousel/lib/styles.css"
+import 'react-alice-carousel/lib/alice-carousel.css';
+
 import ErrorBoundaryContainer from "../components/common/ErrorBoundryContainer"
 
 const Layout = ({ children }: any) => {

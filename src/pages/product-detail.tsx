@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
 import Layout from "../components/layout"
 import CartIcon from "../assests/octicons/cart.svg"
 import Image1 from "../assests/sample.webp"
@@ -46,11 +45,11 @@ const Products = [
   },
 ]
 
-const handleDragStart = (e:any) => e.preventDefault();
+const handleDragStart = (e: any) => e.preventDefault();
 
 const items = Products.map(product => {
-    return (<img key={product.id} className="product-slider-img" src={product.productImage} onDragStart={handleDragStart} />)
-  })
+  return (<img key={product.id} className="product-slider-img" src={product.productImage} onDragStart={handleDragStart} />)
+})
 
 const ProductDetail = () => {
   return (
@@ -70,7 +69,7 @@ const ProductDetail = () => {
                 <div className="row">
                   <div className="col-md-4">
                     <div className="product-images-for">
-                    <AliceCarousel mouseTracking items={items} />
+                      <AliceCarousel mouseTracking items={items} />
                       {ProductImages.map(data => (
                         <div
                           className="image-item"
