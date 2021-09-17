@@ -5,7 +5,7 @@ import CartSvg from "../assests/octicons/cart.svg"
 import HowCanWeHelpSimple from "../components/banner/HowCanWeHelpSimple"
 import Summary from "../components/cart/Summary"
 import GovbuddyIcon from "../assests/ico-govbuddy.webp"
-import Products from "../components/cart/products"
+import Products from "../components/cart/Products"
 
 const Cart = () => {
   return (
